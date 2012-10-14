@@ -1,4 +1,10 @@
-((("highlight-symbol-mode" .
+((("test" .
+   [1 0 0 0])
+  ("line" .
+   [3 0 0 0])
+  ("delete" .
+   [3 0 0 0 0 0])
+  ("highlight-symbol-mode" .
    [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
   ("linum-mode" .
    [0 0 0 0 1 0 0 0 0 0])
