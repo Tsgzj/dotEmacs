@@ -149,6 +149,12 @@ charset
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete//ac-dict")
 (ac-config-default)
 
+;;autopari
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins")
+(require 'autopair)
+(autopair-global-mode) 
+(require 'auto-pair+)
 
 ;;yasnippet
 ;;(add-to-list 'load-path
@@ -400,3 +406,6 @@ static char * arrow_right[] = {
                      (kill-region (line-beginning-position)
                                   (line-end-position))
                      (message "killed line")))))
+
+
+
