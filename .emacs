@@ -22,28 +22,38 @@
 (set-selection-coding-system 'utf-8)
 (modify-coding-system-alist 'process "*" 'utf-8)
 
+;;将所有的~文件放在.backup文件夹里面
+(setq backup-directory-alist (quote (("." . "~/.backups"))))
 (setq mac-option-modifier 'meta)
-
 (setq default-major-mode 'text-mode)
-
 (set-face-attribute
-'default nil :font "consolas 16")
+'default nil :font "inconsolata 18")
 ;; Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
 (set-fontset-font (frame-parameter nil 'font)
 charset
 (font-spec :family "Hiragino Sans GB" :size 18)))
 
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 ;;(setq display-time-format “%V %m.%d/%H:%M”)
 (display-time-mode 1) ; 显示时间
 ;;(setq display-time-24hr-format t) ; 24小时格式
 ;;(setq display-time-day-and-date t) ; 显示日期
+
+ (require 'cua-base)
+(cua-mode)
 
 (mouse-avoidance-mode 'animate) ; 光标移动到鼠标下时，鼠标自动弹开
 
 (setq inhibit-startup-message t)
 
 (setq kill-ring-max 200)
+
+;;Haskell-mode
+(load "~/.emacs.d/haskell-mode/haskell-site-file")
 
 ;;(setq default-fill-column 60)
 
@@ -61,8 +71,8 @@ charset
 ;;(setq show-paren-style 'parentheses)
 ;;(linum-mode 1)
 
-(require 'ido)
-(ido-mode t)
+;;(require 'ido)
+;;(ido-mode t)
 
 (setq default-frame-alist
 '((top . 0)(left . 300)(width . 120)(height . 65)(tool-bar-lines . 0)))
@@ -94,13 +104,19 @@ charset
 ;; 	     "~/.emacs.d/plugins/")
 ;;(require 'highlight-symbol)
 ;;(highlight-symbol-mode t)
-
-
 ;;
-(global-set-key [(control f3)] 'highlight-symbol-at-point)
+
+;;markdown-mode
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/markdown-mode/")
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+   (cons '("\\.text" . markdown-mode) auto-mode-alist))
+;;(global-set-key [(control f3)] 'highlight-symbol-at-point)
 ;;global-set-key [f3] 'highlight-symbol-next)
-(global-set-key [(shift f3)] 'highlight-symbol-prev)
-(global-set-key [(meta f3)] 'highlight-symbol-prev)
+;;(global-set-key [(shift f3)] 'highlight-symbol-prev)
+;;(global-set-key [(meta f3)] 'highlight-symbol-prev)
 
 (add-to-list 'load-path 
 	     "~/.emacs.d/color-theme")
@@ -118,6 +134,7 @@ charset
 ;;(Color-theme-blackboard)
 ;;(color-theme-gnome2)
 ;;(color-theme-zenburn)
+
 
 
 ;;cedet
@@ -156,6 +173,14 @@ charset
 (autopair-global-mode) 
 (require 'auto-pair+)
 
+
+;;Golang
+(add-to-list 'load-path
+	     "~/.emacs.d/go")
+(require 'go-mode-load)
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+
 ;;yasnippet
 ;;(add-to-list 'load-path
 ;;              "~/.emacs.d/plugins/yasnippet")
@@ -191,7 +216,6 @@ charset
       '(("dvips and PDF Viewer" "%(o?)dvips %d -o && open %f")
         ("PDF Viewer" "open %o")
         ("Safari" "open %o")))
-
 
 
 ;;powerline配置
