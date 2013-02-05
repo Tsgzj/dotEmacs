@@ -1,0 +1,6 @@
+ls
+cd ~
+ls
+rm test.c
+la
+ls -a
