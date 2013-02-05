@@ -14,18 +14,18 @@
 
 ;; ----- ido-work-file-list -----
 (
- ".emacs"
  "test.c"
+ ".emacs"
  "#test.c#"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (20753 1991 0 0) "UserContent/" "test.c" "test/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".semanticdb/" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".local/" ".ido.last" ".emacs.d/" ".emacs" ".dvdcss/" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" "../" "./")
+ ("/Users/Sun/" (20753 2130 0 0) "UserContent/" "test.c" "test/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".semanticdb/" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".local/" ".ido.last" ".emacs.d/" ".emacs" ".dvdcss/" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" ".#test.c" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (20753 2123 0 0) "vender/" "tutorial/" "themes/" "plugins/" "places" "init.el" "haskell-mode/" "go/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Desktop/" (20753 987 0 0) ".localized" ".DS_Store" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (20753 983 0 0) "vender/" "tutorial/" "themes/" "slime/" "plugins/" "places" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs" ".DS_Store" "../" "./")
 
  ("/Users/Sun/.emacs.d/Auctex/" (20598 8015 0 0) "toolbar-x.elc" "toolbar-x.el" "TODO" "texmathp.elc" "texmathp.el" "tex.elc" "tex.el" "tex-wizard.el" "tex-style.elc" "tex-style.el" "tex-site.el.out" "tex-site.el.in" "tex-site.el" "tex-mik.elc" "tex-mik.el" "tex-jp.elc" "tex-jp.el" "tex-info.elc" "tex-info.el" "tex-fptex.elc" "tex-fptex.el" "tex-font.elc" "tex-font.el" "tex-fold.elc" "tex-fold.el" "tex-buf.elc" "tex-buf.el" "tex-bar.elc" "tex-bar.el" "style/" "RELEASE" "README" "preview/" "multi-prompt.elc" "multi-prompt.el" "mkinstalldirs" "Makefile.in" "Makefile" "lpath.el" "latex.elc" "latex.el" "INSTALL.windows" "install-sh" "INSTALL" "images/" "font-latex.elc" "font-latex.el" "FAQ" "doc/" "COPYING" "context.elc" "context.el" "context-nl.elc" "context-nl.el" "context-en.elc" "context-en.el" "configure.ac" "configure" "config.status" "config.log" "CHANGES" "ChangeLog" "bib-cite.elc" "bib-cite.el" "auto-loads.el~" "auto-loads.el" "auctex.spec" "auctex.el.in" "auctex.el" "aclocal.m4" ".DS_Store" "../" "./")
 

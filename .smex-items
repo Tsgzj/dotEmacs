@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  eshell
- auto-complete-mode
  c-mode
  package-list-packages
  package-install
  shell
  cd
+ 5x5
 )
 
 ;; ----- smex-data -----
