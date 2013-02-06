@@ -2,23 +2,25 @@
 ;; ----- smex-history -----
 (
  eshell
- c-mode
+ ac-complete-slime
  package-list-packages
  package-install
+ java-mode
+ c-mode
  shell
- cd
- 5x5
 )
 
 ;; ----- smex-data -----
 (
  (shell . 1)
  (slime . 1)
- (eshell . 2)
- (c-mode . 3)
- (auto-complete-mode . 8)
- (ac-complete-yasnippet . 1)
- (auto-complete . 1)
- (package-install . 1)
- (package-list-packages . 1)
+ (eshell . 6)
+ (c-mode . 6)
+ (auto-complete-mode . 14)
+ (ac-complete-yasnippet . 4)
+ (auto-complete . 3)
+ (package-install . 5)
+ (package-list-packages . 4)
+ (java-mode . 1)
+ (ac-complete-slime . 1)
 )

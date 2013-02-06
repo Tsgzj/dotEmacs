@@ -71,8 +71,10 @@ charset
 ;;(setq show-paren-style 'parentheses)
 ;;(linum-mode 1)
 
-;;(require 'ido)
-;;(ido-mode t)
+(require 'ido)
+(ido-mode t)
+
+(iswitchb-mode 1)
 
 (setq default-frame-alist
 '((top . 0)(left . 300)(width . 120)(height . 65)(tool-bar-lines . 0)))
@@ -125,6 +127,12 @@ charset
   '(progn
      (color-theme-initialize)))
 
+(add-to-list 'load-path
+             "~/.emacs.d/slime-2013-02-05/")
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(require 'slime)
+(slime-setup)
+
 
 ;;choose the color theme
 ;;(load-file “~/.emacs.d/themes/zenburn-theme.el”)
@@ -167,13 +175,37 @@ charset
 (autopair-global-mode) 
 (require 'auto-pair+)
 
-
 ;;Golang
 (add-to-list 'load-path
 	     "~/.emacs.d/go")
 (require 'go-mode-load)
-(require 'go-autocomplete)
+
+(add-to-list 'load-path
+	     "~/.emacs.d/elpa/popup-20130117.1954/")
+
+(add-to-list 'load-path
+             "~/.emacs.d/auto-complete/")
 (require 'auto-complete-config)
+;; setting dictionary directory.
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict/")
+
+;; setup and turn on `auto-complete-mode` for various major modes
+(ac-config-default)
+
+;; resetting ac-sources
+(setq-default ac-sources '(
+                           ac-source-yasnippet
+                           ac-source-abbrev
+                           ac-source-dictionary
+                           ac-source-words-in-same-mode-buffers
+                           ))
+
+
+(add-to-list 'load-path
+             "~/.emacs.d/yasnippet/")
+(require 'yasnippet)
+(setq yas-snippet-dirs "~/.emacs.d/yasnippet/snippets/")
+(yas-global-mode t)
 
 ;;auctex配置
 (add-to-list 'load-path
@@ -204,6 +236,9 @@ charset
       '(("dvips and PDF Viewer" "%(o?)dvips %d -o && open %f")
         ("PDF Viewer" "open %o")
         ("Safari" "open %o")))
+
+
+
 
 
 ;;powerline配置

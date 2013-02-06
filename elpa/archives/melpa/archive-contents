@@ -10,6 +10,13 @@
  (zoom-frm .
 	   [(20121228 1913)
 	    nil "Commands to zoom frame font size. [source: wiki]" single])
+ (znc .
+      [(20120729 1124)
+       ((cl-lib
+	 (2 2))
+	(erc
+	 (5 3)))
+       "ZNC + ERC [source: github]" single])
  (zlc .
       [(20110826 1723)
        nil "Provides zsh like completion for minibuffer [source: github]" single])
@@ -63,6 +70,9 @@
  (windsize .
 	   [(20110728 1636)
 	    nil "Simple, intuitive window resizing [source: github]" single])
+ (window-number .
+		[(20100803 1327)
+		 nil "Select windows by numbers [source: wiki]" single])
  (window-layout .
 		[(20130202 527)
 		 nil "window layout manager [source: github]" single])
@@ -110,6 +120,9 @@
  (wc-mode .
 	  [(20120531 1344)
 	   nil "show wc-like information in status bar [source: wiki]" single])
+ (watch-buffer .
+	       [(20120331 1344)
+		nil "run a shell command when saving a buffer [source: github]" single])
  (w3m .
       [(20121225 147)
        nil "an Emacs interface to w3m [source: github]" tar])
@@ -315,6 +328,9 @@
  (syntactic-sugar .
 		  [(20121205 1457)
 		   nil "Effect-free forms such as if/then/else [source: github]" single])
+ (synonyms .
+	   [(20121229 2306)
+	    nil "Look up synonyms for a word or phrase in a thesaurus. [source: wiki]" single])
  (sws-mode .
 	   [(20120730 2122)
 	    nil "(S)ignificant (W)hite(S)pace mode [source: github]" single])
@@ -463,7 +479,7 @@
 		  [(20121129 1435)
 		   nil "A color coded smart mode-line. [source: github]" single])
  (smart-forward .
-		[(20121020 1601)
+		[(20130205 1352)
 		 ((expand-region
 		   (0 8 0)))
 		 "Semantic navigatioin [source: github]" single])
@@ -480,7 +496,7 @@
 	    [(20121227 1032)
 	     nil "Rip Clojure namespaces apart and rebuild them. [source: github]" single])
  (skewer-mode .
-	      [(20130130 1141)
+	      [(20130205 937)
 	       ((simple-httpd
 		 (1 4 0))
 		(js2-mode
@@ -1083,7 +1099,7 @@
 		     [(20121011 2145)
 		      nil "Tiny functionality enhancements for evaluating sexps. [source: github]" single])
  (nrepl .
-	[(20130203 835)
+	[(20130205 706)
 	 ((clojure-mode
 	   (2 0 0)))
 	 "Client for Clojure nREPL [source: github]" single])
@@ -1127,7 +1143,7 @@
 	     [(20121114 2059)
 	      nil "View and edit parts of multiple files in one buffer [source: github]" single])
  (multi-web-mode .
-		 [(20121126 1123)
+		 [(20130205 2044)
 		  nil "multiple major mode support for web editing [source: github]" tar])
  (multi-term .
 	     [(20130108 2305)
@@ -1243,7 +1259,7 @@
 			       [(20121223 154)
 				nil "Advice for magit-log-edit-commit [source: github]" single])
  (magit .
-	[(20130203 1332)
+	[(20130205 1026)
 	 nil "Control Git from Emacs. [source: github]" tar])
  (mag-menu .
 	   [(20130127 2113)
@@ -1507,7 +1523,7 @@
 		   [(20081104 2213)
 		    nil "HTTP POST requests using the url library [source: wiki]" single])
  (htmlize .
-	  [(20120926 2232)
+	  [(20130205 2135)
 	   nil "Convert buffer text and decorations to HTML. [source: git]" single])
  (html-script-src .
 		  [(20121008 1907)
@@ -1609,7 +1625,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [source: github]" single])
  (helm .
-       [(20130204 1333)
+       [(20130205 1832)
 	nil "Helm is an Emacs incremental and narrowing framework [source: github]" tar])
  (header2 .
 	  [(20121228 2051)
@@ -1798,6 +1814,13 @@
  (frame-cmds .
 	     [(20130118 837)
 	      nil "Frame and window commands (interactive functions). [source: wiki]" single])
+ (font-utils .
+	     [(20121205 1454)
+	      ((persistent-soft
+		(0 8 6))
+	       (pcache
+		(0 2 3)))
+	      "Utility functions for working with fonts [source: github]" single])
  (fold-this .
 	    [(20121218 1630)
 	     nil "Just fold this region please [source: github]" single])
@@ -1874,7 +1897,7 @@
 		    (0 1)))
 		  "A flymake handler for coffee script [source: github]" single])
  (flycheck .
-	   [(20130203 1129)
+	   [(20130205 1628)
 	    ((s
 	      (1 3 1))
 	     (dash
@@ -1929,7 +1952,7 @@
 		       [(20121108 945)
 			nil "Make Emacs use the $PATH set up by the user's shell [source: github]" single])
  (evil-paredit .
-	       [(20121117 919)
+	       [(20130205 1053)
 		((evil
 		  (0 0 0))
 		 (paredit
@@ -2036,7 +2059,7 @@
 	   [(20120413 1107)
 	    nil "Emacs window session manager [source: github]" single])
  (elpy .
-       [(20130203 2045)
+       [(20130205 2230)
 	nil "Emacs Lisp Python Environment [source: github]" single])
  (elpa-audit .
 	     [(20121121 1747)
@@ -2330,7 +2353,7 @@
 		 [(20130110 1632)
 		  nil "A minor mode for the ClojureScript 'lein cljsbuild' command [source: github]" single])
  (clj-refactor .
-	       [(20130205 806)
+	       [(20130205 1310)
 		((s
 		  (1 3 1))
 		 (dash
@@ -2356,7 +2379,7 @@
 		       [(20100310 1348)
 			nil "cursor stays vertically centered [source: wiki]" single])
  (carton .
-	 [(20121109 1753)
+	 [(20130205 1804)
 	  nil "Emacs dependency management made easy [source: github]" single])
  (caml .
        [(20130116 2056)
@@ -2569,12 +2592,5 @@
 	      nil "auto-complete.el source for dabbrev [source: wiki]" single])
  (abl-mode .
 	   [(20120718 1655)
-	    nil "Python TDD minor mode [source: github]" single])
- (font-utils .
-	     [(20121205 1454)
-	      ((persistent-soft
-		(0 8 6))
-	       (pcache
-		(0 2 3)))
-	      "Utility functions for working with fonts [source: github]" single]))
+	    nil "Python TDD minor mode [source: github]" single]))
 

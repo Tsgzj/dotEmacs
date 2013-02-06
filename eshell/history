@@ -4,3 +4,24 @@ ls
 rm test.c
 la
 ls -a
+ls
+cd elpa/
+ls
+ls
+cd elpa/
+ls
+cd auto-complete-20130122.1551/
+ls
+cd ..
+cd yasnippet-20130112.1823/
+ls
+ls
+cd .emacs.d
+ls
+cd elpa
+ls
+cd ..
+ls
+cd elpa
+ls
+ls
