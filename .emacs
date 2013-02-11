@@ -131,7 +131,7 @@ charset
              "~/.emacs.d/slime-2013-02-05/")
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (require 'slime)
-(slime-setup)
+(slime-setup '(slime-fancy))
 
 
 ;;choose the color theme
@@ -206,6 +206,28 @@ charset
 (require 'yasnippet)
 (setq yas-snippet-dirs "~/.emacs.d/yasnippet/snippets/")
 (yas-global-mode t)
+
+
+;;org-mode
+(add-to-list 'load-path 
+             "~/.emacs.d/org-mode/lisp/")
+
+(require 'org)                                   
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t) 
+
+;;quicklisp
+;;(load (expand-file-name "~/quicklisp/slime-helper.el"))
+  ;; Replace "sbcl" with the path to your implementation
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(setq inferior-lisp-program "sbcl -K utf-8")
+
+;;weibo
+;;(add-to-list 'load-path
+;;             "~/.emacs.d/weibo/")
+;;(require 'weibo)
 
 ;;auctex配置
 (add-to-list 'load-path

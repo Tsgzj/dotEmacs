@@ -2,30 +2,72 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/Users/Sun/" . "Desktop/")
- ("/Users/Sun/.emacs.d/" . "Auctex/")
+ ("/Users/Sun/Program/" . "Lisp/")
+ ("/Users/" . "Sun/")
+ ("/" . "Users/")
+ ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
+ ("/Users/Sun/Downloads/" . "cs_thesis_zju-master/")
+ ("/Users/Sun/" . "Program/")
+ ("/Users/Sun/.emacs.d/" . "slime-2013-02-05/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Desktop/"
+ "/Users/Sun/Program/Lisp/"
  "/Users/Sun/"
+ "/Users/Sun/.emacs.d/slime-2013-02-05/"
+ "/Users/Sun/org/"
+ "/Users/Sun/Downloads/cs_thesis_zju-master/"
+ "/Users/Sun/Desktop/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "test.c"
+ "test.lisp"
  ".emacs"
- "#test.c#"
+ "slime.el"
+ "slime-autoloads.el"
+ "#test.lisp#"
+ "test.org"
+ ".vimperatorrc"
+ "main.tex"
+ "test.cl"
+ "test.c"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/Desktop/" (20753 49113 0 0) ".localized" ".DS_Store" "../" "./")
+ ("/Users/Sun/" (20757 65504 0 0) "UserContent/" "test/" "quicklisp/" "Public/" "Program/" "Pictures/" "org/" "ndk/" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".t.weibo.emacs.d/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".semanticdb/" ".sbclrc" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".local/" ".InstallAnywhere/" ".ido.last" ".ghc/" ".emacs.d/" ".emacs" ".eclipse/" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" "../" "./")
 
- ("/Users/Sun/.emacs.d/" (20753 50192 0 0) "yasnippet/" "vender/" "tutorial/" "themes/" "plugins/" "places" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs" ".DS_Store" "../" "./")
+ ("/Users/Sun/.emacs.d/" (20757 64705 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs" ".DS_Store" "../" "./")
 
- ("/Users/Sun/" (20753 50192 0 0) "UserContent/" "test/" "Public/" "Pictures/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".semanticdb/" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".local/" ".ido.last" ".emacs.d/" ".emacs" ".dvdcss/" ".DS_Store" ".dropbox/" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" "../" "./")
+ ("/Users/Sun/Program/Lisp/" (20757 6530 0 0) "test.lisp" "test.db" "../" "./")
+
+ ("/Users/Sun/Desktop/" (20757 10274 0 0) ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/slime-2013-02-05/" (20756 47670 0 0) "xref.lisp" "test.sh" "swank.lisp" "swank.asd" "swank-source-path-parser.lisp" "swank-source-file-cache.lisp" "swank-scl.lisp" "swank-sbcl.lisp" "swank-rpc.lisp" "swank-match.lisp" "swank-loader.lisp" "swank-lispworks.lisp" "swank-gray.lisp" "swank-ecl.lisp" "swank-corman.lisp" "swank-cmucl.lisp" "swank-clisp.lisp" "swank-ccl.lisp" "swank-backend.lisp" "swank-allegro.lisp" "swank-abcl.lisp" "start-swank.lisp" "slime.el.~1.1426.~" "slime.el" "slime-autoloads.el" "sbcl-pprint-patch.lisp" "README" "PROBLEMS" "nregex.lisp" "NEWS" "mkdist.sh" "metering.lisp" "hyperspec.el" "HACKING" "doc/" "CVS/" "contrib/" "ChangeLog" ".cvsignore" "#README#" "../" "./")
+
+ ("/Users/Sun/Program/" (20756 25104 0 0) "Lisp/" "../" "./")
+
+ ("/Users/Sun/Desktop/tolsetOSX/" (17883 987 0 0) "z_tools/" "OSAkkie0.1.04/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Desktop/tolsetOSX/OSAkkie0.1.04/" (20756 37276 0 0) "osakkie.img" "osakkie.hsf" "osakkie.bhs" "osakkie/" "media/" "Makefile" "HowToMake.txt" "font/" "apps/" "apilib/" ".DS_Store" "../" "./")
+
+ ("/usr/" (20747 11634 0 0) "X11R6/" "X11/" "texbin/" "standalone/" "share/" "sbin/" "local/" "llvm-gcc-4.2/" "libexec/" "lib/" "include/" "bin/" "../" "./")
+
+ ("/usr/local/" (20751 9348 0 0) "texlive/" "share/" "sbin/" "README.md" "opt/" "Library/" "lib/" "include/" "etc/" "CONTRIBUTING.md" "Cellar/" "bin/" ".gitignore" ".git/" "../" "./")
+
+ ("/usr/local/bin/" (20755 24899 0 0) "wftopfa" "unix-lpr.sh" "tmux" "texdist" "sl" "sbcl" "ps2ps2" "ps2ps" "ps2pdfwr" "ps2pdf14" "ps2pdf13" "ps2pdf12" "ps2pdf" "ps2epsi" "ps2ascii" "printafm" "pphs" "pkg-config" "pfbtopfa" "pf2afm" "pdfopt" "pdf2ps" "pdf2dsc" "npm" "node-waf" "node" "lprsetup.sh" "ifnames" "hostip" "hgk" "hg" "gsnd" "gslp" "gslj" "gsdj500" "gsdj" "gsbj" "gs-X11" "gs-noX11" "gs" "grep-changelog" "gitk" "git-upload-pack" "git-upload-archive" "git-subtree" "git-shell" "git-receive-pack" "git-cvsserver" "git-credential-osxkeychain" "git" "font2c" "event_rpcgen.py" "etags" "eps2eps" "emacsclient" "emacs-24.2.92" "emacs" "ebrowse" "dvipdf" "dumphint" "ctags" "cowthink" "cowsay" "convert" "brew" "autoupdate" "autoscan" "autoreconf" "automake-1.13" "automake" "autom4te" "autojump" "autoheader" "autoconf" "alarmer" "aclocal-1.13" "aclocal" "../" "./")
+
+ ("/Users/Sun/org/" (20755 24810 0 0) "../" "./")
+
+ ("/Users/Sun/.vimperator/" (20159 25818 0 0) "plugin/" "info/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Downloads/cs_thesis_zju-master/data/" (20754 12018 0 0) "zjubib.bib" "thanks.tex" "thanks.aux" "task.tex" "task.aux" "eval.tex" "eval.aux" "cover.tex" "chap2.tex" "chap2.aux" "chap1.tex" "chap1.aux" "appe.tex" "appe.aux" "announce.tex" "abse.tex" "abse.aux" "absc.tex" "absc.aux" "../" "./")
+
+ ("/Users/Sun/Downloads/cs_thesis_zju-master/" (20754 12006 0 0) "zjuthesis.cls" "zjuthesis.cfg" "missfont.log" "main.toc" "main.tex" "main.pdf" "main.nlo" "main.log" "main.aux" "images/" "data/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Downloads/" (20754 31353 0 0) "思维导图入门(图字完全版).pdf" "思维导图.pdf" "实用Common.Lisp编程.pdf" "冰果/" "【批量下载】數碼暴龍ost等.zip" "【思维导图丛书(全六册)(PDF)】/" "ÐÂ½¨ÎÄ¼þ¼Ð/" "xxx-av.com-20760-FHD.rar" "xxx-av.com-20760-FHD/" "XQuartz-2.7.40.dmg" "XQuartz-2.7.4.dmg" "vlc-2.0.5.dmg" "Tunnelblick_3.3beta21b.dmg" "Tokyo-Hot n0818-HD.rar" "Tokyo-Hot n0818-HD/" "starter-kit-2.0.3.tar" "starter-kit-2.0.3/" "slime-current.tgz" "slime-2013-02-05/" "Skim-1.4.1.dmg" "secretsocks.zip" "SecretSocks-1.0.2.dmg" "Secret Socks.app/" "SafeControls.dmg" "quicklisp.lisp" "QQWebLogin.pkg" "QQ_V2.3.0.dmg" "ovpn/" "OSXFUSE-2.3.9.dmg" "osu!_20121025.dmg" "openvpn.7z" "openvpn/" "NJUthesis-0.2f.zip" "NJUthesis/" "Mindjet_Mac_10.1.505.dmg" "MacTeX.pkg" "Language_Switcher_1_1_7.dmg" "jp-1.myav.tv-IPZ041.avi" "iTerm2-1_0_0_20130122/" "iSSH_3.1.zip" "Inconsolata.otf" "IDJDatePickerView.zip" "hotavxxx.com_MKD-S33.ISO" "HITMA-168_wmv.torrent" "Haskell Platform 2012.4.0.0 64bit.pkg" "googlechrome.dmg" "GoAgentX-v1.3.12.dmg" "GIMP-2.8.2-p4-Mountain-Lion.dmg" "Dropbox 1.6.16.dmg" "download.wmv" "download.mp4.td.cfg" "download.mp4.td" "download.avi.td.cfg" "download.avi.td" "dnscrypt-osx-client-0.19.dmg" "CT2Y1-C2.rar" "CT2Y1-C2 童颜巨乳MM,外表清纯内心淫荡/" "cs_thesis_zju-master.zip" "cs_thesis_zju-master/" "ccl-1.8-darwinx86.tar.gz" "ccl-1.8-darwinx86.tar" "CarrierEditor-1.0.6.dmg" "Carib722_LauXanh.Us.wmv.part" "BetterTouchTool.app/" "b-1222-ipz014.rar" "b-1222-ipz014/" "AppCode-1.6.4.dmg" "Android 应用性能优化_David Wu.pdf" "aMuleCore-2.2.6-x86-Leopard-MFb03.dmg" "[思维导图--大脑使用说明书].东尼 赞普.2005.pdf" "[KHの徒然写真ブログ]もしも黒猫が俺の彼女だったら___/" "[kat.ph]super.juicy.miku.airi.hd720p.torrent" "[kat.ph]sky.angel.blue.vol.62.miku.airi.uncensored.hd720p.torrent" "[kat.ph]miku.airi.marshmallow.girl.hd720p.lovely.torrent" "[kat.ph]lolita.busty.creampie.airi.miku.bdrip.xvid.jav.uncensored.japanx.torrent" "[kat.ph]drama.collection.miku.airi.avi.torrent" "65fa47cd00509af892a3acfdda876c2054117a07.torrent" "65fa47cd00509af892a3acfdda876c2054117a07(1).torrent" "18428 RSP - Sakura ~Anata ni Deaete Yokatta~.osz" ".localized" ".DS_Store" " EN-05 Diary ÉÙÅ®ÖÐ³öÈÕ¼Ç - Miku Tsukioka ÔÂÇð.avi" "../" "./")
 
  ("/Users/Sun/.emacs.d/elpa/auto-complete-clang-20120612.2224/" (20753 2750 0 0) "auto-complete-clang.el" "auto-complete-clang-pkg.elc" "auto-complete-clang-pkg.el" "auto-complete-clang-autoloads.el" "../" "./")
 

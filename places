@@ -1,4 +1,9 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/Sun/.emacs.d/.emacs" . 3926)
+(("/Users/Sun/.emacs.d/.emacs" . 3940)
  ("/Users/Sun/.emacs.d/elpa/popup-20130117.1954/popup-autoloads.el" . 171)
- ("/usr/include/stdio.h" . 990))
+ ("/Users/Sun/.emacs.d/slime-2013-02-05/slime.el" . 20303)
+ ("/Users/Sun/Program/Lisp/test.lisp" . 1258)
+ ("/usr/include/stdio.h" . 990)
+ ("/usr/local/Cellar/emacs-mac/HEAD/share/emacs/24.2.92/lisp/custom.el.gz" . 63)
+ ("/usr/local/Cellar/emacs-mac/HEAD/share/emacs/24.2.92/lisp/emacs-lisp/cl.el.gz" . 88)
+ ("/usr/local/Cellar/emacs-mac/HEAD/share/emacs/24.2.92/lisp/files.el.gz" . 58))

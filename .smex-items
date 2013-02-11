@@ -1,26 +1,37 @@
 
 ;; ----- smex-history -----
 (
+ linum-mode
+ slime
+ slime-toggle-debug-on-swank-error
+ sldb-cycle
+ slime-mode
+ eval-buffer
  eshell
- ac-complete-slime
- package-list-packages
- package-install
- java-mode
- c-mode
- shell
 )
 
 ;; ----- smex-data -----
 (
  (shell . 1)
- (slime . 1)
- (eshell . 6)
+ (slime . 24)
+ (eshell . 7)
  (c-mode . 6)
- (auto-complete-mode . 14)
+ (auto-complete-mode . 19)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
- (package-install . 5)
+ (package-install . 6)
  (package-list-packages . 4)
  (java-mode . 1)
  (ac-complete-slime . 1)
+ (lisp-mode . 1)
+ (go-mode . 1)
+ (plain-TeX-mode . 2)
+ (eval-buffer . 4)
+ (weibo-timeline . 4)
+ (weibo-timeline-mode . 3)
+ (cua-mode . 5)
+ (linum-mode . 2)
+ (slime-mode . 1)
+ (sldb-cycle . 2)
+ (slime-toggle-debug-on-swank-error . 1)
 )
