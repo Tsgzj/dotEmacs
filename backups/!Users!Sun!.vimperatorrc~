@@ -65,7 +65,7 @@ noremap <M-a> <C-a>
 noremap <M-x> <C-x>
 set complete=shl
 set titlestring=Scarlet@Vimperator
-set gui=notabs
+set gui=tabs
 source! "/Volumes/Macintosh HD/Users/Sun/.vimperatorrc.local"
 
 " vim: set ft=vimperator:

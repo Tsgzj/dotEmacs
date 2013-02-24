@@ -2,52 +2,71 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Sun/.emacs.d/elpa/" . "window-number-20100803.1327/")
  ("/Users/Sun/Program/" . "Lisp/")
  ("/Users/" . "Sun/")
  ("/" . "Users/")
  ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
  ("/Users/Sun/Downloads/" . "cs_thesis_zju-master/")
- ("/Users/Sun/" . "Program/")
- ("/Users/Sun/.emacs.d/" . "slime-2013-02-05/")
+ ("/Users/Sun/" . "Desktop/")
+ ("/Users/Sun/.emacs.d/" . "emacs-powerline/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Program/Lisp/"
  "/Users/Sun/"
+ "/Users/Sun/Program/Ruby/"
+ "/Users/Sun/Desktop/"
+ "/Users/Sun/Program/Lisp/"
+ "/Users/Sun/.emacs.d/emacs-powerline/"
+ "/Users/Sun/Program/Lisp/Notes/"
+ "/Users/Sun/Program/Python/"
  "/Users/Sun/.emacs.d/slime-2013-02-05/"
  "/Users/Sun/org/"
  "/Users/Sun/Downloads/cs_thesis_zju-master/"
- "/Users/Sun/Desktop/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "test.lisp"
  ".emacs"
- "slime.el"
- "slime-autoloads.el"
- "#test.lisp#"
- "test.org"
- ".vimperatorrc"
- "main.tex"
- "test.cl"
+ "simple.rb"
  "test.c"
+ "Soduku.rb"
+ ".zshrc"
+ ".vimperatorrc"
+ "blood_pressure.lisp"
+ "my_blood_pressure.db"
+ "test.lisp"
+ "powerline.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (20757 65504 0 0) "UserContent/" "test/" "quicklisp/" "Public/" "Program/" "Pictures/" "org/" "ndk/" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".t.weibo.emacs.d/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".semanticdb/" ".sbclrc" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".local/" ".InstallAnywhere/" ".ido.last" ".ghc/" ".emacs.d/" ".emacs" ".eclipse/" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" "../" "./")
+ ("/Users/Sun/" (20777 37822 0 0) "UserContent/" "test/" "quicklisp/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "doo/" "Documents/" "Desktop/" ".zshrc" ".zsh-update" ".zhistory" ".zcompdump" ".Xauthority" ".vimrc" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim/" ".Trash/" ".t.weibo.emacs.d/" ".ssh/" ".srecode/" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rsense" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".newsrc-dribble" ".local/" ".irb_history" ".InstallAnywhere/" ".ido.last" ".ghc/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".CFUserTextEncoding" ".cache/" ".bash_history" ".backups/" "../" "./")
 
- ("/Users/Sun/.emacs.d/" (20757 64705 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs" ".DS_Store" "../" "./")
+ ("/Users/Sun/Program/Ruby/" (20777 37220 0 0) "test.rb" "Soduku.rb" ".#simple.rb" "#simple.rb#" "../" "./")
 
- ("/Users/Sun/Program/Lisp/" (20757 6530 0 0) "test.lisp" "test.db" "../" "./")
+ ("/Users/Sun/Desktop/" (20776 39403 0 0) "stop_watch/" ".localized" ".DS_Store" "../" "./")
 
- ("/Users/Sun/Desktop/" (20757 10274 0 0) ".localized" ".DS_Store" "../" "./")
+ ("/Users/Sun/.emacs.d/" (20777 27459 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" ".#.emacs" "../" "./")
+
+ ("/Users/Sun/.emacs.d/elpa/" (20777 27263 0 0) "window-number-readme.txt" "window-number/" "starter-kit-20121025.1511/" "smex-20120915.2041/" "ruby-tools-readme.txt" "ruby-tools-20121008.1851/" "popup-readme.txt" "popup-20130117.1954/" "paredit-20110508.1256/" "nlinum-1.1/" "magit-20130203.1332/" "ido-ubiquitous-20121214.2145/" "idle-highlight-mode-20120920.1848/" "helm-c-yasnippet-readme.txt" "find-file-in-project-20120716.1655/" "archives/" ".DS_Store" "#window-number-readme.txt#" "../" "./")
+
+ ("/Users/Sun/.emacs.d/elpa/ruby-tools-20121008.1851/" (20777 27247 0 0) "ruby-tools.elc" "ruby-tools.el" "ruby-tools-pkg.elc" "ruby-tools-pkg.el" "ruby-tools-autoloads.el" "../" "./")
+
+ ("/Users/Sun/Program/Lisp/" (20773 53837 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/emacs-powerline/" (20767 18779 0 0) "README.rst" "powerline.el" "AUTHORS" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Sun/Program/Lisp/Notes/" (20767 16638 0 0) "char4.markdown" "../" "./")
+
+ ("/Users/Sun/Program/" (20766 3866 0 0) "Ruby/" "Python/" "Lisp/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/elpa/window-number-20100803.1327/" (20764 50664 0 0) "window-number.elc" "window-number.el" "window-number-pkg.elc" "window-number-pkg.el" "window-number-autoloads.el" "../" "./")
+
+ ("/Users/Sun/Program/Python/" (20762 821 0 0) "hello_world.py" ".#hello_world.py" "../" "./")
 
  ("/Users/Sun/.emacs.d/slime-2013-02-05/" (20756 47670 0 0) "xref.lisp" "test.sh" "swank.lisp" "swank.asd" "swank-source-path-parser.lisp" "swank-source-file-cache.lisp" "swank-scl.lisp" "swank-sbcl.lisp" "swank-rpc.lisp" "swank-match.lisp" "swank-loader.lisp" "swank-lispworks.lisp" "swank-gray.lisp" "swank-ecl.lisp" "swank-corman.lisp" "swank-cmucl.lisp" "swank-clisp.lisp" "swank-ccl.lisp" "swank-backend.lisp" "swank-allegro.lisp" "swank-abcl.lisp" "start-swank.lisp" "slime.el.~1.1426.~" "slime.el" "slime-autoloads.el" "sbcl-pprint-patch.lisp" "README" "PROBLEMS" "nregex.lisp" "NEWS" "mkdist.sh" "metering.lisp" "hyperspec.el" "HACKING" "doc/" "CVS/" "contrib/" "ChangeLog" ".cvsignore" "#README#" "../" "./")
-
- ("/Users/Sun/Program/" (20756 25104 0 0) "Lisp/" "../" "./")
 
  ("/Users/Sun/Desktop/tolsetOSX/" (17883 987 0 0) "z_tools/" "OSAkkie0.1.04/" ".DS_Store" "../" "./")
 

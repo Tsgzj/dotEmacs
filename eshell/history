@@ -38,3 +38,9 @@ cd slime-2013-02-05/
 ls
 open slime.el 
 emacs slime.el
+cd .emacs.d/elpa/
+ls
+mv window-number-20100803.1327/ window-number
+ls
+cd window-number/
+ls

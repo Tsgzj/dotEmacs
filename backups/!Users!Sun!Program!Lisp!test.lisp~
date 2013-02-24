@@ -15,8 +15,8 @@
   (dolist (cd *db*)
     (format t "~{~a: ~10t~a~%~}~%" cd)))
 
-(defun dump-db2 ()
-  (format t "~{~a: ~10t~a~%~}~%" *db*)
+;;(defun dump-db2 ()
+;;  (format t "~{~a: ~10t~a~%~}~%" *db*)
 
 (defun prompt-read (prompt)
   (format *query-io* "~a: " prompt)
@@ -38,7 +38,7 @@
 (defun save-db (filename)
   (with-open-file (out filename
                        :direction :output
-                       :if-exists :supersede
+                       :exists :supersede
                        :external-format :utf-8)
     (with-standard-io-syntax
       (print *db* out))))
@@ -49,4 +49,6 @@
     (with-standard-io-syntax
       (setf *db* (read in)))))
 
- 
+;;(defun )
+(defun verbose-sum (x y)
+)
