@@ -1,0 +1,13 @@
+fun ack 0 b = b + 1
+  | ack a 0 =  ack (a - 1) 1
+  | ack a b =  ack (a -1) (ack a (b -1 ));
+
+val pi = 3.14159;
+fun area r = pi*r*r;
+
+fun fraction (n,d) =
+    let val com = gcd(n,d)
+    in (n div com, d div com)
+    end;
+
+

@@ -1,5 +1,3 @@
-"3.3 (created: 2011/11/13 17:32:12)
-
 highlight Bell border: none; background-color: #d0d0d0;
 highlight Boolean color: orchid;
 highlight CmdLine font-size: 14px; background: black; color: #d0d0d0; -moz-transition: all 0.25s;
@@ -51,7 +49,7 @@ noremap s :tabopen<Space>http://www.shooter.cn/search/
 noremap o :tabopen<Space>http://translate.google.cn/?hl=en#en|zh-CN|
 noremap q :tabmove-1<Return>
 noremap e :tabmove+1<Return>
-noremap f F
+"noremap f F
 "noremap y copy<Space>titleAndURL
 
 " noremap F f
@@ -65,10 +63,8 @@ noremap <M-a> <C-a>
 noremap <M-x> <C-x>
 set complete=shl
 set titlestring=Scarlet@Vimperator
-set gui=tabs
-source! "/Volumes/Macintosh HD/Users/Sun/.vimperatorrc.local"
 
 " vim: set ft=vimperator:
 
-source ~/.vimperator/plugin/_libly.js
-source ~/.vimperator/plugin/feedSomeKeys_3.js
+"source ~/.vimperator/plugin/_libly.js
+source ~/.vimperator/plugin/char_hints_mod2.js

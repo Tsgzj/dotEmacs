@@ -1,0 +1,189 @@
+\documentclass{ctexart}
+
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+
+\hypersetup{pdftitle=编译原理实验报告一,pdfauthor=孙文翔}
+\setlength\parindent{0pt}
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\lstset{numberstyle=\tiny, keywordstyle=\color{blue!70},
+  commentstyle=\color{red!50!green!50!blue!50}, frame=shadowbox,
+  rulesepcolor=\color{red!20!green!20!blue!20},escapeinside=``,
+  xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+  keywordstyle=\bfseries, basicstyle=\ttfamily\small, breaklines=true}
+
+\title{编译原理实验一 \\ 词法分析}
+
+%\author{孙~文翔}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\begin{tabular}{l r}
+%%实验日期: & 2013.4.11 \\
+SSL组:&\href{mailto:wxsun1991@gmail.com}{孙~文翔}~101220102\\
+&\href{mailto:xdshennju@hotmail.com}{沈~旭东}~101220096 \\
+&\href{mailto: jimmy326@sina.com}{罗~喆豪}~101220082 \\
+指导教师:& 陈~~~~林\\
+\\
+\end{tabular}
+\end{center}
+
+%-----------------------------
+%----------正文---------------
+%-----------------------------
+\section{功能}
+本实验实现了\href{https://docs.google.com/file/d/0B3XoJxnvbn0-OFZwREl3TFg4bmM/edit}{Tig语言}
+的词法分析。
+
+对一个给定的Tig语言程序文件进行词法分析，输出结果至终端或文件。
+
+本次实验使用了ML-Lex工具，这是Lex工具的ML语言实现。使用方式与Lex相同。
+参考资料包括\href{http://smlnj.org/doc/ML-Lex/manual.html}{ML-Lex手册}
+等。
+
+\subsubsection{实现}
+ML-Lex读取Lex文件生成.lex.sml，使用MLex.makeLexer处理。Lex文件结构如下
+\begin{lstlisting}
+  `用户声明` 
+  %%
+  `ML-Lex 定义`
+  %% 
+  `规则`
+\end{lstlisting}
+
+用户声明定义一些变量，例如行号、注释号等，这些变量将在以后使用。
+
+ML-Lex定义给一些正则表达式一些别名，方便在规则中调用。
+
+规则是整个Lex文件中最重要的部分。它按照规则进行匹配，对匹配成功的字串
+执行相应的动作，语法如下：
+\begin{lstlisting}
+  <STATE> `规则` => `动作`;
+\end{lstlisting}
+
+匹配规则前可以判断状态，状态通过以下命令定义。
+\begin{lstlisting}
+  %s  `状态名`
+\end{lstlisting}
+
+默认的初始状态为INITIAL。
+
+如以下规则
+\begin{lstlisting}[language=ML]
+  <INITIAL>{digit}+   => (Tokens.INT(valOf(Int.fromString yytext),yypos,yypos+size yytext));
+\end{lstlisting}
+
+表示在INITIAL状态下匹配多个{digit}后，将匹配的到的字符转转换为Int类型，
+并且调用Tokens.Int函数处理，最后计算该字符出现的位置并打印。其他的规则
+与之类似。
+
+以上就是我们的语法分析器的实现过程。
+\subsection{亮点}
+
+\subsubsection{注释}
+支持嵌套注释、跨行注释，如
+
+\begin{lstlisting}
+  /*your /* nested */ comment */
+\end{lstlisting}
+
+如果仅使用正则表达式匹配无法实现该功能，通过在Lex中添加状态实现。在遇到
+$/*$后进入COMMENT状态，并且记录遇到的$/*/$的数量。之后每次遇到$*/$则将
+数量减一，直到为0，退出COMMENT状态。
+
+\subsubsection{ASCII输入}
+字符串支持ASCII码输入。如
+\begin{lstlisting}
+  var a:="\072\069\076\076\079\032\087\079\082\073\068\033"
+\end{lstlisting}
+
+在经过词法分析后，其中的字符串将会被解释为
+
+\begin{lstlisting}
+  STRING("HELLO WORLD!")
+\end{lstlisting}
+
+这里我使用了ML语言的标准库，将$\backslash$后的数字转换为对应的ASCII字符并输出。
+
+\subsubsection{十六进制赋值}
+变量赋值时支持十六进制。如
+\begin{lstlisting}
+  var a:=0xFF
+\end{lstlisting}
+
+在经过词法分析后，0xFF将会被解释为
+\begin{lstlisting}
+  INT(255)
+\end{lstlisting}
+
+首先匹配十六进制数字0x\{digit\}+，将该十六进制转换为十进制，之后的处理过
+程与普通的整数相同。
+\\\\
+
+\section{编译运行}
+\subsection{环境配置}
+首先你需要有一个standard ML运行环境，推荐使用
+\href{http://www.smlnj.org/}{SML/NJ}。
+
+\subsubsection{Windows}
+SML/NJ提供了Windows下的安装包，只需使用管理员身份运行安装包，按照提示
+操作即可。
+
+\subsubsection{*NIX}
+*NIX环境下可以按照\href{http://www.smlnj.org/install/index.html}{这里
+的}操作进行。
+
+\textbf{OS X}可以使用brew安装
+\begin{lstlisting}
+  brew install smlnj
+\end{lstlisting}
+
+
+\subsection{运行}
+\textbf{运行程序前，请确保您已正确安装SML/NJ环境!}
+l
+你可以使用
+\begin{lstlisting}
+  sml test.sml
+\end{lstlisting}
+
+直接运行，该程序会对/test文件夹内的所有.tig文件进行词法分析，并将结果
+保存至/out文件夹中。
+
+您也可以自行编译，并将分析结果输出至终端，操作如下：
+\begin{lstlisting}
+  `首先运行sml`
+  sml
+  `编译`
+  CM.make "sources.cm";
+  `对/test/test1.tig进行词法分析`
+  Parse.single "test/test1.tig";
+\end{lstlisting}
+
+\subsubsection{错误解决}
+如果在Windows环境下运行程序时出现以下问题：
+\begin{lstlisting}
+  [scanning (sources.cm):basis.cm]
+  sources.cm:8.2-8.10 Error: Io: openIn failed on "basis.cm", No such file or directory
+  val it = false : bool
+\end{lstlisting}
+
+请按照以下格式修改source.cm最后两行
+\begin{lstlisting}
+  C:\\sml\\lib\\basic.cm
+  C:\\sml\\lib\\smlnj-lib.cm
+\end{lstlisting}
+
+如果仍然无法解决，请\href{mailto:wxsun1991@gmail.com}{联系我}。
+\end{document}

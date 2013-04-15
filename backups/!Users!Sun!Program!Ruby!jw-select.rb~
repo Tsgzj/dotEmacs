@@ -1,0 +1,14 @@
+require "open-uri"
+
+puts "Input username:"
+username = gets
+puts "Input password"
+password = gets
+
+puts username + password
+
+open("http://bbs.nju.edu.cn/cache/top10.xml"){|x|
+while line = x.gets
+   puts line
+end
+}

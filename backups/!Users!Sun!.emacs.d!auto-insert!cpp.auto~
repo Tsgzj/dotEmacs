@@ -1,0 +1,24 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  `(buffer-name)`
+ *
+ *    Description:  
+ *
+ *        Version:  1.0
+ *        Created:  `(format-time-string "%c")`
+ *       Revision:  none
+ *       Compiler:  g++
+ *
+ *         Author:  Sun Wenxiang (TSGZJ), wxsun1991@gmail.com
+ *   Organization:  Nanjing University
+ *
+ * =====================================================================================
+ */
+
+#include <stdio>
+
+int main(int argc, const char *argv[])
+{
+	return 0;
+}

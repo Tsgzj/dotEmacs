@@ -1,0 +1,3 @@
+write:$(blog)
+/usr/local/share/npm/lib/node_modules/hexo/bin/hexo new "$(blog)"
+

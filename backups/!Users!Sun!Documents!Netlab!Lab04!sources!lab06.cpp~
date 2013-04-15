@@ -1,0 +1,105 @@
+/*
+* THIS FILE IS FOR IP FORWARD TEST
+*/
+#include "sysInclude.h"
+#include <queue>n
+
+// system support
+extern void fwd_LocalRcv(char *pBuffer, int length);
+
+extern void fwd_SendtoLower(char *pBuffer, int length, unsigned int nexthop);
+
+extern void fwd_DiscardPkt(char *pBuffer, int type);
+
+extern unsigned int getIpv4Address( );
+
+// implemented by students
+typedef struct IPv4_head
+{
+  int ver:4;
+  int ihl:4;
+  char tos:8;
+  int length:16;
+  int ident:16;
+  char flag:3;
+  int offset:13;
+  int ttl:8;
+  char proto:8;
+  int cksum:16;
+  UINT32 addr_source;
+  UINT32 addr_dest;
+};
+
+
+typedef struct table_node
+{
+  int dest;
+  int next;
+};
+
+queue<table_node> table;
+void stud_Route_Init()
+{
+  	return;
+}
+
+void stud_route_add(stud_route_msg *proute)
+{
+  table_node node;
+  int dest = ntohl(prouto -> dest) & ((1<<31)>>(ntohl(proute->masklen)-1));
+  node.dest = dest;
+  node.next = ntohl(prouto -> nexthop);
+  table.push(node);
+	return;
+}
+
+
+int stud_fwd_deal(char *pBuffer, int length)
+{
+  IPv4_head iphd;
+  iphd.ver = pBuffer[0] >>4;
+  iphd.ihl = pBuffer[0] & 0xf;
+  iphd.ttl = ((IPv4_head *)pBuffer)->ttl;
+  iphd.cksum = ntohs(*(short unsigned int*)(pBuffer+10));
+  iphd.addr_dest = ntohl(*(unsigned int*)(pBuffer+16));
+
+  if(iphd.ttl == 0)
+    {
+	printf("TTL Error!   ttl:%d\n", iphd.ttl);
+      fwd_DiscardPkt(pBuffer, STUD_FORWARD__TEST_TTLERROR);
+      return 1;
+    }
+  
+  if(iphd.addr_dest == getIpv4Address())
+    {
+      fwd_LocalRcv(pBuffer, length);
+    }
+
+  for (int i = 0; i < table.size(); ++i)
+  {
+    stud_route_msg temp = table[i];
+    if(temp.dest == iphd.addr_dest)
+      {
+        char *myBuffer = new char(length);
+        memcpy(myBuffer, pBuffer, length);
+        myBuffer[8] --;
+        int sum=0;
+        unsigned short local_cksum = 0;
+        for(int i = 0;i < 2 * iphd.ihl;i ++)  
+            {  
+                if (i == 5)  
+                    continue;  
+                sum = sum + (myBuffer[i*2]<<8) + (myBuffer[i*2+1]);  
+                sum %= 65535;  
+            }  
+            local_cksum = htons(0xffff - (unsigned short int)sum);  
+            memcpy(myBuffer+10, &local_cksum, sizeof(short unsigned int));  
+            fwd_SendtoLower(myBuffer, length, temp.nexthop);
+            return 0;  
+      }
+  }
+  
+  fwd_DiscardPkt(pBuffer,STUD_FORWARD_TEST_NOROUTE);
+  return 1;  
+}
+

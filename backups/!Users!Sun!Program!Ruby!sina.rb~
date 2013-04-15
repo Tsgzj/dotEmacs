@@ -1,0 +1,7 @@
+require "open-uri"
+
+open("http://www.sina.com.cn"){|x|
+while line = x.gets
+   puts line
+end
+}

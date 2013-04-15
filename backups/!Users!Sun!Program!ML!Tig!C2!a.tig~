@@ -1,0 +1,4 @@
+let 
+     var N := 8.5
+  in print("Success\n") 
+end 

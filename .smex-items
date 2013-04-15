@@ -1,43 +1,65 @@
 
 ;; ----- smex-history -----
 (
- package-list-packages
- test-case-mode
- linum-mode
- eval-buffer
- slime
- cua-mode
  auto-complete-mode
+ outline-mode
+ indent-region
+ uncomment-region
+ comment-box
+ mac-mouse-turn-on-fullscreen
+ eval-region
 )
 
 ;; ----- smex-data -----
 (
  (shell . 1)
- (slime . 36)
+ (slime . 41)
  (eshell . 8)
- (c-mode . 6)
- (auto-complete-mode . 19)
+ (c-mode . 11)
+ (auto-complete-mode . 35)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
  (package-install . 8)
- (package-list-packages . 7)
+ (package-list-packages . 8)
  (java-mode . 1)
  (ac-complete-slime . 1)
- (lisp-mode . 1)
+ (lisp-mode . 4)
  (go-mode . 1)
  (plain-TeX-mode . 2)
- (eval-buffer . 15)
+ (eval-buffer . 16)
  (weibo-timeline . 4)
  (weibo-timeline-mode . 3)
- (cua-mode . 11)
- (linum-mode . 4)
+ (cua-mode . 13)
+ (linum-mode . 12)
  (slime-mode . 1)
  (sldb-cycle . 2)
  (slime-toggle-debug-on-swank-error . 1)
  (python-mode . 1)
- (markdown-mode . 1)
- (ecb-activate . 1)
+ (markdown-mode . 8)
+ (ecb-activate . 2)
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
+ (ruby-mode . 2)
+ (org-mode . 2)
+ (outline-mode . 6)
+ (outline-minor-mode . 4)
+ (allout-mode . 4)
+ (outline-insert-heading . 1)
+ (allout-end-of-current-heading . 1)
+ (xml-mode . 1)
+ (sml-mode . 4)
+ (replace-amp . 1)
+ (run-sml . 1)
+ (life . 1)
+ (split-window-vertically . 1)
+ (comment-box . 13)
+ (sml-lex-mode . 9)
+ (scheme-mode . 1)
+ (Electric-command-history-redo-expression . 1)
+ (c++-mode . 2)
+ (eval-region . 1)
+ (indent-region . 27)
+ (mac-mouse-turn-on-fullscreen . 1)
+ (uncomment-region . 2)
 )

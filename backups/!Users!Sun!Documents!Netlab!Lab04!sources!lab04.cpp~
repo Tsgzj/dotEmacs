@@ -1,0 +1,149 @@
+/*
+* THIS FILE IS FOR IP TEST
+*/
+// system support
+#include "sysInclude.h"
+
+extern void ip_DiscardPkt(char* pBuffer,int type);
+
+extern void ip_SendtoLower(char*pBuffer,int length);
+
+extern void ip_SendtoUp(char *pBuffer,int length);
+
+extern unsigned int getIpv4Address();
+
+typedef struct IPv4_head
+{
+  int ver:4;
+  int ihl:4;
+  char tos:8;
+  int length:16;
+  int ident:16;
+  char flag:3;
+  int offset:13;
+  int ttl:8;
+  char proto:8;
+  int cksum:16;
+  UINT32 addr_source;
+  UINT32 addr_dest;
+};
+
+// implemented by students
+
+int stud_ip_recv(char *pBuffer,unsigned short length)
+{
+  // IPv4_head *ip_hd = (IPv4_head *)pBuffer;            
+  // printf("Version : %d \n", iphd->ver);                
+  // printf("IP Header Length : %d \n", iphd->ihl);       
+  // printf("Type of Service : %d \n", iphd->tos);        
+  // printf("Size : %d \n", iphd->length);                
+  // printf("Identification : %d \n", iphd->ident);       
+  // printf("Flags : %x \n", iphd->flag);                 
+  // printf("Offset : %d \n", iphd->offset);              
+  // printf("TTL : %d \n", iphd->ttl);                    
+  // printf("Protocol : %d \n", iphd->proto);             
+  // printf("Check Sum : %x \n", (char)(ntohl((long)iphd->cksum)));            
+  // printf("Source IP Addr : %x \n", iphd->addr_source); 
+  // printf("Dest IP Addr : %x \n", iphd->addr_dest);     
+
+  IPv4_head iphd;
+  iphd.ver = pBuffer[0] >>4;
+  iphd.ihl = pBuffer[0] & 0xf;
+  iphd.ttl = ((IPv4_head *)pBuffer)->ttl;
+  iphd.cksum = ntohs(*(short unsigned int*)(pBuffer+10));
+  iphd.addr_dest = ntohl(*(unsigned int*)(pBuffer+16));
+
+  // printf("Version : %d \n", iphd.ver);
+  // printf("IP Header Length : %d \n", iphd.ihl);
+  // printf("TTL : %d \n", iphd.ttl);
+  // printf("Check Sum : %d \n", iphd.cksum);
+  // printf("Dest IP Addr : %d \n", iphd.addr_dest);  return 0;
+
+  if(iphd.ver != 4)
+    {
+	printf("Version Error! ver:%d\n", iphd.ver);
+      ip_DiscardPkt(pBuffer, STUD_IP_TEST_VERSION_ERROR);
+      return 1;
+    }
+
+  if(iphd.ihl < 5)
+    {
+	printf("ihl Error! ihl:%d\n", iphd.ihl);
+      ip_DiscardPkt(pBuffer, STUD_IP_TEST_HEADLEN_ERROR);
+      return 1;
+    }
+
+  if(iphd.ttl == 0)
+    {
+	printf("TTL Error!   ttl:%d\n", iphd.ttl);
+      ip_DiscardPkt(pBuffer, STUD_IP_TEST_TTL_ERROR);
+      return 1;
+    }
+  
+  unsigned short *temp = (unsigned short *)pBuffer;
+  unsigned int sum = 0;
+  for (int i = 0; i < iphd.ihl*2; ++i)
+    {
+      sum += *temp;
+      temp ++;
+    }
+
+  unsigned short mycksum = ~(sum);
+  if(mycksum != 0)
+    {
+	printf("Checksum Error!\n");
+      ip_DiscardPkt(pBuffer, STUD_IP_TEST_CHECKSUM_ERROR);
+      return 1;
+    }
+  
+  if(iphd.addr_dest != getIpv4Address() && iphd.addr_dest != 0xffff)
+    {
+	printf("Address Error!  dest:%d, local:%d\n", iphd.addr_dest, getIpv4Address());
+      ip_DiscardPkt(pBuffer, STUD_IP_TEST_DESTINATION_ERROR);
+      return 1;
+    }
+  
+  ip_SendtoUp(pBuffer,length);
+  return 0;
+}
+
+int stud_ip_Upsend(char *pBuffer,unsigned short len,unsigned int srcAddr,
+				   unsigned int dstAddr,byte protocol,byte ttl)
+{
+  char *myBuffer = new char(20 + len);
+  memset(myBuffer, 0, 20+len);
+
+  myBuffer[0] = 0x45;  
+  unsigned short length =  htons(len+20);  
+  memcpy(myBuffer + 2, &length, 16);  
+  myBuffer[8] = ttl;  
+  myBuffer[9] = protocol;  
+      
+  unsigned int addr_source = htonl(srcAddr);  
+  unsigned int addr_dest = htonl(dstAddr);  
+  memcpy(myBuffer + 12, &addr_source, sizeof(unsigned int));
+  memcpy(myBuffer + 16, &addr_dest, sizeof(unsigned int));
+
+  //printf("%d,  %d\n\n", sizeof(unsigned int), sizeof(unsigned short));
+  unsigned int sum = 0;
+  memset(myBuffer + 10, 0, sizeof(unsigned short));
+  unsigned short *temp = (unsigned short*)&myBuffer[0];
+  for (int i = 0; i < 10; i++)
+    {
+      sum += (unsigned int)(*temp);
+      temp++;
+    }
+  unsigned short *low = (unsigned short *)&sum;
+  unsigned short *high = low + 1;
+  while(*high != 0x0000)
+    {
+      sum = *high + *low;
+    }
+  unsigned short local_cksum = (unsigned short)(~sum);
+  
+  memcpy(myBuffer + 10, &local_cksum, sizeof(unsigned short));  
+  memcpy(myBuffer + 20, pBuffer, len);    
+
+  ip_SendtoLower(myBuffer,len+20); 
+  return 0;
+}

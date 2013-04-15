@@ -1,0 +1,62 @@
+%%% begin of preamble.tex %%%
+\usepackage[hyperref,UTF8]{ctexcap}
+\usepackage{listings} % 程序源码格式输出
+\usepackage{color} % 颜色相关
+\usepackage{fancyhdr} % 页眉页脚
+\usepackage{graphicx} % 插图
+\usepackage{algorithmic} % 算法描述
+\usepackage{algorithm} % 算法描述
+\usepackage{ifthen} % 条件显示
+\usepackage{fontspec} % 字体设置
+
+% 页面相关配置
+\topmargin 0.5 true cm
+\oddsidemargin 1.2 true cm
+\evensidemargin 1.2 true cm
+\textheight 21 true cm % maxsize=29.7cm
+\textwidth 14 true cm % maxsize=21cm
+
+% 页眉页脚配置
+\pagestyle{fancy}
+%\lhead{\kaishu\zihao{5} 实验报告}
+\chead{}
+\rhead{\zihao{5} $\cdot$~\thepage~$\cdot$}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headheight}{14.5pt}
+
+% 源代码显示样式配置
+\lstloadlanguages{C,SQL}
+\lstset{basicstyle=\linespread{1.2} \zihao{-5} ,numbers=left,extendedchars=false,framexleftmargin=10mm,frame=single,backgroundcolor=\color[RGB]{245,245,244},keywordstyle=\bfseries\color[RGB]{130,0,0},identifierstyle=\bfseries\color[RGB]{0,0,130},numberstyle=\color[RGB]{41,41,255},commentstyle=\it\color[RGB]{130,130,130},stringstyle=\rmfamily\slshape\color[RGB]{255,0,0},showstringspaces=false,tabsize=4}
+
+% 正文相关设置
+\CTEXsetup[number={\chinese{section}}]{section}
+\CTEXsetup[number={\arabic{section}.\arabic{subsection}}]{subsection}
+\CTEXsetup[format={\heiti\zihao{-3}\leftline}]{section} % 黑体、三号字、左对齐
+\CTEXsetup[format={\heiti\zihao{4}}\leftline]{subsection} % 黑体、四号字、左对齐
+\CTEXsetup[format={\heiti\zihao{-4}\leftline}]{subsubsection} % 黑体、小四号字、左对齐
+
+% 设定中英文字体，fc-list 列出相关字体
+\defaultfontfeatures{Mapping=tex-text}  % 启用tex风格字符
+% \setCJKmainfont[BoldFont={WenQuanYi Zen Hei},ItalicFont={AR PL UKai CN}]{AR PL SungtiL GB}
+% \setmainfont{Nimbus Roman No9 L}
+% \setsansfont{Nimbus Sans L}
+% \setmonofont{Bitstream Vera Sans Mono}
+
+\linespread{1.25}  % 1.25倍行距
+
+\renewcommand{\figurename}{\zihao{5}\fangsong 图}
+\renewcommand{\thefigure}{\arabic{section}-\arabic{figure}}
+\makeatletter
+\@addtoreset {figure}{section} % 自动重置计数器figure
+\makeatother
+
+% 自定义命令
+\newcommand{\refto}[1]
+{
+\ref{#1}\ifthenelse{\equal{\thepage}{\pageref{#1}}}{(本页)}{（第\pageref{#1}页）}
+}
+

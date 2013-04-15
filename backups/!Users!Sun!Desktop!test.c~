@@ -1,2 +1,10 @@
 #include "stdio.h"
-main
+int main(int argc, char *argv[])
+{
+  char a=0x02, b=0xdd;
+  int c;
+  c=a;
+  c=c<<8||b;
+  printf ("%d\n", c);
+  return 0;
+}

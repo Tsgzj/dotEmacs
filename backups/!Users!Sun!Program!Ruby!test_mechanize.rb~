@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+require 'rubygems'  
+require 'mechanize'  
+  
+agent = WWW::Mechanize.new  
+agent.max_history = 1  
+agent.user_agent_alias = 'Windows IE 7'  
+  
+page = agent.get("http://jwas3.nju.edu.cn:8080/jiaowu/")  
+form = page.forms[0]  
+form.fields[0].value = "101220102"  
+form.fields[1].value = "zjr1314520"  
+      
+agent.submit form #登录JavaEye  

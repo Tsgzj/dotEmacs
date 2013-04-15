@@ -1,0 +1,19 @@
+(*
+File:C2/test.sml
+
+Copyright (C) 2013  Sun Wenxiang<Tsgzj>
+Create: Wed Apr 10 16:01:58 2013
+
+Author: Sun Wenxiang <wxsun1991@gmail.com>
+Organization: Nanjing University
+*)
+CM.make "sources.cm";(*编译*)
+
+Parse.parse ("test/test0.tig", TextIO.openOut ("out/test0.tig.out"));
+Parse.parse ("test/test1.tig", TextIO.openOut ("out/test1.tig.out"));
+Parse.parse ("test/test2.tig", TextIO.openOut ("out/test2.tig.out"));
+Parse.parse ("test/test3.tig", TextIO.openOut ("out/test3.tig.out"));
+Parse.parse ("test/test4.tig", TextIO.openOut ("out/test4.tig.out"));
+
+              
+              

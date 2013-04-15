@@ -1,6 +1,7 @@
 (setq user-full-name "Sun Wenxiang")
 (setq user-mail-address "wxsun1991@gmail.com")
 
+(server-start)
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
 (fset 'yes-or-no-p 'y-or-n-p) 
@@ -27,12 +28,13 @@
 (setq mac-option-modifier 'meta)
 (setq default-major-mode 'text-mode)
 (set-face-attribute
-'default nil :font "inconsolata 18")
+'default nil :font "inconsolata 16")
+
 ;; Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
 (set-fontset-font (frame-parameter nil 'font)
 charset
-(font-spec :family "Hiragino Sans GB" :size 18)))
+(font-spec :family "Hiragino Sans GB" :size 16)))
 
 (require 'package)
 (add-to-list 'package-archives
@@ -47,10 +49,12 @@ charset
 (cua-mode)
 
 (mouse-avoidance-mode 'animate) ; 光标移动到鼠标下时，鼠标自动弹开
-
 (setq inhibit-startup-message t)
 
-(setq kill-ring-max 200)
+(setq kill-ring-max 2000)
+
+(require 'linum)
+(global-linum-mode t)
 
 ;;Haskell-mode
 (load "~/.emacs.d/haskell-mode/haskell-site-file")
@@ -115,7 +119,8 @@ charset
 (autoload 'markdown-mode "markdown-mode.el"
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
-   (cons '("\\.text" . markdown-mode) auto-mode-alist))
+    (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
+
 ;;(global-set-key [(control f3)] 'highlight-symbol-at-point)
 ;;global-set-key [f3] 'highlight-symbol-next)
 ;;(global-set-key [(shift f3)] 'highlight-symbol-prev)
@@ -180,6 +185,20 @@ charset
 (autoload 'test-case-compilation-finish-run-all "test-case-mode")
 (add-hook 'find-file-hook 'enable-test-case-mode-if-test)
 
+;;SML-mode
+(global-font-lock-mode t)
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/elpa/sml-mode-6/"))
+(autoload 'sml-mode "sml-mode" "Major mode for editing SML." t)
+(autoload 'run-sml "sml-proc" "Run an inferior SML process." t)
+(setq sml-program-name "/usr/local/bin/sml")
+(add-to-list 'auto-mode-alist '("\\.\\(sml\\|sig\\)\\'" . sml-mode))
+(defun my-sml-mode-hook () "Local defaults for SML mode"
+  (setq sml-indent-level 2)
+  (setq words-include-escape t)
+  (setq indent-tabs-mode nil))
+(add-hook 'sml-mode-hook 'my-sml-mode-hook)
+
+
 ;;ecb
 (add-to-list 'load-path
 	     "~/.emacs.d/ecb-2.40/")
@@ -200,26 +219,27 @@ charset
 (require 'go-mode-load)
 
 (add-to-list 'load-path
-	     "~/.emacs.d/elpa/popup-20130117.1954/")
-
+						 "~/.emacs.d/elpa/popup-20130117.1954/")
+ 
 (add-to-list 'load-path
-             "~/.emacs.d/auto-complete/")
+						 "~/.emacs.d/auto-complete/")
 (require 'auto-complete-config)
 ;; setting dictionary directory.
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict/")
-
+ 
 ;; setup and turn on `auto-complete-mode` for various major modes
 (ac-config-default)
-
+ 
 ;; resetting ac-sources
 (setq-default ac-sources '(
-                           ac-source-yasnippet
-                           ac-source-abbrev
-                           ac-source-dictionary
-                           ac-source-words-in-same-mode-buffers
-                           ))
+													 ac-source-yasnippet
+													 ac-source-abbrev
+													 ac-source-dictionary
+													 ac-source-words-in-same-mode-buffers
+													 ))
+(global-auto-complete-mode t)
 
-
+;;(global-set-key (kbd "TAB") 'smart-tab)
 (add-to-list 'load-path
              "~/.emacs.d/yasnippet/")
 (require 'yasnippet)
@@ -256,6 +276,10 @@ charset
 ;;(add-to-list 'load-path
 ;;             "~/.emacs.d/weibo/")
 ;;(require 'weibo)
+
+
+(setenv "PATH" (concat "/usr/texbin:/usr/local/bin:" (getenv "PATH")))
+      (setq exec-path (append '("/usr/texbin" "/usr/local/bin") exec-path))
 
 ;;auctex配置
 (add-to-list 'load-path
@@ -505,4 +529,32 @@ static char * arrow_right[] = {
                      (message "killed line")))))
 
 
+;;autoinsert
+;;首先这句话设置一个目录，你的auto-insert 的模版文件会存放在这个目录中，
+(setq-default auto-insert-directory "~/.emacs.d/auto-insert/")
+(auto-insert-mode)  ;;; 启用auto-insert
+;; 默认情况下插入模版前会循问你要不要自动插入，这里设置为不必询问，
+;; 在新建一个org文件时，自动插入`auto-insert-directory'目录下的`org-auto-insert`文件中的内容
+(setq auto-insert-query nil) 
+(define-auto-insert "\\.org" "org-auto-insert")
+(define-auto-insert "\\.c" "c.auto")
+(define-auto-insert "\\.cpp" "cpp.auto")
+(define-auto-insert "\\.lisp" "cl.auto")
+(define-auto-insert "\\.sml" "ml.auto")
 
+(defadvice auto-insert  (around yasnippet-expand-after-auto-insert activate)
+  "expand auto-inserted content as yasnippet templete,
+  so that we could use yasnippet in autoinsert mode"
+  (let ((is-new-file (and (not buffer-read-only)
+                          (or (eq this-command 'auto-insert)
+                              (and auto-insert (bobp) (eobp))))))
+    ad-do-it
+    (let ((old-point-max (point-max)))
+      (when is-new-file
+        (goto-char old-point-max)
+        (yas/expand-snippet (buffer-substring-no-properties (point-min) (point-max)))
+        (delete-region (point-min) old-point-max)
+        )
+      )
+    )
+  )

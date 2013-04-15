@@ -1,0 +1,21 @@
+#include "stdio.h"
+int pw(int a){
+  return a*a;
+}
+
+int main(int argc, char *argv[])
+{
+  int i, j, k;
+  for (i = 0; i < 1000; ++i)
+    {
+      for (j = 0; j < 1000 - i; ++j)
+        {
+          for (k = 0; k < 1000 - i - j; ++k)
+            {
+              if((i+j+k == 1000) && (pw(i) + pw(j) == pw(k)))
+                printf ("%d, %d, %d\n", i, j, k);
+            }
+        }
+    }
+  return 0;
+}

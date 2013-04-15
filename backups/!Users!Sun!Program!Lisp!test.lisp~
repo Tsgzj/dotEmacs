@@ -51,4 +51,70 @@
 
 ;;(defun )
 (defun verbose-sum (x y)
-)
+  "Sum any two numbers"
+  (format t "Summing ~d and ~d.~%" x y)
+  (+ x y))
+
+(defun verbose-sum2 (x y)
+  "Sum any two numbers"
+  (format t "Summing ~d and ~d is ~d~%" x y (+ 2 3)))
+
+(let ((x 10))  (format t "~d " x))
+
+(defun foo-25(x)
+  (format t "Parameter: ~a~%" x)
+  (let ((x 2))
+    (format t "Outer Let: ~a~%" x)
+    (let ((x 3))
+      (format t "Inner Let: ~a~%" x))
+    (format t "Outer Let：~a~%" x))
+  (format t "Parameter: ~a~%" x))  
+
+(defun timestable ()
+    (dotimes (x 20)
+      (dotimes (y 20)
+        (format t " ~3d" (* (+ 1 x) (+ 1 y))) (if (< x y) (return)))
+      (format t "~%")))
+
+(defun fib (x)
+  (do ((n 0 (1+ n))
+       (cur 0 next)
+       (next 1 (+ cur next)))
+      ((= x n) cur)))
+
+(defun my-fib (x)
+  (loop for i below x
+       and a = 0 then b
+       and b = 1 then (+ b a)
+       finally (return a)))
+
+(defmacro with-gemsyms ((&rest names) &body body)
+  `(let ,(loop for n in names collect `(,n (gemsym)))
+     ,@body))
+
+(defvar *test-name* nil)
+
+(defmacro deftest (name parameters &body body)
+  `(defun ,name ,parameters
+     (let ((*test-name* (append *test-name* (list `,name))))
+       ，@body)))
+
+(defmacro check (&body forms)
+  `(combine-results
+    ,@(loop for f in forms collect `(report-result ,f `,f))))
+
+(defmacro combine-results (&body forms)
+  (with-gemsyms (result)
+    `(let ((,result t))
+       ,@(loop for f in forms collect `(unless ,f (setf ,result nil)))
+       ,result)))
+
+(defun report-result (result form)
+  (format t "~:[FAIL~;PASS~] ... ~a: ~a~%" result *test-name* form)
+  result)
+
+(defun my-fib-2 (n)
+  "Simple recursive Fibonacci number function"
+  (if (< n 2)
+    n
+    (+ (fib (- n 1)) (fib (- n 2)))))

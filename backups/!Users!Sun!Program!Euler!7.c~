@@ -1,0 +1,22 @@
+#include "stdio.h"
+int prime(int a){
+  int n;
+  for (n = 2; n < a; n++)
+    {
+      if(a%n ==0)
+        return 0;
+    }
+  return 1;
+}
+
+int main(int argc, char *argv[])
+{
+  int i = 1;
+  int a = 3;
+  while(i>1001){
+    if(prime(a) == 1)
+      i++;
+    a += 2;
+  }
+  return 0;
+}

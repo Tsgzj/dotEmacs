@@ -1,0 +1,23 @@
+structure Parse =
+struct 
+fun parse (filename, outfilename) =
+    let
+      val file = TextIO.openIn filename
+      fun get _ = TextIO.input file
+      fun put p = TextIO.output(outfilename,p)
+      fun putln p = (put p; put "\n")
+      val lexer = Mlex.makeLexer get
+      fun do_it() =
+	  let val t = lexer()
+	  in
+            put t; putln "";
+	    if substring(t,0,3)="EOF" then () else do_it()
+	  end
+    in
+      do_it();
+      TextIO.closeIn file;
+      putln "";
+      TextIO.flushOut outfilename
+    end
+end
+
