@@ -82,6 +82,7 @@
     (objc-mode . "iphoneos")
     (perl-mode . "perl")
     (php-mode . "php")
+    (lisp-mode . "lisp")
     (python-mode . "python3")
     (ruby-mode . "ruby")
     (scala-mode . "scala")

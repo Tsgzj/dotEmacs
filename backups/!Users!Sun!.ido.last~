@@ -45,9 +45,11 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/.emacs.d/auto-insert/"
+ "/Users/Sun/.emacs.d/plugins/"
  "/Users/Sun/Program/Euler/"
+ "/Users/Sun/Program/Lisp/"
  "/Users/Sun/"
+ "/Users/Sun/.emacs.d/auto-insert/"
  "/Users/Sun/Program/Rails/simple_app/app/controllers/"
  "/Users/Sun/Program/Rails/simple_app/app/models/"
  "/Users/Sun/Program/Rails/simple_app/app/views/relationships/"
@@ -58,8 +60,6 @@
  "/Users/Sun/Program/Rails/simple_app/config/"
  "/Users/Sun/Program/Rails/simple_app/db/migrate/"
  "/Users/Sun/Program/Ruby/"
- "/Users/Sun/Program/Lisp/"
- "/Users/Sun/.emacs.d/plugins/"
  "/Users/Sun/Program/Ruby/Sudoku/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/cc-mode/"
  "/Users/Sun/Documents/Netlab/lab11/"
@@ -99,27 +99,31 @@
 
 ;; ----- ido-work-file-list -----
 (
- "ruby.auto"
+ "dash-at-point.el"
+ "10.rb"
  "11.rb"
+ "test.lisp"
+ ".emacs"
+ "ruby.auto"
  "cpp.auto"
  "ml.auto"
  "sh.auto"
  "cl.auto"
- ".emacs"
- "python.auto"
- "c.auto"
- "10.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Sun/.emacs.d/plugins/" (20884 33173 0 0) "test.c.BAK" "test-case-mode.el" "python.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "fill-column-indicator.el" "dash-at-point.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (20884 33174 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/" (20884 33174 0 0) "UserContent/" "top10.xml" "top1.html" "tmux-powerline/" "test.c" "test/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "macruby_example.yml" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Blog/" "AndroidStudioProjects/" "a.out" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".marboo/" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
+
+ ("/Users/Sun/Program/Lisp/" (20883 36507 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".DS_Store" "#test.lisp#" "#new.lisp#" "../" "./")
+
+ ("/Users/Sun/Program/Euler/" (20884 32918 0 0) "a.out" "9.c" "7.c" "6.c" "4.c" "3.c" "2.c" "11.rb" "10.rb" "10.c" "1.c" "../" "./")
+
  ("/Users/Sun/.emacs.d/auto-insert/" (20884 32530 0 0) "sh.auto" "ruby.auto" "python.auto" "ml.auto" "cpp.auto" "cl.auto" "c.auto" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (20884 32563 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/Euler/" (20884 32577 0 0) "a.out" "9.c" "7.c" "6.c" "4.c" "3.c" "2.c" "10.rb" "10.c" "1.c" ".#11.rb" "../" "./")
-
- ("/Users/Sun/" (20884 32563 0 0) "UserContent/" "top10.xml" "top1.html" "tmux-powerline/" "test.c" "test/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "macruby_example.yml" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Blog/" "AndroidStudioProjects/" "a.out" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".marboo/" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
 
  ("/Users/Sun/Program/Rails/simple_app/app/controllers/" (20883 36152 0 0) "users_controller.rb" "static_pages_controller.rb" "sessions_controller.rb" "relationships_controller.rb" "microposts_controller.rb" "application_controller.rb" "../" "./")
 
@@ -143,15 +147,11 @@
 
  ("/Users/Sun/Program/Rails/simple_app/db/migrate/" (20883 30495 0 0) "20130515115132_create_relationships.rb" "20130514103150_create_microposts.rb" "20130513113835_add_admin_to_users.rb" "20130513090256_add_remember_token_to_users.rb" "20130424080746_add_password_digest_to_users.rb" "20130424080039_add_index_to_users_name.rb" "20130424075238_add_index_to_users_email.rb" "20130424065214_create_users.rb" "../" "./")
 
- ("/Users/Sun/Program/Lisp/" (20883 20048 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".DS_Store" ".#new.lisp" "#test.lisp#" "#new.lisp#" "../" "./")
-
  ("/Users/Sun/Downloads/lab10/client/" (20883 19189 0 0) "stcp_client.h" "stcp_client.c" "app_client.c" "../" "./")
 
  ("/Users/Sun/Downloads/" (20883 19061 0 0) "跳跃大搜查线.THE.FINAL.新的希望.Odoru.Daisosasen.The.Final.Aratanaru.Kibo.Chi_Jap.BDrip.1024X576-YYeTs人人影视.mkv" "评论王垠《完全用Linux工作》.pdf" "编译原理课程设计报告.doc" "编程随想：太子党关系网络 (2.0.7).pdf" "缎带 爱言叶.mp4" "现代编译原理：Ｃ语言描述.pdf" "正片-1/" "正片/" "桜流し.wav" "指导攻略 1.pdf" "把时间当作朋友（2011第3版）3.0.b.07.pdf" "卒業メモリーズ/" "下载.html" "一生所爱（大话西游 电影主题曲） - 卢冠廷.flac" "いく/" "ZiJingBT.跳跃大搜查线.THE.FINAL.新的希望.Odoru.Daisosasen.The.Final.Aratanaru.Kibo.Chi_Jap.BDrip.1024X576-YYeTs人人影视.mkv.torrent" "ZiJingBT.The.Big.Bang.Theory.S06E23.720p.HDTV.X264-DIMENSION.torrent" "ZiJingBT.Helvetica.2007.720p.BluRay.x264-CiNEFiLE.mkv.torrent" "ZiJingBT.Game.of.Thrones.S03E07.720p.HDTV.x264-EVOLVE.torrent" "Welly.v2.7.zip" "UIPanNavigationController-master.zip" "UIPanNavigationController-master/" "Touhou Marisa/" "Tigpiler-master.zip" "Tigpiler-master.1/" "Tigpiler-master/" "tiger_manual.pdf" "tiger_manual(1).pdf" "Tiger_Compiler_Doc.pdf" "tiger-ml-master/" "tiger-master.zip" "tiger-master/" "tiger/" "The.Shining.1980.BluRay.1080p.DTS-HD.MA.5.1.x264-beAst/" "texlive-zh-cn.pdf" "subscriptions.xml" "Snakes.and.Earrings.2008.BluRay.720p.FLAC.x264-YYeTs.mkv" "smlnj.msi" "ruby-style-guide-master.zip" "ruby-style-guide-master.1/" "ruby-style-guide-master/" "railstutorial2ndcn-20130501.pdf" "railstutorial2ndcn-20130413.pdf" "Popup-master/" "P90-X 健身系类/" "Monokai/" "Menulet.zip" "Menulet/" "lab_report_1.zip" "lab_report_1/" "Lab45/" "lab10source.tar.gz" "lab10/" "kurogo-guide.pdf" "KSImageNamed-Xcode-master/" "Kal-master/" "Jiro_Dreams_Of_Sushi_2011_1080p_BluRay_x264_DTS_WiKi.rar Folder/" "IMG_20130422_182353.jpg" "iGV-master/" "iAtC2afkODS6U.gif" "How Emacs changed my life.pdf" "Highlight-Indentation-for-Emacs-master-1/" "Highlight-Indentation-for-Emacs-master/" "Helvetica.2007.720p.BluRay.x264-CiNEFiLE.mkv" "Grammar.pdf" "Gomoku-master/" "gobang-master/" "fca1668cbdaad829f54455b2543234b2bb832262.torrent" "f166b09668ea595afe6cc49ce0a754068e1da2f7.torrent" "EventKitProgGuide.pdf" "config/" "compiler-original/" "ColorSense-for-Xcode-master.zip" "ColorSense-for-Xcode-master/" "Chess.js-master/" "BitTorrent.vcf" "BitTorrent.pkg" "ABCalendarPicker-master/" "a8e9209a3eab00b7b29ad9c029de2f08c7248f16.torrent" "a8e9209a3eab00b7b29ad9c029de2f08c7248f16(1).torrent" "[未知类别][SRCL-7486～7487][20110316][初回生産限定盤]「Today.Is.A.Beautiful.Day」／supercell/" "[未知类别][SRCL-7201～SRCL-7202][20100210][初回生産限定盤]「さよならメモリーズ」／supercell/" "[EMTP-Raws]デジモンアドベンチャー The Movie [DVDrip][Hi10P]/" "[120727]Rewrite Harvest festa! Original SoundTrack “Feast”[WAV+CUE+BK]/" "9b69ad6c2999b811066d399d523b42636f538ce9.torrent" "4 Syntax analysis.pdf" "3专/" "2专/" "2ea408db3fa79995e02faf8d36a2dc842773b1af.torrent" "1专/" "101220102_lab03/" "0c2f757aeefec683b4a3ba06de72b3530a675c0c.torrent" ".localized" ".DS_Store" "(C83) [CREAYUS (Rangetsu)] Cyber Lovers (Sword Art Online) [Chinese]/" "(C82) [ポルノ★スター (玉置勉強)] ペーパーに毛がはえた ～妹からアイドルまで～ (よろず)/" "../" "./")
 
  ("/Users/Sun/Downloads/lab10/" (20883 19096 0 0) "server/" "README" "Makefile" "common/" "client/" "../" "./")
-
- ("/Users/Sun/.emacs.d/plugins/" (20883 15546 0 0) "test.c.BAK" "test-case-mode.el" "python.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "fill-column-indicator.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Program/Ruby/" (20883 9870 0 0) "Weather.rb" "Top10_Get.rb" "test_mechanize.rb" "test.rb" "Sudoku.rb" "Sudoku/" "sina.rb" "shortURL.rb" "rails/" "macruby_test.rb" "jw-select.rb" "doc/" "26.rb" ".DS_Store" "#26.rb#" "../" "./")
 

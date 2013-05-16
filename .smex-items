@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ dash-at-point
  shell
  eshell
  open-line
  css-mode
  ecb-activate
  c-mode
- lisp-mode
 )
 
 ;; ----- smex-data -----
@@ -84,4 +84,5 @@
  (global-blank-mode . 2)
  (highlight-indentation-current-column-mode . 1)
  (open-line . 1)
+ (dash-at-point . 3)
 )
