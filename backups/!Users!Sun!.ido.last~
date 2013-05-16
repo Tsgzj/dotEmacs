@@ -45,8 +45,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Program/Euler/"
  "/Users/Sun/.emacs.d/auto-insert/"
+ "/Users/Sun/Program/Euler/"
  "/Users/Sun/"
  "/Users/Sun/Program/Rails/simple_app/app/controllers/"
  "/Users/Sun/Program/Rails/simple_app/app/models/"
@@ -99,8 +99,8 @@
 
 ;; ----- ido-work-file-list -----
 (
- "11.rb"
  "ruby.auto"
+ "11.rb"
  "cpp.auto"
  "ml.auto"
  "sh.auto"
@@ -113,13 +113,13 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/.emacs.d/auto-insert/" (20884 32398 0 0) "sh.auto" "ruby.auto" "python.auto" "ml.auto" "cpp.auto" "cl.auto" "c.auto" ".#ruby.auto" "../" "./")
+ ("/Users/Sun/.emacs.d/auto-insert/" (20884 32530 0 0) "sh.auto" "ruby.auto" "python.auto" "ml.auto" "cpp.auto" "cl.auto" "c.auto" "../" "./")
 
- ("/Users/Sun/" (20884 32236 0 0) "UserContent/" "top10.xml" "top1.html" "tmux-powerline/" "test.c" "test/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "macruby_example.yml" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Blog/" "AndroidStudioProjects/" "a.out" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".marboo/" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
+ ("/Users/Sun/.emacs.d/" (20884 32563 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
 
- ("/Users/Sun/.emacs.d/" (20884 32135 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+ ("/Users/Sun/Program/Euler/" (20884 32577 0 0) "a.out" "9.c" "7.c" "6.c" "4.c" "3.c" "2.c" "10.rb" "10.c" "1.c" ".#11.rb" "../" "./")
 
- ("/Users/Sun/Program/Euler/" (20884 31958 0 0) "a.out" "9.c" "7.c" "6.c" "4.c" "3.c" "2.c" "10.rb" "10.c" "1.c" "../" "./")
+ ("/Users/Sun/" (20884 32563 0 0) "UserContent/" "top10.xml" "top1.html" "tmux-powerline/" "test.c" "test/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "macruby_example.yml" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Blog/" "AndroidStudioProjects/" "a.out" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".marboo/" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
 
  ("/Users/Sun/Program/Rails/simple_app/app/controllers/" (20883 36152 0 0) "users_controller.rb" "static_pages_controller.rb" "sessions_controller.rb" "relationships_controller.rb" "microposts_controller.rb" "application_controller.rb" "../" "./")
 

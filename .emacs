@@ -164,6 +164,13 @@
 ;;(color-theme-gnome2)
 ;;(color-theme-zenburn)
 
+;;dash
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/dash-at-point")
+(autoload 'dash-at-point "dash-at-point"
+  "Search the word at point with Dash." t nil)
+(global-set-key "\C-cd" 'dash-at-point)
+
 ;;透明
 ;;(set-frame-parameter (selected-frame) 'alpha (list 95 95))
 ;;(add-to-list 'default-frame-alist (cons 'alpha (list 95 95)))
