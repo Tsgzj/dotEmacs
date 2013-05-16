@@ -48,9 +48,9 @@ on spaces"
   (when highlight-indentation-current-regex ;; OFF
     (font-lock-remove-keywords nil `((,highlight-indentation-current-regex
                                       (1 'highlight-indentation-face)))))
-
+  
   (set (make-local-variable 'highlight-indentation-current-regex) nil)
-
+  
   (when highlight-indentation-mode ;; ON
     (when (not (local-variable-p 'highlight-indentation-offset))
       (set (make-local-variable 'highlight-indentation-offset)
@@ -121,16 +121,16 @@ from major mode"
   "Hilight Indentation minor mode displays
 a vertical bar corresponding to the indentation of the current line"
   :lighter " |"
-
+  
   (when highlight-indentation-current-column-regex
     (font-lock-remove-keywords nil highlight-indentation-current-column-regex))
-
+  
   (set (make-local-variable 'highlight-indentation-current-column-regex) nil)
   (cond  (highlight-indentation-current-column-mode
           (add-hook 'post-command-hook 'highlight-indentation-current-column-post-command-hook nil t))
          (t
           (remove-hook 'post-command-hook 'highlight-indentation-current-column-post-command-hook t)
-
+          
           (font-lock-fontify-buffer))))
 
 (defun highlight-indentation-current-column-post-command-hook ()

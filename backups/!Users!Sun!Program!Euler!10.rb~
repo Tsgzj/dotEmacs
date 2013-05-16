@@ -1,0 +1,5 @@
+require 'prime'
+
+sum = 0
+Prime.take_while {|x| x < 2000000; sum += x}
+puts sum

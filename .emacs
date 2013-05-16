@@ -4,7 +4,7 @@
 (server-start)
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
-(fset 'yes-or-no-p 'y-or-n-p) 
+(fset 'yes-or-no-p 'y-or-n-p)
 (set-frame-parameter (selected-frame) 'alpha (list 100 100)) 
 (add-to-list 'default-frame-alist (cons 'alpha (list 100 100))) 
 (set-language-environment "Chinese-GB")
@@ -28,31 +28,47 @@
 (setq mac-option-modifier 'meta)
 (setq default-major-mode 'text-mode)
 (set-face-attribute
-'default nil :font "inconsolata 16")
+ 'default nil :font "inconsolata 14")
 
 ;; Chinese Font
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
-(set-fontset-font (frame-parameter nil 'font)
-charset
-(font-spec :family "Hiragino Sans GB" :size 16)))
+  (set-fontset-font (frame-parameter nil 'font)
+                    charset
+                    (font-spec :family "Hiragino Sans GB" :size 14)))
+;;咆哮体，勿用
+;;(font-spec :family "FZNHT" :size 36 )))
 
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+;;代码风格
+(setq tab-width 8)
+(setq default-tab-width 8)
+;;use tab or space?
+(setq indent-tabs-mode t)
+(setq c-basic-offset 8)
+;;100字符换行
+;;(setq-default fill-column 100)
+
+;;highlight space
+(load-file "~/.emacs.d/plugins/highlight-indentation.el")
+(require 'highlight-indentation)
+(set-face-background 'highlight-indentation-face "#323232")
+(set-face-background 'highlight-indentation-current-column-face "#465457")
+
 
 ;;(setq display-time-format “%V %m.%d/%H:%M”)
 (display-time-mode 1) ; 显示时间
 ;;(setq display-time-24hr-format t) ; 24小时格式
 ;;(setq display-time-day-and-date t) ; 显示日期
 
- (require 'cua-base)
+(require 'cua-base)
 (cua-mode)
 
 (mouse-avoidance-mode 'animate) ; 光标移动到鼠标下时，鼠标自动弹开
 (setq inhibit-startup-message t)
-
 (setq kill-ring-max 2000)
-
 (require 'linum)
 (global-linum-mode t)
 
@@ -64,14 +80,13 @@ charset
 (setq sentence-end "\\([。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
 (setq sentence-end-double-space nil)
 (setq scroll-margin 3
-    scroll-conservatively 10000)
+      scroll-conservatively 10000)
 
 ;;(setq frame-title-format "emacs@%b")
 
 
 (windmove-default-keybindings)
 
-;;(show-paren-mode t)
 ;;(setq show-paren-style 'parentheses)
 ;;(linum-mode 1)
 
@@ -81,11 +96,10 @@ charset
 ;;(iswitchb-mode 1)
 
 (setq default-frame-alist
-'((top . 0)(left . 0)(width . 104)(height . 71)(tool-bar-lines . 0)))
+      '((top . 0)(left . 0)(width . 108)(height . 71)(tool-bar-lines . 0)))
 ;;(setq default-frame-alist
 ;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0))
 (setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -94,6 +108,7 @@ charset
  '(column-number-mode t)
  '(display-time-mode t)
  '(ecb-options-version "2.40")
+ '(fill-column 100)
  '(scroll-bar-mode nil)
  '(show-paren-mode t))
 (custom-set-faces
@@ -117,9 +132,9 @@ charset
 (add-to-list 'load-path
 	     "~/.emacs.d/plugins/markdown-mode/")
 (autoload 'markdown-mode "markdown-mode.el"
-   "Major mode for editing Markdown files" t)
+  "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
-    (cons '("\\.markdown" . markdown-mode) auto-mode-alist))
+      (cons '("\\.md" . markdown-mode) auto-mode-alist))
 
 ;;(global-set-key [(control f3)] 'highlight-symbol-at-point)
 ;;global-set-key [f3] 'highlight-symbol-next)
@@ -154,16 +169,25 @@ charset
 ;;(add-to-list 'default-frame-alist (cons 'alpha (list 95 95)))
 
 ;;自动缩进
-(global-set-key (kbd "RET") 'newline-and-indent)
+;;(global-set-key (kbd "RET") 'newline-and-indent)
+(load-file "~/.emacs.d/plugins/auto-indent-mode.el")
+;;(setq auto-indent-on-visit-file t)
+(require 'auto-indent-mode)
+(auto-indent-global-mode)
+
+;;fill-column
+(load-file "~/.emacs.d/plugins/fill-column-indicator.el")
+(require 'fill-column-indicator)
+(fci-mode t)
 
 ;;cedet
 (add-to-list 'load-path "~/.emacs.d/cedet-1.1/common")
 (require 'cedet)
 (require 'semantic-ia)
- 
+
 ;; Enable EDE (Project Management) features
 (global-ede-mode 1)
- 
+
 (semantic-load-enable-minimum-features)
 ;;(semantic-load-enable-code-helpers)
 (semantic-load-enable-guady-code-helpers)
@@ -176,6 +200,67 @@ charset
 (add-to-list 'load-path
              "~/.emacs.d/elpa/ruby-tools-20121008.1851")
 (require 'ruby-tools)
+
+;;blank-mode
+(load-file "~/.emacs.d/plugins/blank-mode.el")
+(require 'blank-mode)
+(setq blank-empty 'underline)
+
+;;python
+;;(add-to-list 'load-path
+;;             "~/.emacs.d/plugins/python.el")
+;;(require 'python)
+
+;;whitespace
+(setq whitespace-display-mappings
+      ;;all numbers are Unicode codepoint in decimal. ⁖ (insert-char 182 1)
+      '(
+        (space-mark 32 [183] [46]) 
+        (newline-mark 10 [8629 10])
+        (tab-mark 9 [187 9])
+        ))
+
+;;Never Shall you use Tabs
+(setq indent-tabs-mode nil)
+
+;; C language setting
+(add-hook 'c-mode-hook
+          '(lambda ()
+             (c-set-style "bsd")
+             (setq tab-width 8)
+             (fci-mode)
+             ;;(setq indent-tabs-mode t)
+             ;; (setq whitespace-style (quote (spaces tabs newline space-mark tab-mark newline-mark)))
+             ;;             (whitespace-mode)
+             (setq c-basic-offset 8)))
+;; C++ language setting
+(add-hook 'c++-mode-hook
+          '(lambda ()
+             (c-set-style "bsd")
+             ;;(c-toggle-auto-state)
+             (setq tab-width 8)
+             (fci-mode)
+             ;; (setq whitespace-style (quote (spaces tabs newline space-mark tab-mark newline-mark)))
+             ;;(whitespace-mode)
+             ;;(setq indent-tabs-mode t)
+             (setq c-basic-offset 8)))
+;;Ruby language setting
+(add-hook 'ruby-mode-hook
+          '(lambda ()
+             (fci-mode)
+;;             (setq whitespace-style (quote (tabs newline tab-mark newline-mark)))
+             ;;             (whitespace-mode)))
+             ;;(blank-mode)
+             ;;(setq indent-tabs-mode t)
+             (highlight-indentation-mode)))
+;;Lisp language setting
+(add-hook 'lisp-mode-hook
+          '(lambda ()
+             (setq tab-width 8)
+             (auto-complete-mode t)
+             (fci-mode)
+             ))
+
 
 ;;test-case-mode
 (add-to-list 'load-path "~/.emacs.d/plugins/test-case-mode")
@@ -219,24 +304,24 @@ charset
 (require 'go-mode-load)
 
 (add-to-list 'load-path
-						 "~/.emacs.d/elpa/popup-20130117.1954/")
- 
+             "~/.emacs.d/elpa/popup-20130117.1954/")
+
 (add-to-list 'load-path
-						 "~/.emacs.d/auto-complete/")
+             "~/.emacs.d/auto-complete/")
 (require 'auto-complete-config)
 ;; setting dictionary directory.
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict/")
- 
+
 ;; setup and turn on `auto-complete-mode` for various major modes
 (ac-config-default)
- 
+
 ;; resetting ac-sources
 (setq-default ac-sources '(
-													 ac-source-yasnippet
-													 ac-source-abbrev
-													 ac-source-dictionary
-													 ac-source-words-in-same-mode-buffers
-													 ))
+                           ac-source-yasnippet
+                           ac-source-abbrev
+                           ac-source-dictionary
+                           ac-source-words-in-same-mode-buffers
+                           ))
 (global-auto-complete-mode t)
 
 ;;(global-set-key (kbd "TAB") 'smart-tab)
@@ -257,6 +342,12 @@ charset
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t) 
 
+;;js2-mode
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/js2-mode.el")
+(autoload 'js2-mode "js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode)) 
+
 ;;RSENSE
 (setq rsense-home (expand-file-name "~/opt/rsense-0.3"))
 (add-to-list 'load-path (concat rsense-home "/etc"))
@@ -268,7 +359,7 @@ charset
 
 ;;quicklisp
 ;;(load (expand-file-name "~/quicklisp/slime-helper.el"))
-  ;; Replace "sbcl" with the path to your implementation
+;; Replace "sbcl" with the path to your implementation
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq inferior-lisp-program "sbcl -K utf-8")
 
@@ -279,7 +370,7 @@ charset
 
 
 (setenv "PATH" (concat "/usr/texbin:/usr/local/bin:" (getenv "PATH")))
-      (setq exec-path (append '("/usr/texbin" "/usr/local/bin") exec-path))
+(setq exec-path (append '("/usr/texbin" "/usr/local/bin") exec-path))
 
 ;;auctex配置
 (add-to-list 'load-path
@@ -289,11 +380,11 @@ charset
 (load "auctex.el" nil t t)
 (load "preview-latex.el" nil t t)
 (add-hook 'LaTeX-mode-hook (lambda()
-                                  (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
-                                  (setq TeX-command-default "XeLaTeX")
-                                     (setq TeX-save-query  nil )
-                                      (setq TeX-show-compilation t)
-                                                                   ))
+                             (add-to-list 'TeX-command-list '("XeLaTeX" "%`xelatex%(mode)%' %t" TeX-run-TeX nil t))
+                             (setq TeX-command-default "XeLaTeX")
+                             (setq TeX-save-query  nil )
+                             (setq TeX-show-compilation t)
+                             ))
 
 (add-hook 'LaTeX-mode-hook
           (lambda ()
@@ -352,9 +443,9 @@ static char * arrow_right[] = {
 \"..          \",
 \".           \",
 \"            \"};"  color1 color2))
- 
- 
- 
+
+
+
 (defun arrow-left-xpm (color1 color2)
   "Return an XPM right arrow string representing."
   (format "/* XPM */
@@ -386,8 +477,8 @@ static char * arrow_right[] = {
 \"          ..\",
 \"           .\",
 \"            \"};"  color2 color1))
- 
- 
+
+
 (defun arrow-first-xpm (color1 color2)
   "Return an XPM right arrow string representing."
   (format "/* XPM */
@@ -419,53 +510,53 @@ static char * arrow_right[] = {
 \"..   ......          \",
 \".   ......           \",
 \"   ......            \"};"  color1 color2))
- 
- 
- 
+
+
+
 (defconst color1 "#F9408C")
 (defconst color2 "#989898")
 (defconst color3 "#696969")
- 
+
 (defvar arrow-right-1 (create-image (arrow-first-xpm color1 color2) 'xpm t :ascent 'center))
 (defvar arrow-right-2 (create-image (arrow-right-xpm color2 color3) 'xpm t :ascent 'center))
 (defvar arrow-right-3 (create-image (arrow-right-xpm color3 "None") 'xpm t :ascent 'center))
 (defvar arrow-left-1  (create-image (arrow-left-xpm color2 color1) 'xpm t :ascent 'center))
 (defvar arrow-left-2  (create-image (arrow-left-xpm color3 color2) 'xpm t :ascent 'center))
 (defvar arrow-left-3  (create-image (arrow-left-xpm "None" color3) 'xpm t :ascent 'center))
- 
+
 (setq-default mode-line-format
- (list  '(:eval (concat (propertize " %* %b " 'face 'mode-line-color-1)
-                        (propertize " " 'display arrow-right-1)))
-        '(:eval (concat (propertize " %Z " 'face 'mode-line-color-2)
-                        (propertize " " 'display arrow-right-2)))
-        '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
-                        (propertize " " 'display arrow-right-3)))
- 
-        ;; Justify right by filling with spaces to right fringe - 16
-        ;; (16 should be computed rahter than hardcoded)
-        '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
- 
-        '(:eval (concat (propertize " " 'display arrow-left-3)
-                        (propertize " %p " 'face 'mode-line-color-3)))
-        '(:eval (concat (propertize " " 'display arrow-left-2)
-                        (propertize "%4l:%2c  " 'face 'mode-line-color-2)))
-))
- 
+              (list  '(:eval (concat (propertize " %* %b " 'face 'mode-line-color-1)
+                                     (propertize " " 'display arrow-right-1)))
+                     '(:eval (concat (propertize " %Z " 'face 'mode-line-color-2)
+                                     (propertize " " 'display arrow-right-2)))
+                     '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
+                                     (propertize " " 'display arrow-right-3)))
+                     
+                     ;; Justify right by filling with spaces to right fringe - 16
+                     ;; (16 should be computed rahter than hardcoded)
+                     '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
+                     
+                     '(:eval (concat (propertize " " 'display arrow-left-3)
+                                     (propertize " %p " 'face 'mode-line-color-3)))
+                     '(:eval (concat (propertize " " 'display arrow-left-2)
+                                     (propertize "%4l:%2c  " 'face 'mode-line-color-2)))
+                     ))
+
 (make-face 'mode-line-color-1)
 (set-face-attribute 'mode-line-color-1 nil
                     :foreground "#fff"
                     :background color1)
- 
+
 (make-face 'mode-line-color-2)
 (set-face-attribute 'mode-line-color-2 nil
                     :foreground "#fff"
                     :background color2)
- 
+
 (make-face 'mode-line-color-3)
 (set-face-attribute 'mode-line-color-3 nil
                     :foreground "#fff"
                     :background color3)
- 
+
 (set-face-attribute 'mode-line nil
                     :foreground "#fff"
                     :background "#404040"
@@ -512,9 +603,9 @@ static char * arrow_right[] = {
                       (kill-ring-save (region-beginning)
                                       (region-end))
                     (progn
-                     (kill-ring-save (line-beginning-position)
-                                     (line-end-position))
-                     (message "copied line")))))
+                      (kill-ring-save (line-beginning-position)
+                                      (line-end-position))
+                      (message "copied line")))))
 
 ;; kill region or whole line
 (global-set-key "\C-w"
@@ -524,9 +615,9 @@ static char * arrow_right[] = {
                       (kill-region (region-beginning)
                                    (region-end))
                     (progn
-                     (kill-region (line-beginning-position)
-                                  (line-end-position))
-                     (message "killed line")))))
+                      (kill-region (line-beginning-position)
+                                   (line-end-position))
+                      (message "killed line")))))
 
 
 ;;autoinsert
@@ -541,6 +632,7 @@ static char * arrow_right[] = {
 (define-auto-insert "\\.cpp" "cpp.auto")
 (define-auto-insert "\\.lisp" "cl.auto")
 (define-auto-insert "\\.sml" "ml.auto")
+(define-auto-insert "\\.rb" "ruby.auto")
 
 (defadvice auto-insert  (around yasnippet-expand-after-auto-insert activate)
   "expand auto-inserted content as yasnippet templete,

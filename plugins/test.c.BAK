@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int a;
+	a += 12;
+	long b;
+	b += a;
+	return 0;
+}
+
+int anotherfun()
+{
+	char a;
+}
+
+void test
+{
+	int just;
+	return 0;
+}
+
+
+void less()
+{
+        int 
+                }

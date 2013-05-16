@@ -44,3 +44,9 @@ mv window-number-20100803.1327/ window-number
 ls
 cd window-number/
 ls
+ls
+cd ..
+ls
+cd app/views/users/
+ls
+touch _follow.html.erb

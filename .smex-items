@@ -1,31 +1,31 @@
 
 ;; ----- smex-history -----
 (
- auto-complete-mode
- outline-mode
- indent-region
- uncomment-region
- comment-box
- mac-mouse-turn-on-fullscreen
- eval-region
+ shell
+ eshell
+ open-line
+ css-mode
+ ecb-activate
+ c-mode
+ lisp-mode
 )
 
 ;; ----- smex-data -----
 (
- (shell . 1)
- (slime . 41)
- (eshell . 8)
- (c-mode . 11)
- (auto-complete-mode . 35)
+ (shell . 10)
+ (slime . 42)
+ (eshell . 9)
+ (c-mode . 30)
+ (auto-complete-mode . 42)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
  (package-install . 8)
  (package-list-packages . 8)
- (java-mode . 1)
+ (java-mode . 2)
  (ac-complete-slime . 1)
- (lisp-mode . 4)
+ (lisp-mode . 9)
  (go-mode . 1)
- (plain-TeX-mode . 2)
+ (plain-TeX-mode . 3)
  (eval-buffer . 16)
  (weibo-timeline . 4)
  (weibo-timeline-mode . 3)
@@ -34,13 +34,13 @@
  (slime-mode . 1)
  (sldb-cycle . 2)
  (slime-toggle-debug-on-swank-error . 1)
- (python-mode . 1)
- (markdown-mode . 8)
- (ecb-activate . 2)
+ (python-mode . 6)
+ (markdown-mode . 11)
+ (ecb-activate . 4)
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
- (ruby-mode . 2)
+ (ruby-mode . 12)
  (org-mode . 2)
  (outline-mode . 6)
  (outline-minor-mode . 4)
@@ -53,13 +53,35 @@
  (run-sml . 1)
  (life . 1)
  (split-window-vertically . 1)
- (comment-box . 13)
+ (comment-box . 22)
  (sml-lex-mode . 9)
  (scheme-mode . 1)
  (Electric-command-history-redo-expression . 1)
- (c++-mode . 2)
+ (c++-mode . 4)
  (eval-region . 1)
- (indent-region . 27)
+ (indent-region . 56)
  (mac-mouse-turn-on-fullscreen . 1)
- (uncomment-region . 2)
+ (uncomment-region . 9)
+ (css-mode . 6)
+ (cedet-java-describe . 1)
+ (javascript-mode . 2)
+ (html-mode . 3)
+ (js2-mode . 1)
+ (speedbar . 1)
+ (comment-region . 7)
+ (whitespace-mode . 23)
+ (blank-mode . 19)
+ (browse-url-w3 . 3)
+ (c-set-style . 5)
+ (newline-and-indent . 2)
+ (auto-fill-mode . 2)
+ (customize-variable . 1)
+ (fci-mode . 1)
+ (highlight-indentation-mode . 14)
+ (show-children . 1)
+ (text-mode . 3)
+ (global-whitespace-mode . 2)
+ (global-blank-mode . 2)
+ (highlight-indentation-current-column-mode . 1)
+ (open-line . 1)
 )
