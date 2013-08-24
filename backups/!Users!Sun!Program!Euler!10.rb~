@@ -1,5 +1,5 @@
 require 'prime'
 
 sum = 0
-Prime.take_while {|x| x < 2000000; sum += x}
+Prime.each(2000000) {|x| sum += x}
 puts sum

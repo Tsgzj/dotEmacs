@@ -50,3 +50,9 @@ ls
 cd app/views/users/
 ls
 touch _follow.html.erb
+ls
+cd Program/
+ls
+mkdir lua
+ls
+mkdir Ruby

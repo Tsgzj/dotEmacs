@@ -118,3 +118,10 @@
   (if (< n 2)
     n
     (+ (fib (- n 1)) (fib (- n 2)))))
+
+(defun to-word (n)
+  "Convert a number to english word"
+  (format nil "~r" n))
+
+(defun number-length (n)
+  (length (format nil "~r" n)))

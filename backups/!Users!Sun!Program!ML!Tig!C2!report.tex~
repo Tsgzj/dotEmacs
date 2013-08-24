@@ -52,7 +52,7 @@ SSL组:&\href{mailto:wxsun1991@gmail.com}{孙~文翔}~101220102\\
 参考资料包括\href{http://smlnj.org/doc/ML-Lex/manual.html}{ML-Lex手册}
 等。
 
-\subsubsection{实现}
+\subsection{实现}
 ML-Lex读取Lex文件生成.lex.sml，使用MLex.makeLexer处理。Lex文件结构如下
 \begin{lstlisting}
   `用户声明` 
@@ -116,8 +116,8 @@ $/*$后进入COMMENT状态，并且记录遇到的$/*/$的数量。之后每次�
 
 这里我使用了ML语言的标准库，将$\backslash$后的数字转换为对应的ASCII字符并输出。
 
-\subsubsection{十六进制赋值}
-变量赋值时支持十六进制。如
+\subsubsection{十六进制/八进制赋值}
+变量赋值时支持十六进制/八进制。如
 \begin{lstlisting}
   var a:=0xFF
 \end{lstlisting}
@@ -128,7 +128,7 @@ $/*$后进入COMMENT状态，并且记录遇到的$/*/$的数量。之后每次�
 \end{lstlisting}
 
 首先匹配十六进制数字0x\{digit\}+，将该十六进制转换为十进制，之后的处理过
-程与普通的整数相同。
+程与普通的整数相同。当十六进制或八进制数错误时会报错，如0xGG。
 \\\\
 
 \section{编译运行}
@@ -152,7 +152,7 @@ SML/NJ提供了Windows下的安装包，只需使用管理员身份运行安装�
 
 \subsection{运行}
 \textbf{运行程序前，请确保您已正确安装SML/NJ环境!}
-l
+
 你可以使用
 \begin{lstlisting}
   sml test.sml

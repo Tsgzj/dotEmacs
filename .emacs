@@ -107,6 +107,7 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(display-time-mode t)
+ '(ecb-layout-window-sizes nil)
  '(ecb-options-version "2.40")
  '(fill-column 100)
  '(scroll-bar-mode nil)
@@ -208,6 +209,18 @@
              "~/.emacs.d/elpa/ruby-tools-20121008.1851")
 (require 'ruby-tools)
 
+;;tabbar
+;; (add-to-list 'load-path
+;;              "~/.emacs.d/elpa/tabbar-20110824.1439")
+;; (add-to-list 'load-path
+;;              "~/.emacs.d/elpa/tabbar-ruler-20130501.1226")
+;; (setq tabbar-ruler-global-tabbar 't) ; If you want tabbar
+;; ;;(setq tabbar-ruler-global-ruler 't) ; if you want a global ruler
+;; (setq tabbar-ruler-popup-menu 't) ; If you want a popup menu.
+;; (setq tabbar-ruler-popup-toolbar 't) ; If you want a popup toolbar
+
+;; (require 'tabbar-ruler)
+
 ;;blank-mode
 (load-file "~/.emacs.d/plugins/blank-mode.el")
 (require 'blank-mode)
@@ -217,6 +230,12 @@
 ;;(add-to-list 'load-path
 ;;             "~/.emacs.d/plugins/python.el")
 ;;(require 'python)
+
+
+;;textmate-mode
+(add-to-list 'load-path "~/.emacs.d/vender/textmate.el")
+(require 'textmate)
+(textmate-mode)
 
 ;;whitespace
 (setq whitespace-display-mappings
@@ -371,9 +390,9 @@
 (setq inferior-lisp-program "sbcl -K utf-8")
 
 ;;weibo
-;;(add-to-list 'load-path
-;;             "~/.emacs.d/weibo/")
-;;(require 'weibo)
+(add-to-list 'load-path
+             "~/.emacs.d/weibo/")
+(require 'weibo)
 
 
 (setenv "PATH" (concat "/usr/texbin:/usr/local/bin:" (getenv "PATH")))
