@@ -1,8 +1,0 @@
-;;; `(buffer-name)` --- 
-
-;; Copyright (C) 2013  Sun Wenxiang
-;; Create at: `(format-time-string "%c")`
-
-;; Author: Sun Wenxiang <wxsun1991@gmail.com>
-
-;;; Code:

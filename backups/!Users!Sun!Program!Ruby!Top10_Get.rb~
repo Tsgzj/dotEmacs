@@ -1,7 +1,0 @@
-require "open-uri"
-
-open("http://bbs.nju.edu.cn/cache/top10.xml"){|x|
-while line = x.gets
-   puts line
-end
-}
