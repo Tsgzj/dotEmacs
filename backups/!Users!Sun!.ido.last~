@@ -65,16 +65,17 @@
  ("/" . "Users/")
  ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
  ("/Users/Sun/Downloads/" . "Tigpiler-master/")
- ("/Users/Sun/" . "Desktop/")
+ ("/Users/Sun/" . ".TeXmacs/")
  ("/Users/Sun/.emacs.d/" . "yasnippet/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/Users/Sun/"
+ "/Users/Sun/.emacs.d/vender/"
+ "/Users/Sun/Program/Ruby/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/general/"
- "/Users/Sun/Program/Ruby/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/definitions/"
  "/Users/Sun/Program/lua/"
  "/Users/Sun/Blog/hexo/themes/memoir/layout/_partial/"
@@ -120,36 +121,41 @@
  "/Users/Sun/Documents/Netlab/lab11/client/"
  "/Users/Sun/Documents/Netlab/lab10/101220102_lab12/client/"
  "/Users/Sun/Documents/Netlab/lab11/server/"
- "/Users/Sun/Documents/Netlab/lab10/101220102_lab12/server/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
+ "highlight-parentheses.el"
+ "1.rb"
  ".vimperatorrc"
  "deli"
  "dee"
- "1.rb"
  "mod"
  "fib.lua"
  "comment.ejs"
  "after_footer.ejs"
- "01.c"
- "TmuxController.m"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21009 56505 0 0) "UserContent/" "tweetero/" "tmux-powerline/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
+ ("/Users/Sun/" (21017 20583 0 0) "UserContent/" "tweetero/" "tmux-powerline/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#my_blood_pressure.db#" "../" "./")
 
- ("/Users/Sun/Program/Ruby/" (21007 34063 0 0) "1.rb" ".git/" ".#1.rb" "#1.rb#" "../" "./")
+ ("/Users/Sun/.emacs.d/vender/" (21017 20562 0 0) "textmate.el/" "highlight-parentheses.el" "emacs-powerline/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (21017 20515 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/" (20987 20433 0 0) "Sun/" "Shared/" ".localized" "../" "./")
+
+ ("/Users/Sun/.TeXmacs/" (20853 30196 0 0) "texts/" "system/" "styles/" "progs/" "plugins/" "packages/" "misc/" "langs/" "fonts/" "doc/" "bin/" "../" "./")
+
+ ("/Users/Sun/Program/Ruby/" (21016 5829 0 0) "mdfind4.rb" "1.rb" ".git/" "../" "./")
 
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/" (20753 48615 0 0) "zip" "select" "reject" "inject" "eawi" "eav" "eai" "eac" "ea" "det" "deli" "collect" "classify" "any" "all" "../" "./")
 
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/general/" (20753 48615 0 0) "y" "rreq" "req" "rb" "dee" "case" "bm" "app" "=b" "#" "../" "./")
 
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/definitions/" (21007 33960 0 0) "w" "rw" "r" "mod" "mm" "Comp" "cls" "cla" "am" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (21007 33964 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
 
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/" (20753 48615 0 0) "general/" "definitions/" "control structure/" "collections/" ".yas-parents" ".yas-make-groups" "../" "./")
 
@@ -333,12 +339,6 @@
  ("/Users/Sun/Documents/Netlab/" (20925 29288 0 0) "lab11/" "lab10/" "lab09/" "Lab07/" "Lab06/" "Lab04/" "Lab03/" "Lab02/" "Lab01/" "101220102_lab07-08/" "101220102_lab05-06/" "101220102_lab04/" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Program/ML/MLFTWP/" (20921 35246 0 0) "test.sml" "../" "./")
-
- ("/Users/Sun/Movies/" (20925 7656 0 0) "【全程高能】日本强力饮水机 - 嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~ - bilibilitv.flv" "【♂】JOJO的奇幻冒险【♂】 - 嗶哩嗶哩 - ( ゜- ゜)つロ 乾杯~ - bilibilitv.flv" "Uncrustify-Objective-C.workflow.tar.gz" "tiger_c_sample.zip" "tiger_c_sample/" "tiger_1.zip" "tiger_0.zip" "tiger.zip" "tiger-1/" "tiger/" "Soft.ofocus-theme" "Slate.dmg" "Scapple.dmg" "QtSpim_9.1_mac.dmg" "pcspim.zip" "pcspim/" "mcij.rar.td.cfg" "mcij.rar.td" "jre-7u21-macosx-x64.dmg" "jdk-7u21-macosx-x64.dmg" "java_cup_v10k.tar.gz" "iMovie Projects.localized/" "iMovie Events.localized/" "ideaIC-12.1.4.dmg" "Game.of.Thrones.S03E10.720p.HDTV.x264-EVOLVE.mkv" "eclipse-jee-juno-SR2-macosx-cocoa-x86_64.tar.gz" "BusyCal.app/" "2ktvuwflcvlffakecsibytmp4 (videomp4 对象).mp4" ".test/" ".localized" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Movies/tiger-1/" (12972 65270 0 0) "testcases/" "chap9/" "chap8/" "chap7/" "chap6/" "chap5/" "chap4/" "chap3/" "chap2/" "chap12/" "chap11/" "chap10/" "chap1/" "../" "./")
-
- ("/Users/Sun/Movies/tiger-1/chap2/" (13278 36012 0 0) "Parse/" "makefile" "ErrorMsg/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

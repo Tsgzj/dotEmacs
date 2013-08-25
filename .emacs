@@ -1,7 +1,8 @@
 (setq user-full-name "Sun Wenxiang")
 (setq user-mail-address "wxsun1991@gmail.com")
 
-(server-start)
+(load "server")
+(unless (server-running-p) (server-start))
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -9,7 +10,6 @@
 (add-to-list 'default-frame-alist (cons 'alpha (list 100 100))) 
 (set-language-environment "Chinese-GB")
 (set-keyboard-coding-system 'chinese-iso-8bit)
-
 
 (setq mac-command-modifier 'meta)
 (setq mac-control-modifier 'control)
@@ -27,14 +27,17 @@
 (setq backup-directory-alist (quote (("." . "~/.backups"))))
 (setq mac-option-modifier 'meta)
 (setq default-major-mode 'text-mode)
+(if (display-graphic-p)
 (set-face-attribute
- 'default nil :font "inconsolata 14")
+ 'default nil :font "inconsolata 14"))
 
+;;(setq default-frame-alist '((font . "Inconsolata-15")))
 ;; Chinese Font
+(if (display-graphic-p)
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
                     charset
-                    (font-spec :family "Hiragino Sans GB" :size 14)))
+                    (font-spec :family "Hiragino Sans GB" :size 14))))
 ;;咆哮体，勿用
 ;;(font-spec :family "FZNHT" :size 36 )))
 
@@ -94,7 +97,7 @@
 (ido-mode t)
 
 ;;(iswitchb-mode 1)
-
+(tool-bar-mode 0)
 (setq default-frame-alist
       '((top . 0)(left . 0)(width . 108)(height . 71)(tool-bar-lines . 0)))
 ;;(setq default-frame-alist
@@ -237,6 +240,10 @@
 (require 'textmate)
 (textmate-mode)
 
+;;highlight-parentheses
+(load-file "~/.emacs.d/vender/highlight-parentheses.el")
+(require 'highlight-parentheses)
+
 ;;whitespace
 (setq whitespace-display-mappings
       ;;all numbers are Unicode codepoint in decimal. ⁖ (insert-char 182 1)
@@ -283,6 +290,7 @@
 (add-hook 'lisp-mode-hook
           '(lambda ()
              (setq tab-width 8)
+             (highlight-parentheses-mode)
              (auto-complete-mode t)
              (fci-mode)
              ))

@@ -1,11 +1,11 @@
 
 ;; ----- smex-history -----
 (
+ server-start
  eshell
  xml-mode
  server-force-delete
  server-mode
- server-start
  man
  c-set-style
 )
@@ -96,6 +96,6 @@
  (ebrowse-tags-find-definition . 1)
  (man . 2)
  (server-force-delete . 4)
- (server-start . 1)
+ (server-start . 2)
  (server-mode . 1)
 )
