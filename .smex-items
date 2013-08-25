@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ ecb-activate
+ server-force-delete
  server-start
  eshell
  xml-mode
- server-force-delete
  server-mode
  man
- c-set-style
 )
 
 ;; ----- smex-data -----
@@ -36,7 +36,7 @@
  (slime-toggle-debug-on-swank-error . 1)
  (python-mode . 6)
  (markdown-mode . 11)
- (ecb-activate . 8)
+ (ecb-activate . 9)
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
@@ -95,7 +95,7 @@
  (find-function . 1)
  (ebrowse-tags-find-definition . 1)
  (man . 2)
- (server-force-delete . 4)
+ (server-force-delete . 5)
  (server-start . 2)
  (server-mode . 1)
 )

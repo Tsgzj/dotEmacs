@@ -1,8 +1,10 @@
 (setq user-full-name "Sun Wenxiang")
 (setq user-mail-address "wxsun1991@gmail.com")
 
-(load "server")
-(unless (server-running-p) (server-start))
+(setq default-directory "~/")
+
+;;(load "server")
+;;(unless (server-running-p) (server-start))
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -290,10 +292,15 @@
 (add-hook 'lisp-mode-hook
           '(lambda ()
              (setq tab-width 8)
-             (highlight-parentheses-mode)
              (auto-complete-mode t)
              (fci-mode)
              ))
+
+(define-globalized-minor-mode global-highlight-parentheses-mode
+  highlight-parentheses-mode
+  (lambda ()
+    (highlight-parentheses-mode t)))
+(global-highlight-parentheses-mode t)
 
 
 ;;test-case-mode

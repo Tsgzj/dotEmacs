@@ -60,7 +60,7 @@
  ("/Users/Sun/Program/Ruby/rails/test3/app/views/" . "events/")
  ("/Users/Sun/Program/Ruby/rails/test3/app/" . "views/")
  ("/Users/Sun/.emacs.d/elpa/" . "window-number-20100803.1327/")
- ("/Users/Sun/Program/" . "Ruby/")
+ ("/Users/Sun/Program/" . "Lisp/")
  ("/Users/" . "Sun/")
  ("/" . "Users/")
  ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
@@ -71,7 +71,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Sun/Program/Lisp/"
+ "/Users/Sun/Program/C/"
  "/Users/Sun/"
+ "/"
  "/Users/Sun/.emacs.d/vender/"
  "/Users/Sun/Program/Ruby/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/"
@@ -118,32 +121,33 @@
  "//Users/Sun/Desktop/"
  "/Users/Sun/Documents/Netlab/lab11/common/"
  "/Users/Sun/Documents/Netlab/lab10/101220102_lab12/common/"
- "/Users/Sun/Documents/Netlab/lab11/client/"
- "/Users/Sun/Documents/Netlab/lab10/101220102_lab12/client/"
- "/Users/Sun/Documents/Netlab/lab11/server/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "test.lisp"
+ "time.c"
  ".emacs"
+ ".eamcs"
  "highlight-parentheses.el"
  "1.rb"
  ".vimperatorrc"
  "deli"
  "dee"
  "mod"
- "fib.lua"
- "comment.ejs"
- "after_footer.ejs"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21017 20583 0 0) "UserContent/" "tweetero/" "tmux-powerline/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#my_blood_pressure.db#" "../" "./")
+ ("/Users/Sun/" (21017 40366 0 0) "UserContent/" "tweetero/" "tmux-powerline/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#my_blood_pressure.db#" "../" "./")
+
+ ("/Users/Sun/Program/C/" (20980 40800 0 0) "time.c" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (21017 33423 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/Lisp/" (20980 40905 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "#new.lisp#" "../" "./")
 
  ("/Users/Sun/.emacs.d/vender/" (21017 20562 0 0) "textmate.el/" "highlight-parentheses.el" "emacs-powerline/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (21017 20515 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
 
  ("/Users/" (20987 20433 0 0) "Sun/" "Shared/" ".localized" "../" "./")
 
@@ -335,10 +339,6 @@
  ("/Users/Sun/Documents/Netlab/lab10/" (20925 29067 0 0) "101220102_lab12.pdf" "101220102_lab12/" "../" "./")
 
  ("/Users/Sun/Documents/Netlab/lab11/" (20780 29796 0 0) "server/" "README" "Makefile" "common/" "client/" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/" (20925 29288 0 0) "lab11/" "lab10/" "lab09/" "Lab07/" "Lab06/" "Lab04/" "Lab03/" "Lab02/" "Lab01/" "101220102_lab07-08/" "101220102_lab05-06/" "101220102_lab04/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/ML/MLFTWP/" (20921 35246 0 0) "test.sml" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----
