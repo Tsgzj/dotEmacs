@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Sun/.emacs.d/plugins/" . "markdown-mode/")
+ ("/Volumes/" . "KINGSTON/")
+ ("/Applications/" . "develop/")
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/" . "collections/")
  ("/Users/Sun/Blog/hexo/themes/memoir/layout/" . "_partial/")
  ("/Users/Sun/Blog/hexo/themes/light/" . "layout/")
@@ -51,7 +54,7 @@
  ("/Users/Sun/Desktop/101220102_lab03/" . "source/")
  ("/Users/Sun/Desktop/" . "tiger-master/")
  ("/Users/Sun/Git/" . "cv/")
- ("/Users/Sun/Documents/LaTeX/" . "latex模板/")
+ ("/Users/Sun/Documents/LaTeX/" . "bibtex_test/")
  ("/Users/Sun/Documents/" . "LaTeX/")
  ("/Users/Sun/Blog/hexo/source/" . "_posts/")
  ("/Users/Sun/Blog/hexo/" . "source/")
@@ -60,30 +63,44 @@
  ("/Users/Sun/Program/Ruby/rails/test3/app/views/" . "events/")
  ("/Users/Sun/Program/Ruby/rails/test3/app/" . "views/")
  ("/Users/Sun/.emacs.d/elpa/" . "window-number-20100803.1327/")
- ("/Users/Sun/Program/" . "Lisp/")
+ ("/Users/Sun/Program/" . "Euler/")
  ("/Users/" . "Sun/")
  ("/" . "Users/")
  ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
  ("/Users/Sun/Downloads/" . "Tigpiler-master/")
- ("/Users/Sun/" . ".TeXmacs/")
- ("/Users/Sun/.emacs.d/" . "yasnippet/")
+ ("/Users/Sun/" . "Desktop/")
+ ("/Users/Sun/.emacs.d/" . "plugins/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Program/Lisp/"
- "/Users/Sun/Program/C/"
  "/Users/Sun/"
+ "/Users/Sun/Documents/LaTeX/bibtex_test/"
+ "/Users/Sun/Blog/hexo/source/_posts/"
+ "/Users/Sun/Desktop/"
+ "/Users/Sun/.emacs.d/plugins/markdown-mode/"
+ "/Users/Sun/.emacs.d/weibo/"
+ "/Volumes/KINGSTON/"
+ "/Users/Sun/Git/weenote/"
+ "/Users/Sun/Documents/vimperator-plugins-3.6/"
+ "/etc/"
+ "/Users/Sun/Program/Lisp/"
+ "/Users/Sun/Program/Euler/"
+ "/Users/Sun/.emacs.d/plugins/"
+ "/Users/Sun/Program/Ruby/"
+ "/Users/Sun/Program/C/"
+ "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/"
+ "/Users/Sun/Program/Python/"
+ "/Volumes/LaCie/Movies/V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi/"
+ "/Users/Sun/Documents/LaTeX/"
+ "/Applications/develop/"
  "/"
  "/Users/Sun/.emacs.d/vender/"
- "/Users/Sun/Program/Ruby/"
- "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/general/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/definitions/"
  "/Users/Sun/Program/lua/"
  "/Users/Sun/Blog/hexo/themes/memoir/layout/_partial/"
  "/Users/Sun/Blog/hexo/themes/light/layout/_partial/"
- "/Users/Sun/Program/Euler/"
  "/Users/Sun/Git/iTerm2/"
  "/Users/Sun/Program/Sh/"
  "/Users/Sun/Program/ML/Tig/C2/"
@@ -96,7 +113,6 @@
  "/Users/Sun/Dropbox/QQAtachment/101220100 语义/"
  "/Users/Sun/Desktop/tiger-master/src/"
  "/Users/Sun/Desktop/tiger_source/chap5/"
- "/Users/Sun/Desktop/"
  "/Users/Sun/Desktop/tiger-master/include/"
  "/Users/Sun/Desktop/tiger-master/"
  "/Users/Sun/Desktop/tiger/src/"
@@ -108,52 +124,93 @@
  "/Users/Sun/Desktop/lab12_Source/common/"
  "/Users/Sun/Desktop/lab12_Source/topology/"
  "/Users/Sun/Desktop/lab11/common/"
- "/Users/Sun/Downloads/lab12/common/"
- "//Users/Sun/Downloads/lab12/topology/"
- "/Users/Sun/Desktop/lab12/topology/"
- "/Users/Sun/Desktop/lab11/server/"
- "/Users/Sun/Desktop/lab11/client/"
- "/Users/Sun/Downloads/lab12/son/"
- "/Users/Sun/Desktop/lab12/son/"
- "/Users/Sun/Downloads/lab12/topology/"
- "//Users/Sun/Desktop/lab11/common/"
- "//Users/Sun/Desktop/lab11/client/"
- "//Users/Sun/Desktop/"
- "/Users/Sun/Documents/Netlab/lab11/common/"
- "/Users/Sun/Documents/Netlab/lab10/101220102_lab12/common/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "test.lisp"
- "time.c"
- ".emacs"
- ".eamcs"
- "highlight-parentheses.el"
- "1.rb"
  ".vimperatorrc"
- "deli"
- "dee"
- "mod"
+ "example.tex"
+ "re-bottlenecks-that-evernote-encountered-in-china.md"
+ "toukiden.html"
+ ".emacs"
+ "test.md"
+ "markdown-mode.el"
+ "webpage.sh"
+ "weibo-authorize.el"
+ "personal_statement.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21017 40366 0 0) "UserContent/" "tweetero/" "tmux-powerline/" "Sites/" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#my_blood_pressure.db#" "../" "./")
+ ("/Users/Sun/" (21100 62057 0 0) "UserContent/" "tweetero/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#toukiden.html#" "../" "./")
 
- ("/Users/Sun/Program/C/" (20980 40800 0 0) "time.c" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
+ ("/Users/Sun/Documents/LaTeX/bibtex_test/" (21085 2715 0 0) "test.bib" "Master.bib" "example.tex" "example.ps" "example.pdf" "example.log" "example.dvi" "example.blg" "example.bbl" "example.aux" "../" "./")
 
- ("/Users/Sun/.emacs.d/" (21017 33423 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+ ("/Users/Sun/Documents/" (21098 28829 0 0) "陈琦《GRE核心词汇考法精细》（再要你命3000）破解合成打印版.pdf" "毕业生生源.xls" "尽管去做——无压工作的艺术.pdf" "奥华子.m3u" "冰与火之歌/" "再要你命3000.pdf" "二日游.pdf" "workspace/" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "vedett-despicableme2-720p.chs.srt" "v.txt" "User Manual.pdf" "Tig/" "test.md" "Stephen,King - Under the Dome.epub" "Soft.ofocus-theme" "ruby-style-guide-master/" "RSS.ppt" "RoR/" "PS Vita/" "paper-reading.pdf" "OrgTutorial.en-cn.html" "OmniOutliner/" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "my_code.cbxml" "My Videos/" "My Snippets.textexpander" "My Pictures/" "My Documents/" "My Collection.bib" "Monokai.alfredappearance" "Money.money/" "luhn58.pdf" "Library.papers3/" "LaTeX/" "iOS 7 Design Resources 苹果官方文档/" "imsg.scpt" "icons-1-0-1.eps" "iBT新托福镇魂单词题（词汇题）全集（EXCEL版）1.0版.xls" "happy birthday.scpt" "GRE_Argument终极提纲.epub" "favicon/" "eBooks/" "Course/" "Compiler_Slides/" "Calibre Library/" "Buick's_CV_zh_CN.pdf" "Buick's_CV_en_US.pdf" "Breaking Bad.S01E01.chs&eng.ass" "Bibtex/" "all_stack_overflow/" "Aiseesoft Studio/" "AI/" "a586723f-07a4-4d1a-b703-162caa9cad1f.srt" "3班青共校.xls" "10cs_3班_毕业生生源信息修改.xls" "10cs_3班_十一离校情况统计.xls" "10cs_3班_中秋离校信息.xls" "10cs3_工作统计.xls" ".localized" ".DS_Store" ".#v.txt" "../" "./")
 
- ("/Users/Sun/Program/Lisp/" (20980 40905 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "#new.lisp#" "../" "./")
+ ("/Users/Sun/Blog/hexo/source/_posts/" (21075 24576 0 0) "tiger_language_reference_manual_3.md" "tiger_language_reference_manual_2.md" "tiger_language_reference_manual_1.md" "talk_about_headset.md" "something-about-favicon.md" "re-bottlenecks-that-evernote-encountered-in-china.md" "nowplaying-for-ituns.md" "ml-yacc.md" "ml-lex_tutorial.md" "lol.md" "introduce_slate.md" "hello-world.md" "customize-hexo.md" "compiler_lab_01.md" "calendar-apps-for-mac.md" "../" "./")
+
+ ("/Users/Sun/Blog/hexo/source/" (20799 7442 0 0) "favicon.ico" "CNAME" "_posts/" "_drafts/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Blog/hexo/" (21075 24431 0 0) "themes_backup/" "themes/" "source/" "scripts/" "scaffolds/" "public/" "package.json" "_config.yml" ".gitignore" ".DS_Store" ".deploy/" "../" "./")
+
+ ("/Users/Sun/Desktop/" (21072 57971 0 0) "Source Code/" "149攻略成品稿.zip" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/plugins/markdown-mode/" (20603 56668 0 0) "webpage.sh" "markdown-mode.el" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (21072 2899 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Volumes/KINGSTON/" (21063 42596 0 0) "._雏鹰小分队暑期实践报告——王鑫.doc" "雏鹰小分队暑期实践报告——王鑫.doc" "._101220102_时晓峰_实践报告.doc" "101220102_时晓峰_实践报告.doc" "._沈旭东_实践报告.pdf" "沈旭东_实践报告.pdf" "._.TemporaryItems" ".TemporaryItems/" ".fseventsd/" ".Spotlight-V100/" ".Trashes/" "._.Trashes" "南京大学校园纪念物调研及仙林校区校园纪念物规划建议报告.doc" "hangugeo/" "无师自通韩国语教学视频/" "../" "./")
+
+ ("/Volumes/" (21063 42497 0 0) "Macintosh HD/" "LACIE SHARE/" "LaCie/" "KINGSTON/" "../" "./")
+
+ ("/.vol/" (20444 50509 0 0) "../" "./")
+
+ ("/Users/Sun/.emacs.d/weibo/" (20756 39889 0 0) "weibo.el" "weibo-user.el" "weibo-timeline.el" "weibo-status.el" "weibo-status-comment.el" "weibo-post.el" "weibo-image.el" "weibo-comment.el" "weibo-authorize.el" "README" "../" "./")
+
+ ("/Users/Sun/Git/weenote/" (21060 55005 0 0) "weenote.js" "test.html" "README.md" "package.json" "index.html" ".git/" "../" "./")
+
+ ("/Users/Sun/Git/TpHash-master/" (20437 3696 0 0) "tpHash.m" "tpHash.h" "README" "../" "./")
+
+ ("/Users/Sun/Git/" (21060 54992 0 0) "weenote/" "TpHash-master/" "Spoon-Knife/" "ShortcutRecorder/" "ruby-sample/" "pomodoro/" "Objektiv/" "mono.growlstyle/" "mconf/" "KindleEar/" "iTerm2/" "iOS7Demos/" "cv/" "bellman/" "autojump/" "AlfredWeibo/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Documents/vimperator-plugins-3.6/" (21060 54081 0 0) "跳.js" "zoom-em-all.js" "zip-de-download.js" "yslow.js" "youtubeamp.js" "yetmappings.js" "xpcom_inspector.js" "xpath_hint.js" "x-hint.js" "win-mouse.js" "watchizu.js" "wassr.js" "walk-input.js" "vimp_to_android_phone.js" "video-controller.js" "uuid.js" "usi.js" "unload-tab.js" "unicode.js" "umihara.js" "ubiquityNeta.js" "ubiquity.js" "uaSwitchLite.js" "uaSwitch.js" "twopen.js" "twittperator.js" "twittperator/" "twitterView.js" "twissr.js" "translaten.js" "tombloo.js" "tohex.js" "toggline.js" "toggler.js" "tinyurl.js" "tinymenu.js" "takahashiPresentation.js" "tada.js" "tabsort.js" "tabmixplus.js" "tab-history.js" "subscldr.js" "stylish.js" "stylechanger.js" "stella.js" "statusline-toolbar.js" "statusbar_panel.js" "statstat.js" "splitBrowser.js" "spellchecker.js" "speeddial.js" "spatial-navigation.js" "slideshare.js" "sl.js" "simg.js" "shuppoppo.js" "session-manager.js" "scroll_div.js" "scenario-actor.js" "scalapi.js" "sbmcommentsviewer.js" "reveal-ie-ctrl-a-images.js" "retweet.js" "resizable_textarea.js" "reporter.js" "removetabs.js" "relative_move.js" "relatedBlogSearch.js" "refe.js" "refcontrol.js" "readitlater.js" "reading.js" "readcatlater.js" "pypi.js" "pukka.js" "proxy.js" "property-panel.js" "prevent_focus_ietab.js" "prevent-pseudo-domain.js" "PMWriter.js" "pluginManager.js" "plugin_loader.js" "pixiv.js" "pino.js" "peekpage.js" "PDF.js.js" "pathtraq.js" "param_editor.js" "options-migrate-user-pref.js" "option-selector.js" "opener.js" "opener-ex.js" "open-frame.js" "onclick.js" "nume.js" "notifier.js" "notifier/" "nnp_cooperation.js" "nicovideo_comment.js" "nicontroller.js" "nicolist.js" "nextlink.js" "newtab.js" "namakubi.js" "my-style.js" "multi_requester.js" "multi-exec.js" "mpd-currentsong.js" "mouseinspect.js" "mouse_gestures.js" "morse.js" "moreqmarks.js" "modules/" "mkcolor.js" "mixiecho.js" "migratestatusbar.js" "migemo_hint.js" "migemo_completion.js" "migemo-find.js" "migemized_find.js" "microUpdate.js" "microsoft-translator.js" "memo.js" "matanico.js" "marker_reader.js" "maine_coon.js" "lookupDictionary.js" "longcat.js" "lolipo-ojisan.js" "loginManager.js" "localkeymode.js" "lo.js" "literal-bmark.js" "ldrize_cooperation_fetch_flv.js" "ldrize_cooperation.js" "ldr_unread_counter.js" "ldc-completer.js" "keywordstore.js" "jweather.js" "jquery-loader.js" "inspector.js" "incuri.js" "imageextender.js" "i_love_echo.js" "history-search-backward.js" "hints-yank-paste.js" "hints-for-embedded.js" "hint-tombloo.js" "highlight.js" "hidecritter.js" "hatenaStar.js" "hatenabookmark_show.js" "hatena_highlight.js" "hatena_fotolife.js" "hatena-bookmark-search.js" "hateDAopener.js" "hatebuWatchDog.js" "hatebuCounter.js" "hash.js" "happy_hacking_vimperator.js" "haiku.js" "gvimail.js" "googlesuggest.js" "googlekanji.js" "googledocs.js" "google-tasks.js" "google-search.js" "google-results.js" "google-plus-commando.js" "goo.gl.js" "gmperator.js" "gmap.js" "gmail_biff.js" "gmail-commando.js" "gbmark.js" "garbage_finder.js" "function-template.js" "foxytunes.js" "foxage2ch.js" "forcefocuscontent.js" "fetchyoutube.js" "feedSomeKeys_3.js" "feeder.js" "facebook.js" "extension-manager.js" "exShowElementInfo.js" "exopen.js" "ex_autocmd.js" "every.js" "escape-from-iframe.js" "erection.js" "epub-reader.js" "encodingSwitcher.js" "ego_counter.js" "edit-vimperator-files.js" "echopy.js" "direct_hb.js" "direct_delb.js" "direct_bookmark.js" "delicious_search.js" "cpan-search.js" "copy.js" "cookieManager.js" "cookie.js" "commandBookmarklet.js" "command_menu.js" "clock.js" "clear_privacy_data.js" "chaika.js" "caret-hint.js" "bufferecho.js" "buffer-multiple-hints.js" "browser_object.js" "bookmarktoolbar-hint.js" "blinkelement.js" "bitly.js" "bijin_clock.js" "autoproxychanger.js" "autopagerize_controll.js" "autoIgnoreKey.js" "auto_word_select_mode.js" "auto_source.js" "auto_reload.js" "auto_detect_link.js" "auto-wildoptions.js" "auto-focus-frame.js" "auto-bookmark.js" "atodeyomu.js" "atnd.js" "asdfghjkl.js" "applauncher.js" "appinfo.js" "appendAnchor.js" "amebanow.js" "amazon_simple_uri.js" "alias.js" "alert.js" "addhatebu.js" "adddialog.js" "account_switcher.js" "access_hatena.js" "_smooziee.js" "_libly.js" ".DS_Store" ".#takahashiPresentation.js" "../" "./")
+
+ ("/etc/" (21055 9086 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sudoers" "sshd_config~orig" "sshd_config" "ssh_host_rsa_key.pub" "ssh_host_rsa_key" "ssh_host_key.pub" "ssh_host_key" "ssh_host_dsa_key.pub" "ssh_host_dsa_key" "ssh_config~orig" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolver/" "resolv.conf" "RemoteManagement.launchd" "rc.netboot" "rc.imaging" "rc.common" "raddb/" "racoon/" "protocols" "profile" "ppp/" "postfix/" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd" "pam.d/" "opt/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "named.conf" "moduli" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab~orig" "krb5.keytab" "kern_loader.conf" "irbrc" "ip6addrctl.conf" "hosts~orig" "hosts.equiv" "hosts" "hostconfig" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "CiscoSystemsVPNClient/" "bind.keys" "bashrc" "autofs.conf" "auto_master" "auto_home" "authorization" "asl.conf" "apache2/" "aliases.db" "aliases" "afpovertcp.cfg" "../" "./")
+
+ ("/Users/Sun/Program/" (21054 24517 0 0) "twit/" "tiger/" "test/" "simple_app/" "ShortURL/" "Sh/" "Ruby/" "Python/" "NowPlaying/" "MLFTWP/" "Lisp/" "knowledge/" "Js/" "Java/" "gittest/" "Euler/" "Emoticon/" "C/" "blog/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/Euler/" (21053 40992 0 0) "qr_97941ApD.out" "qr_97941ApD.c" "qr_97656QoD.rb" "qr_97656q8P" "qr_97656dyJ.out" "qr_97656dyJ.c" "qr_96270UPc.rb" "qr_96270twJ.rb" "qr_96270hZi.rb" "qr_96270HFW.rb" "qr_96270gmD.rb" "qr_9627066P.rb" "17.rb" "16.rb" "15.rb" "14.rb" "11.rb" "10.rb" "09.c" "07.c" "06.c" "04.c" "03.c" "02.c" "01.c" ".git/" ".DS_Store" "#14.rb#" "../" "./")
+
+ ("/Users/Sun/Program/Ruby/" (21053 40057 0 0) "mdfind4.rb" "1.rb" ".git/" "#1.rb#" "../" "./")
+
+ ("/Users/Sun/.emacs.d/plugins/" (21053 5073 0 0) "test.c.BAK" "test-case-mode.el" "quickrun.el" "python.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "fill-column-indicator.el" "dash-at-point.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/C/" (21053 6330 0 0) "time.c" "Makefile" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
+
+ ("/Users/Sun/Program/Lisp/" (21052 10887 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "#new.lisp#" "../" "./")
+
+ ("/Users/Sun/Program/Python/" (20980 41571 0 0) "test/" "hello_world.py" ".git/" ".DS_Store" "#hello_world.py#" "../" "./")
+
+ ("/Volumes/LaCie/Movies/V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi/" (20734 49081 0 0) "V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi.nfo" "V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi.mkv" "V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi.ass" "Sample/" ".DS_Store" "../" "./")
+
+ ("/Volumes/LaCie/Movies/" (21035 65046 0 0) "银魂[RG Genshiken] Gintama - 1-201+SP [DVDRip 704x528 x264 AAC]/" "老爸老妈的罗曼史.S01-S07.MiniSD-TLF/" "秒速五厘米/" "攻壳机动队/" "天元突破.红莲螺岩.Tengen.Toppa.Gurren.Lagann.2007.BluRay.720p.DD2.0.MNHD-FRDS/" "剧场公演/" "今敏MiniSD-TLF作品集.Satoshi.Kon.Collcetion.MiniSD-TLF/" "ありがとうー上甘岭.flv" "【葛炮】真·葛炮告白 - 嗶哩嗶哩.mp4" "【葛平音源】小圆脸OP - AcFun.tv.mp4" "【元首】元首热唱magnet - AcFun.tv.mp4" "WALL-E.2008.CEE.BluRay.1080p.X264.iNT-TLF/" "V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi/" "The.Shining.1980.BluRay.1080p.DTS-HD.MA.5.1.x264-beAst/" "The.Pianist.2002.BluRay.1080p.DTS.x264-CHD/" "The.Lord.of.the.Rings.The.Motion.Picture.Trilogy.Extended.Editions.2001-2003.720p.BluRay.x264.DTS-WiKi/" "Summer.Wars.2009.Blu-ray.RE.x264.1080p.DTS-HD.MA.5.1.2Audio-HDS/" "Samsara.2011.Blu-Ray.1080p.DTS-HD.MA.7.1.x264-beAst/" "Memento.10th.Anniversary.Special.Edition.2000.BluRay.1080p.x264.DTS-WiKi/" "Love.Letter.1995.BluRay.1080p.DTS.x264-CHD/" "jobs.mov" "Jiro_Dreams_Of_Sushi_2011_1080p_BluRay_x264_DTS_WiKi.rar Folder/" "Jiro.Dreams.Of.Sushi.2011.1080p.BluRay.x264.DTS-WiKi/" "Departures.2008.1080p.BluRay.x264.DTS-WiKi/" "Braveheart.1995.Bluray.1080p.DTS.4Audio.x264-CHD/" "bilibili-long.mp3" "BACCANO! －バッカーノ！－ 全話 (BD 1920x1080 x264 AAC)/" "AMV - Heroes of Tomorrow 720p - YouTube.mp4" "A Chinese Odyssey 1994 1080p Blu-ray x264 DTS-WiKi/" "[宫崎骏作品全集+Ghibli相关作品]/" "[LAC][Gintama][253-265][x264_aac][GB][720P_mp4]/" "[CASO][Tokiwo_Kakeru_Shoujyo][MOVIE][GB_BIG5][BDRIP][1920x1080][x264_AC3_3][4BD37777].mkv" "[2012 Movie][Evangelion 3.33 You Can (Not) Redo.][BDRIP][1080P+SP]/" "[2004][Elfen Lied][BDRIP][1080P][1-14Fin]/" "02游戏歌曲串烧.MTS" ".DS_Store" "../" "./")
+
+ ("/Volumes/LaCie/" (21032 39441 0 0) "tmbootpicker.efi" "Program/" "Pictures/" "Music/" "Movies/" "iamakey/" "Documents/" "Blog/" "Backups.backupdb/" "Backup/" "autorun.inf" ".VolumeIcon.ico" ".VolumeIcon.icns" ".Trashes/" ".TemporaryItems/" ".Spotlight-V100/" ".fseventsd/" ".DS_Store" ".DocumentRevisions-V100/" ".disk_label" ".com.apple.timemachine.donotpresent" ".apdisk" "../" "./")
+
+ ("/.PKInstallSandboxManager/" (20646 27641 0 0) "../" "./")
+
+ ("/Users/" (21034 37629 0 0) "Sun/" "Shared/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/Sun/Documents/LaTeX/" (21030 43054 0 0) "模板/" "zhipai.tex" "zhipai.pdf" "upLaTeX/" "uml.sty.0.09.pdf" "TeX Live 2012" "test_tikz.tex" "test_tikz.pdf" "temple.toc" "temple.tex" "temple.idx" "platex_test.tex" "platex_test.pdf" "pLatex/" "net.tex" "net.pdf" "latex模板/" "latex教程.pdf" "Latex实用教程--20008年版.pdf" "latex.pdf" "gpl-3.0.tex" "gpl-3.0.pdf" "db_1.tex" "db_1.pdf" "cv/" "cjk_test.toc" "cjk_test.tex" "ch4.tex" "ch4.pdf" "bitex_test.tex" "bitex_test.pdf" "bibtex_test/" "bd_2.tex" ".DS_Store" "#test_tikz.tex#" "#cjk_test.tex#" "../" "./")
+
+ ("/Applications/develop/" (21029 17686 0 0) "emacsdaemon.sh" "Emacsclient.app/" ".DS_Store" "../" "./")
+
+ ("/Applications/" (21029 17206 0 0) "欧路词典.app/" "xScope.app/" "xScan.app/" "XLD.app/" "Xcode.app/" "Window Tidy.app/" "Welly.app/" "Wake Up Time.app/" "VMware Fusion.app/" "VLC.app/" "Vitamin-R 2.app/" "uTorrent.app/" "Utilities/" "Unclutter.app/" "Tweetbot.app/" "Transmission.app/" "Toolkit.app/" "Time Machine.app/" "Thunder.app/" "The Unarchiver.app/" "TextMate.app/" "TextEdit.app/" "TeX/" "SystemMonitor.app/" "System Preferences.app/" "Stickies.app/" "Steam.app/" "Spotify.app/" "smcFanControl.app/" "Sleep No More.app/" "Slate.app/" "Skype.app/" "Skim.app/" "Sip.app/" "Should I Sleep.app/" "Shortcat.app/" "Sequel Pro.app/" "Seasonality Core.app/" "SCU.app/" "Safari.app/" "RubyMine.app/" "Reminders.app/" "Reeder.app/" "ReadKit.app/" "QuickTime Player.app/" "QQ.app/" "Preview.app/" "PopClip.app/" "Photo Booth.app/" "Path Finder.app/" "Pages.app/" "OmniOutliner Professional.app/" "Omnifocus.app/" "Objektiv.app/" "NowPlaying.app/" "Notes.app/" "MPlayerX.app/" "Mou.app/" "Money.app/" "Mkvtoolnix.app/" "Mission Control.app/" "MindNode Pro.app/" "Microsoft Silverlight/" "Miao.app/" "Messages.app/" "Merriam-Webster's Dictionaries.app/" "Merriam-Webster 4.0/" "Marked.app/" "Mail.app/" "MacVim.app/" "MacPaw Gemini.app/" "Lingon X.app/" "Line.app/" "Launchpad.app/" "Language Switcher.app/" "Kindle.app/" "Keynote.app/" "Keka.app/" "iTunes.app/" "iTerm.app/" "iStopMotion.app/" "iStat Menus.app/" "iSSH.app/" "iPhoto.app/" "IntelliJ IDEA 12 CE.app/" "iMovie.app/" "Image Capture.app/" "Icon Slate.app/" "iA Writer.app/" "Growl.app/" "GoogleJapaneseInput.localized/" "GoogleAppEngineLauncher.app/" "Google Chrome.app/" "Gimp.app/" "GarageBand.app/" "Game Center.app/" "ForkLift.app/" "Font Book.app/" "Flux.app/" "Firefox.app/" "Feedy.app/" "Fantastical.app/" "FaceTime.app/" "ezText.app/" "Evernote.app/" "Emacs.app/" "eclipse/" "DVD Player.app/" "Droplr.app/" "Dropbox.app/" "DNSCrypt-Menubar.app/" "Dictionary.app/" "DEVONthink Pro.app/" "DEVONsphere Express.app/" "DEVONagent.app/" "develop/" "DesktopUtility.app/" "DesktopMonitor.app/" "Degrees.app/" "Dashboard.app/" "Dash.app/" "DaisyDisk.app/" "Cypher Bot.app/" "Copy.app/" "Contacts.app/" "Cog.app/" "CodeRunner.app/" "CodeBox.app/" "Coda 2.app/" "COCOROBO Wi-Fi Settings.app/" "CMA.app/" "clementine.app/" "CleanMyMac 2.app/" "Chess.app/" "CheatSheet.app/" "Characters.app/" "CarrierEditor.app/" "calibre.app/" "Calendar.app/" "Calculator.app/" "Blur.app/" "Blotter.app/" "Blackmagic Disk Speed Test.app/" "BetterTouchTool.app/" "Bartender.app/" "Automator.app/" "AppCode.app/" "App Store.app/" "Animation Code 360.app/" "AliWangwang.app/" "Alfred 2.app/" "Accessorizer.app/" "1Password.app/" ".localized" ".DS_Store" "../" "./")
 
  ("/Users/Sun/.emacs.d/vender/" (21017 20562 0 0) "textmate.el/" "highlight-parentheses.el" "emacs-powerline/" ".DS_Store" "../" "./")
 
- ("/Users/" (20987 20433 0 0) "Sun/" "Shared/" ".localized" "../" "./")
-
  ("/Users/Sun/.TeXmacs/" (20853 30196 0 0) "texts/" "system/" "styles/" "progs/" "plugins/" "packages/" "misc/" "langs/" "fonts/" "doc/" "bin/" "../" "./")
-
- ("/Users/Sun/Program/Ruby/" (21016 5829 0 0) "mdfind4.rb" "1.rb" ".git/" "../" "./")
 
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/" (20753 48615 0 0) "zip" "select" "reject" "inject" "eawi" "eav" "eai" "eac" "ea" "det" "deli" "collect" "classify" "any" "all" "../" "./")
 
@@ -167,13 +224,9 @@
 
  ("/Users/Sun/.emacs.d/yasnippet/" (20753 48615 0 0) "yasnippet.el" "yasnippet-tests.el" "yasnippet-debug.el" "snippets/" "README.org" "README.mdown" "Rakefile" "extras/" "dropdown-list.el" "doc/" ".gitmodules" ".gitignore" ".git/" "../" "./")
 
- ("/Users/Sun/Program/" (21007 33735 0 0) "twit/" "tiger/" "simple_app/" "ShortURL/" "Sh/" "Ruby/" "Python/" "NowPlaying/" "MLFTWP/" "lua/" "Lisp/" "knowledge/" "Js/" "Java/" "gittest/" "Euler/" "Emoticon/" "C/" "blog/" ".DS_Store" "../" "./")
-
  ("/Users/Sun/Program/lua/" (21007 33695 0 0) "fib.lua" ".git/" "../" "./")
 
  ("/Users/Sun/Blog/hexo/themes/memoir/layout/_partial/" (21003 2557 0 0) "post/" "pagination.ejs" "header.ejs" "head.ejs" "google_analytics.ejs" "footer.ejs" "comment.ejs" "brand.ejs" "article.ejs" "archive.ejs" "after_footer.ejs" "../" "./")
-
- ("/Users/Sun/Blog/hexo/" (21003 2422 0 0) "themes_backup/" "themes/" "source/" "scripts/" "scaffolds/" "public/" "package.json" "db.json" "_config.yml" ".gitignore" ".DS_Store" ".deploy/" "../" "./")
 
  ("/Users/Sun/Blog/hexo/themes/memoir/layout/" (21003 2324 0 0) "tag.ejs" "post.ejs" "page.ejs" "layout.ejs" "index.ejs" "category.ejs" "archive.ejs" "_partial/" "../" "./")
 
@@ -188,10 +241,6 @@
  ("/Users/Sun/Blog/hexo/themes/light/" (20791 18438 0 0) "source/" "README.md" "LICENSE" "layout/" "languages/" "_config.yml" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Blog/" (20804 10928 0 0) "test/" "source_code/" "source/" "octopress/" "hexo/" ".themes/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Desktop/" (20987 47284 0 0) ".localized" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/Euler/" (20980 40868 0 0) "17.rb" "16.rb" "15.rb" "14.rb" "11.rb" "10.rb" "09.c" "07.c" "06.c" "04.c" "03.c" "02.c" "01.c" ".git/" ".DS_Store" "../" "./")
 
  ("/Applications/Emacs.app/Contents/MacOS/" (20802 27984 0 0) "libexec/" "Emacs.sh" "Emacs" "bin/" "../" "./")
 
@@ -238,10 +287,6 @@
  ("/Users/Sun/Program/ML/tiger/" (20923 54790 0 0) "types.sml" "tree.sml" "translate.sml" "translate.sig" "tokens.sml" "tokens.sig" "tiger.lex.sml" "tiger.lex" "tiger.grm.sml" "tiger.grm.sig" "tiger.grm" "testliveness.sml" "testcases" "temp.sml" "temp.sig" "table.sml" "table.sig" "symbol.sml" "sources.cm" "slp.sml" "semant.sml" "semant.sig" "runtime.c" "regalloc.sml" "regalloc.sig" "README.md" "printtree.sml" "prabsyn.sml" "parsetest.sml" "parse.sml" "mipsgen.sml" "mipsframe.sml" "makegraph.sml" "main.sml" "liveness.sml" "hash_table.sml" "graph.sml" "graph.sig" "frame.sig" "flowgraph.sml" "findescape.sml" "errormsg.sml" "env.sml" "env.sig" "driver.sml" "color.sml" "color.sig" "codegen.sig" "canon.sml" "assem.sml" "absyn.sml" ".gitignore" ".git/" ".cm/" "../" "./")
 
  ("/Users/Sun/Program/ML/" (20925 29142 0 0) "tiger/" "Tig/" "MLFTWP/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Documents/LaTeX/" (20923 8855 0 0) "模板/" "zhipai.tex" "zhipai.pdf" "zhipai.log" "zhipai.dvi" "zhipai.aux" "upLaTeX/" "uml.sty.0.09.pdf" "TeX Live 2012" "test_tikz.tex" "test_tikz.pdf" "test_tikz.log" "test_tikz.aux" "temple.toc" "temple.tex" "temple.log" "temple.idx" "temple.aux" "platex_test.tex" "platex_test.pdf" "platex_test.log" "platex_test.dvi" "platex_test.aux" "pLatex/" "net.tex" "net.pdf" "net.out" "net.log" "net.aux" "missfont.log" "latex模板/" "latex教程.pdf" "Latex实用教程--20008年版.pdf" "latex.pdf" "gpl-3.0.tex" "gpl-3.0.pdf" "gpl-3.0.log" "gpl-3.0.aux" "db_1.tex" "db_1.pdf" "db_1.log" "db_1.aux" "cv/" "cjk_test.toc" "cjk_test.tex" "cjk_test.out" "cjk_test.log" "cjk_test.dvi" "cjk_test.aux" "ch4.tex" "ch4.pdf" "ch4.log" "ch4.aux" "bd_2.tex" ".DS_Store" "#test_tikz.tex#" "#cjk_test.tex#" "../" "./")
-
- ("/Users/Sun/Documents/" (20935 57743 0 0) "评论王垠《完全用Linux工作》.pdf" "编程随想：太子党关系网络 (2.0.7).pdf" "毛泽东私人医生回忆.pdf" "架构师-二月刊.epub" "指导攻略 3.pdf" "指导攻略 2.pdf" "指导攻略 1.pdf" "把时间当作朋友（2011第3版）3.0.b.07.pdf" "实用Common.Lisp编程.pdf" "《30天自制操作系统》迷你书.pdf" "《30天自制操作系统》光盘.iso" "workspace/" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "tiger_c_sample/" "tiger_1.zip" "tiger_0.zip" "tiger/" "texlive-zh-cn.pdf" "Soft.ofocus-theme" "shell_13.pdf" "Scapple.dmg" "Ruby编程语言.pdf" "ruby-style-guide-master/" "RoR/" "railstutorial2ndcn-20130501.pdf" "python简明教程中文.pdf" "Python学习手册.pdf" "pcspim/" "OrgTutorial.en-cn.html" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "Netlab/" "my_code.cbxml" "Monokai.alfredappearance" "Money.money/" "mcij/" "MacRubyExamples/" "LaTeX/" "java_cup_v10k.tar.gz" "iOS 7 Design Resources 苹果官方文档/" "happy birthday.scpt" "favicon/" "EventKitProgGuide.pdf" "Compiler_Slides/" "BusyCal Backups/" "BlackBerry/" "aMule Downloads/" "AI/" "9pinggb_A4.pdf" "101220102_lab16.pdf" "101220102_lab15.pdf" "101220102_lab14.pdf" ".localized" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Desktop/tiger-master/include/" (20938 38400 0 0) "util.h" "types.h" "tree.h" "translate.h" "tokens.h" "temp.h" "table.h" "symbol.h" "semant.h" "regalloc.h" "printtree.h" "prabsyn.h" "parse.h" "liveness.h" "graph.h" "frame.h" "flowgraph.h" "escape.h" "errormsg.h" "env.h" "color.h" "codegen.h" "canon.h" "assem.h" "absyn.h" "../" "./")
 
@@ -297,48 +342,6 @@
  ("/Users/Sun/Desktop/lab12/topology/" (20930 59833 0 0) "topology.h" "topology.dat" "topology.c" ".#topology.c" "#topology.c#" "../" "./")
 
  ("/Users/Sun/Desktop/lab11/client/" (20930 59498 0 0) "stress_client" "stcp_client.o" "stcp_client.h" "stcp_client.c" "simple_client" "sendthis.txt" "app_stress_client.o" "app_stress_client.c" "app_simple_client.o" "app_simple_client.c" ".DS_Store" ".#app_simple_client.c" "#app_simple_client.c#" "../" "./")
-
- ("/Users/Sun/Desktop/lab11/" (20929 58097 0 0) "server/" "README" "Makefile" "common/" "client/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Desktop/lab12/son/" (20930 59409 0 0) "son.h" "son.c" "neighbortable.h" "neighbortable.c" "../" "./")
-
- ("/Users/Sun/Downloads/lab12/topology/" (20930 59158 0 0) "topology.h" "topology.dat" "topology.c" ".#topology.c" "#topology.c#" "../" "./")
-
- ("/Users/Sun/Desktop/lab12/" (20930 49188 0 0) "topology/" "son/" "sip/" "README" "Makefile" "common/" "../" "./")
-
- ("/Users/Sun/Downloads/lab12/common/" (20780 29796 0 0) "pkt.h" "pkt.c" "constants.h" "../" "./")
-
- ("/Users/Sun/Downloads/lab12/" (20780 29796 0 0) "topology/" "son/" "sip/" "README" "Makefile" "common/" "../" "./")
-
- ("//Users/Sun/Desktop/lab11/common/" (20926 49919 0 0) "seg.o" "seg.h" "seg.c" "constants.h" "../" "./")
-
- ("//Users/Sun/Desktop/lab11/client/" (20926 52645 0 0) "stress_client" "stcp_client.o" "stcp_client.h" "stcp_client.c" "simple_client" "sendthis.txt" "app_stress_client.o" "app_stress_client.c" "app_simple_client.o" "app_simple_client.c" ".#stcp_client.c" "../" "./")
-
- ("//Users/Sun/Desktop/" (20926 47128 0 0) "Screen Shot 2013-06-17 at 3.17.41 PM.png" "lab11/" "final/" "Compiler_Slides/" "a0fae7b2gw1e5q2oei5hlj20zk0pajzg.jpg" "33905591lqhl-acm-tiger-v1.0/" ".localized" ".DS_Store" "../" "./")
-
- ("//Users/Sun/Desktop/lab11/" (20780 29796 0 0) "server/" "README" "Makefile" "common/" "client/" "../" "./")
-
- ("//Users/" (20922 50640 0 0) "test/" "Sun/" "Shared/" ".localized" "../" "./")
-
- ("//" (20925 56659 0 0) "用户信息/" "Volumes/" "var/" "usr/" "Users/" "tmp/" "System/" "sbin/" "private/" "opt/" "Network/" "net/" "mach_kernel" "Library/" "home/" "etc/" "dev/" "cores/" "bin/" "Applications/" ".vol/" ".Trashes/" ".Spotlight-V100/" ".PKInstallSandboxManager/" ".fseventsd/" ".file" ".DocumentRevisions-V100/" ".dbfseventsd" ".com.apple.backupd.mvlist.plist" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab11/common/" (20925 32653 0 0) "seg.h" "seg.c" "constants.h" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab11/client/" (20925 33652 0 0) "stcp_client.h" "stcp_client.c" "sendthis.txt" "app_stress_client.c" "app_simple_client.c" ".#app_simple_client.c" "#app_simple_client.c#" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab10/101220102_lab12/client/" (20925 33476 0 0) "stcp_client.o" "stcp_client.h" "stcp_client.c" "lab10_client" "app_client.o" "app_client.c" ".#stcp_client.c" "#stcp_client.c#" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab11/server/" (20925 33236 0 0) "stcp_server.h" "stcp_server.c" "app_stress_server.c" "app_simple_server.c" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab10/101220102_lab12/server/" (20925 32253 0 0) "stcp_server.o" "stcp_server.h" "stcp_server.c" "lab10_server" "app_server.o" "app_server.c" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab10/101220102_lab12/common/" (20888 60514 0 0) "seg.o" "seg.h" "seg.c" "constants.h" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab10/101220102_lab12/" (20887 26560 0 0) "server/" "README" "Makefile" "common/" "client/" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab10/" (20925 29067 0 0) "101220102_lab12.pdf" "101220102_lab12/" "../" "./")
-
- ("/Users/Sun/Documents/Netlab/lab11/" (20780 29796 0 0) "server/" "README" "Makefile" "common/" "client/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

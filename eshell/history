@@ -56,3 +56,13 @@ ls
 mkdir lua
 ls
 mkdir Ruby
+ruby  qr_28225IAg 
+/usr/bin/env ruby  qr_28225VKm.rb 
+ls
+ruby 14.rb
+ls
+ruby --version
+rvm
+ruby 11.rb
+quit
+logout

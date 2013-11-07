@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- ecb-activate
- server-force-delete
- server-start
+ markdown-mode
+ html-mode
+ mouse-set-point
+ quickrun
+ mail
+ global-set-key
  eshell
- xml-mode
- server-mode
- man
 )
 
 ;; ----- smex-data -----
 (
  (shell . 11)
- (slime . 44)
- (eshell . 10)
+ (slime . 46)
+ (eshell . 12)
  (c-mode . 32)
  (auto-complete-mode . 51)
  (ac-complete-yasnippet . 4)
@@ -34,13 +34,13 @@
  (slime-mode . 1)
  (sldb-cycle . 2)
  (slime-toggle-debug-on-swank-error . 1)
- (python-mode . 6)
- (markdown-mode . 11)
+ (python-mode . 8)
+ (markdown-mode . 14)
  (ecb-activate . 9)
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
- (ruby-mode . 12)
+ (ruby-mode . 13)
  (org-mode . 2)
  (outline-mode . 6)
  (outline-minor-mode . 4)
@@ -53,7 +53,7 @@
  (run-sml . 1)
  (life . 1)
  (split-window-vertically . 1)
- (comment-box . 29)
+ (comment-box . 30)
  (sml-lex-mode . 11)
  (scheme-mode . 1)
  (Electric-command-history-redo-expression . 1)
@@ -65,10 +65,10 @@
  (css-mode . 6)
  (cedet-java-describe . 1)
  (javascript-mode . 4)
- (html-mode . 3)
+ (html-mode . 7)
  (js2-mode . 1)
  (speedbar . 1)
- (comment-region . 24)
+ (comment-region . 28)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -84,7 +84,7 @@
  (global-blank-mode . 2)
  (highlight-indentation-current-column-mode . 1)
  (open-line . 1)
- (dash-at-point . 3)
+ (dash-at-point . 5)
  (list-packages . 1)
  (tabbar-mode . 1)
  (replace-regexp . 11)
@@ -98,4 +98,13 @@
  (server-force-delete . 5)
  (server-start . 2)
  (server-mode . 1)
+ (flymake-mode . 5)
+ (compile . 5)
+ (toggle-frame-fullscreen . 2)
+ (quickrun . 13)
+ (quickrun-region . 1)
+ (quickrun-shell . 2)
+ (global-set-key . 1)
+ (mail . 1)
+ (mouse-set-point . 1)
 )

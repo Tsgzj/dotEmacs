@@ -51,7 +51,7 @@ noremap q :tabmove-1<Return>
 noremap e :tabmove+1<Return>
 "noremap n :tabopen<Space>http://zh.asoiaf.wikia.com/wiki/index.php?search=
 "noremap f F
-noremap p :copy<Space>titleAndURL<Return><Esc>
+noremap Y :copy<Space>titleAndURL<Return><Esc>
 
 " noremap F f
 noremap h gT
@@ -64,7 +64,7 @@ noremap <M-a> <C-a>
 noremap <M-x> <C-x>
 set complete=shl
 set titlestring=Scarlet@Vimperator
-set defsearch=google
+set defsearch=duckduckgo
 
 " vim: set ft=vimperator:
 

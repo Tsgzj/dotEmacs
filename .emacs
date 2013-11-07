@@ -29,17 +29,42 @@
 (setq backup-directory-alist (quote (("." . "~/.backups"))))
 (setq mac-option-modifier 'meta)
 (setq default-major-mode 'text-mode)
-(if (display-graphic-p)
-(set-face-attribute
- 'default nil :font "inconsolata 14"))
 
-;;(setq default-frame-alist '((font . "Inconsolata-15")))
+;; Setting English Font
+(set-face-attribute 'default nil :font "Inconsolata 14")
 ;; Chinese Font
-(if (display-graphic-p)
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
-                    charset
-                    (font-spec :family "Hiragino Sans GB" :size 14))))
+                    charset (font-spec :family "Hiragino Sans GB"
+                                       :size 14)))
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+
+;;(iswitchb-mode 1)
+(setq default-frame-alist
+'((top . 0)(left . 0)(width . 108)(height . 49)))
+;;(setq default-frame-alist
+;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0)))
+;;(setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
+ '(display-time-mode t)
+ '(ecb-layout-window-sizes nil)
+ ;;'(ecb-options-version "2.40")
+ '(fill-column 100)
+ '(scroll-bar-mode nil)
+ '(show-paren-mode t))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
+
 ;;咆哮体，勿用
 ;;(font-spec :family "FZNHT" :size 36 )))
 
@@ -48,11 +73,11 @@
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;;代码风格
-(setq tab-width 8)
-(setq default-tab-width 8)
+(setq tab-width 4)
+(setq default-tab-width 4)
 ;;use tab or space?
 (setq indent-tabs-mode t)
-(setq c-basic-offset 8)
+(setq c-basic-offset 4)
 ;;100字符换行
 ;;(setq-default fill-column 100)
 
@@ -62,6 +87,21 @@
 (set-face-background 'highlight-indentation-face "#323232")
 (set-face-background 'highlight-indentation-current-column-face "#465457")
 
+
+;;quickrun
+(load-file "~/.emacs.d/plugins/quickrun.el")
+(require 'quickrun)
+(setq quickrun-timeout-seconds nil)
+(global-set-key (kbd "<f12>") 'quickrun)
+(global-set-key (kbd "<f11>") 'toggle-frame-fullscreen)
+;;flymake
+(load-file "~/.emacs.d/vender/emacs-flymake/flymake.el")
+;; ;; Let's run 8 checks at once instead.
+(setq flymake-max-parallel-syntax-checks 8)
+;; ;; Yes, I want my copies in the same dir as the original.
+(setq flymake-run-in-place t)
+;; ;; I want to see at most the first 4 errors for a line.
+(setq flymake-number-of-errors-to-display nil)
 
 ;;(setq display-time-format “%V %m.%d/%H:%M”)
 (display-time-mode 1) ; 显示时间
@@ -98,31 +138,6 @@
 (require 'ido)
 (ido-mode t)
 
-;;(iswitchb-mode 1)
-(tool-bar-mode 0)
-(setq default-frame-alist
-      '((top . 0)(left . 0)(width . 108)(height . 71)(tool-bar-lines . 0)))
-;;(setq default-frame-alist
-;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0))
-(setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(column-number-mode t)
- '(display-time-mode t)
- '(ecb-layout-window-sizes nil)
- '(ecb-options-version "2.40")
- '(fill-column 100)
- '(scroll-bar-mode nil)
- '(show-paren-mode t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;;(add-to-list 'load-path
 ;;	     "~/.emacs.d/plugins/")
@@ -141,6 +156,14 @@
   "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
       (cons '("\\.md" . markdown-mode) auto-mode-alist))
+(defun markdown-preview-file ()
+  "run Marked on the current file and revert the buffer"
+  (interactive)
+  (shell-command 
+   (format "open -a /Applications/Marked.app %s" 
+           (shell-quote-argument (buffer-file-name))))
+  )
+(global-set-key "\C-cm" 'markdown-preview-file)
 
 ;;(global-set-key [(control f3)] 'highlight-symbol-at-point)
 ;;global-set-key [f3] 'highlight-symbol-next)
@@ -148,7 +171,7 @@
 ;;(global-set-key [(meta f3)] 'highlight-symbol-prev)
 
 (add-to-list 'load-path 
-	     "~/.emacs.d/color-theme")
+             "~/.emacs.d/color-theme")
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
@@ -165,17 +188,37 @@
 ;;(load-file “~/.emacs.d/themes/zenburn-theme.el”)
 (load-file "~/.emacs.d/themes/color-theme-molokai.el")
 (load-file "~/.emacs.d/themes/color-theme-blackboard.el")
-(color-theme-molokai)
 ;;(Color-theme-blackboard)
 ;;(color-theme-gnome2)
 ;;(color-theme-zenburn)
+(color-theme-molokai)
+
 
 ;;dash
 (add-to-list 'load-path
              "~/.emacs.d/plugins/dash-at-point")
 (autoload 'dash-at-point "dash-at-point"
   "Search the word at point with Dash." t nil)
-(global-set-key "\C-cd" 'dash-at-point)
+(global-set-key (kbd "C-c C-d") 'dash-at-point)
+
+;; (defun set-frame-size-according-to-resolution ()
+;;   (interactive)
+;;   (if window-system
+;;       (progn
+;;         ;; use 180 char wide window for largeish displays
+;;         ;; and smaller 80 column windows for smaller displays
+;;         ;; pick whatever numbers make sense for you
+;;         (if (> (x-display-pixel-width) 1280)
+;;             (add-to-list 'default-frame-alist (cons 'width 180))
+;;           (add-to-list 'default-frame-alist (cons 'width 80)))
+;;         ;; for the height, subtract a couple hundred pixels
+;;         ;; from the screen height (for panels, menubars and
+;;         ;; whatnot), then divide by the height of a char to
+;;         ;; get the height we want
+;;         (add-to-list 'default-frame-alist
+;;                      (cons 'height (/ (- (x-display-pixel-height) 200) (frame-char-height)))))))
+
+;; (set-frame-size-according-to-resolution)
 
 ;;透明
 ;;(set-frame-parameter (selected-frame) 'alpha (list 95 95))
@@ -193,21 +236,21 @@
 (require 'fill-column-indicator)
 (fci-mode t)
 
-;;cedet
-(add-to-list 'load-path "~/.emacs.d/cedet-1.1/common")
-(require 'cedet)
-(require 'semantic-ia)
+;; ;;cedet
+;; (add-to-list 'load-path "~/.emacs.d/cedet-1.1/common")
+;; (require 'cedet)
+;; (require 'semantic-ia)
 
-;; Enable EDE (Project Management) features
-(global-ede-mode 1)
+;; ;; Enable EDE (Project Management) features
+;; (global-ede-mode 1)
 
-(semantic-load-enable-minimum-features)
-;;(semantic-load-enable-code-helpers)
-(semantic-load-enable-guady-code-helpers)
-(semantic-load-enable-excessive-code-helpers)
-(semantic-load-enable-semantic-debugging-helpers) 
-;; Enable SRecode (Template management) minor-mode.
-(global-srecode-minor-mode 1)
+;; (semantic-load-enable-minimum-features)
+;; ;;(semantic-load-enable-code-helpers)
+;; (semantic-load-enable-guady-code-helpers)
+;; (semantic-load-enable-excessive-code-helpers)
+;; (semantic-load-enable-semantic-debugging-helpers)
+;; ;; Enable SRecode (Template management) minor-mode.
+;; (global-srecode-minor-mode 1)
 
 ;;ruby-tools
 (add-to-list 'load-path
@@ -326,10 +369,10 @@
 
 
 ;;ecb
-(add-to-list 'load-path
-	     "~/.emacs.d/ecb-2.40/")
-(require 'ecb)
-(setq stack-trace-on-error nil)
+;;(add-to-list 'load-path
+;;   "~/.emacs.d/ecb-2.40/")
+;;(require 'ecb)
+;;(setq stack-trace-on-error nil)
 
 
 ;;autopari
