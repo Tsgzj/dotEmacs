@@ -64,7 +64,7 @@ noremap <M-a> <C-a>
 noremap <M-x> <C-x>
 set complete=shl
 set titlestring=Scarlet@Vimperator
-set defsearch=duckduckgo
+set defsearch=google
 
 " vim: set ft=vimperator:
 

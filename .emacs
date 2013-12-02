@@ -236,6 +236,10 @@
 (require 'fill-column-indicator)
 (fci-mode t)
 
+;;minimap
+(load-file "~/.emacs.d/plugins/minimap-1.0.el")
+(require 'minimap)
+
 ;; ;;cedet
 ;; (add-to-list 'load-path "~/.emacs.d/cedet-1.1/common")
 ;; (require 'cedet)

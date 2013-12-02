@@ -74,7 +74,11 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Sun/Program/C/"
  "/Users/Sun/"
+ "/Users/Sun/Documents/LaTeX/cv/"
+ "/Users/Sun/Documents/"
+ "/Users/Sun/Program/Ruby/"
  "/Users/Sun/Documents/LaTeX/bibtex_test/"
  "/Users/Sun/Blog/hexo/source/_posts/"
  "/Users/Sun/Desktop/"
@@ -87,8 +91,6 @@
  "/Users/Sun/Program/Lisp/"
  "/Users/Sun/Program/Euler/"
  "/Users/Sun/.emacs.d/plugins/"
- "/Users/Sun/Program/Ruby/"
- "/Users/Sun/Program/C/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/collections/"
  "/Users/Sun/Program/Python/"
  "/Volumes/LaCie/Movies/V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi/"
@@ -122,31 +124,37 @@
  "/Users/Sun/Desktop/lab12_Source/sip/"
  "/Users/Sun/Desktop/lab12_Source/son/"
  "/Users/Sun/Desktop/lab12_Source/common/"
- "/Users/Sun/Desktop/lab12_Source/topology/"
- "/Users/Sun/Desktop/lab11/common/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "quicksort.c"
  ".vimperatorrc"
+ "wjl.tex"
+ "cv_9.tex"
+ "with_best_regards,.html"
+ "test.html"
+ "chinese.c"
+ "2.rb"
+ "Sudoku.rb"
  "example.tex"
- "re-bottlenecks-that-evernote-encountered-in-china.md"
- "toukiden.html"
- ".emacs"
- "test.md"
- "markdown-mode.el"
- "webpage.sh"
- "weibo-authorize.el"
- "personal_statement.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21100 62057 0 0) "UserContent/" "tweetero/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "#toukiden.html#" "../" "./")
+ ("/Users/Sun/Program/C/" (21115 42676 0 0) "time.c" "Makefile" "chinese.c" "a.out" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
+
+ ("/Users/Sun/Program/" (21121 39496 0 0) "tiger/" "Sh/" "Ruby/" "Rails/" "Python/" "OS X/" "MLFTWP/" "Lisp/" "Js/" "Java/" "iOS/" "gittest/" "Euler/" "cvs/" "C/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/" (21132 35183 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+
+ ("/Users/Sun/Documents/LaTeX/cv/" (21129 35240 0 0) "wjl.tex" "wjl.pdf" "wjl.out" "wjl.log" "wjl.aux" "TeX Live 2012" "res.cls" "res copy.cls" "missfont.log" "cv_孙文翔.pdf" "cv_9.tex" "cv_9.out" "cv_9.log" "cv_9.aux" "cv_9 copy.tex" "cv_8.tex" "cv_8.pdf" "cv_8.out" "cv_8.log" "cv_8.dvi" "cv_8.aux" "cv_6.tex" "cv_6.pdf" "cv_6.log" "cv_6.aux" "cv_2.tex" "cv_2.pdf" "cv_2.log" "   .tex" "../" "./")
+
+ ("/Users/Sun/Documents/" (21129 38861 0 0) "陈琦《GRE核心词汇考法精细》（再要你命3000）破解合成打印版.pdf" "潜在语义标引.pdf" "毕业生生源.xls" "尽管去做——无压工作的艺术.pdf" "奥华子.m3u" "冰与火之歌/" "再要你命3000.pdf" "二日游.pdf" "workspace/" "with_best_regards,.md" "with_best_regards,.html" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "v.txt" "User Manual.pdf" "Tig/" "Stephen,King - Under the Dome.epub" "Soft.ofocus-theme" "ruby-style-guide-master/" "RSS.ppt" "RSS-1.ppt" "RoR/" "PS Vita/" "paper-reading.pdf" "OrgTutorial.en-cn.html" "OmniOutliner/" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "my_code.cbxml" "My Snippets.textexpander" "My Collection.bib" "Monokai.alfredappearance" "Money.money/" "luhn58.pdf" "Library.papers3/" "LaTeX/" "iOS 7 Design Resources 苹果官方文档/" "imsg.scpt" "icons-1-0-1.eps" "happy birthday.scpt" "favicon/" "eBooks/" "Course/" "Compiler_Slides/" "Calibre Library/" "Buick's_CV_zh_CN.pdf" "Buick's_CV_en_US.pdf" "Breaking Bad.S01E01.chs&eng.ass" "Bibtex/" "all_stack_overflow/" "Aiseesoft Studio/" "AI/" "3班青共校.xls" "10cs_3班_非本专业考研情况统计.xlsx" "10cs_3班_毕业生生源信息修改.xls" "10cs_3班_十一离校情况统计.xls" "10cs_3班_中秋离校信息.xls" "10cs3_工作统计.xls" "1:149/" ".localized" ".DS_Store" ".#v.txt" "../" "./")
+
+ ("/Users/Sun/Program/Ruby/" (21115 18470 0 0) "Sudoku.rb" "mdfind4.rb" "1.rb" ".git/" ".DS_Store" ".#2.rb" "#2.rb#" "#1.rb#" "../" "./")
 
  ("/Users/Sun/Documents/LaTeX/bibtex_test/" (21085 2715 0 0) "test.bib" "Master.bib" "example.tex" "example.ps" "example.pdf" "example.log" "example.dvi" "example.blg" "example.bbl" "example.aux" "../" "./")
-
- ("/Users/Sun/Documents/" (21098 28829 0 0) "陈琦《GRE核心词汇考法精细》（再要你命3000）破解合成打印版.pdf" "毕业生生源.xls" "尽管去做——无压工作的艺术.pdf" "奥华子.m3u" "冰与火之歌/" "再要你命3000.pdf" "二日游.pdf" "workspace/" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "vedett-despicableme2-720p.chs.srt" "v.txt" "User Manual.pdf" "Tig/" "test.md" "Stephen,King - Under the Dome.epub" "Soft.ofocus-theme" "ruby-style-guide-master/" "RSS.ppt" "RoR/" "PS Vita/" "paper-reading.pdf" "OrgTutorial.en-cn.html" "OmniOutliner/" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "my_code.cbxml" "My Videos/" "My Snippets.textexpander" "My Pictures/" "My Documents/" "My Collection.bib" "Monokai.alfredappearance" "Money.money/" "luhn58.pdf" "Library.papers3/" "LaTeX/" "iOS 7 Design Resources 苹果官方文档/" "imsg.scpt" "icons-1-0-1.eps" "iBT新托福镇魂单词题（词汇题）全集（EXCEL版）1.0版.xls" "happy birthday.scpt" "GRE_Argument终极提纲.epub" "favicon/" "eBooks/" "Course/" "Compiler_Slides/" "Calibre Library/" "Buick's_CV_zh_CN.pdf" "Buick's_CV_en_US.pdf" "Breaking Bad.S01E01.chs&eng.ass" "Bibtex/" "all_stack_overflow/" "Aiseesoft Studio/" "AI/" "a586723f-07a4-4d1a-b703-162caa9cad1f.srt" "3班青共校.xls" "10cs_3班_毕业生生源信息修改.xls" "10cs_3班_十一离校情况统计.xls" "10cs_3班_中秋离校信息.xls" "10cs3_工作统计.xls" ".localized" ".DS_Store" ".#v.txt" "../" "./")
 
  ("/Users/Sun/Blog/hexo/source/_posts/" (21075 24576 0 0) "tiger_language_reference_manual_3.md" "tiger_language_reference_manual_2.md" "tiger_language_reference_manual_1.md" "talk_about_headset.md" "something-about-favicon.md" "re-bottlenecks-that-evernote-encountered-in-china.md" "nowplaying-for-ituns.md" "ml-yacc.md" "ml-lex_tutorial.md" "lol.md" "introduce_slate.md" "hello-world.md" "customize-hexo.md" "compiler_lab_01.md" "calendar-apps-for-mac.md" "../" "./")
 
@@ -178,15 +186,9 @@
 
  ("/etc/" (21055 9086 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sudoers" "sshd_config~orig" "sshd_config" "ssh_host_rsa_key.pub" "ssh_host_rsa_key" "ssh_host_key.pub" "ssh_host_key" "ssh_host_dsa_key.pub" "ssh_host_dsa_key" "ssh_config~orig" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolver/" "resolv.conf" "RemoteManagement.launchd" "rc.netboot" "rc.imaging" "rc.common" "raddb/" "racoon/" "protocols" "profile" "ppp/" "postfix/" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd" "pam.d/" "opt/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "named.conf" "moduli" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab~orig" "krb5.keytab" "kern_loader.conf" "irbrc" "ip6addrctl.conf" "hosts~orig" "hosts.equiv" "hosts" "hostconfig" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "CiscoSystemsVPNClient/" "bind.keys" "bashrc" "autofs.conf" "auto_master" "auto_home" "authorization" "asl.conf" "apache2/" "aliases.db" "aliases" "afpovertcp.cfg" "../" "./")
 
- ("/Users/Sun/Program/" (21054 24517 0 0) "twit/" "tiger/" "test/" "simple_app/" "ShortURL/" "Sh/" "Ruby/" "Python/" "NowPlaying/" "MLFTWP/" "Lisp/" "knowledge/" "Js/" "Java/" "gittest/" "Euler/" "Emoticon/" "C/" "blog/" ".DS_Store" "../" "./")
-
  ("/Users/Sun/Program/Euler/" (21053 40992 0 0) "qr_97941ApD.out" "qr_97941ApD.c" "qr_97656QoD.rb" "qr_97656q8P" "qr_97656dyJ.out" "qr_97656dyJ.c" "qr_96270UPc.rb" "qr_96270twJ.rb" "qr_96270hZi.rb" "qr_96270HFW.rb" "qr_96270gmD.rb" "qr_9627066P.rb" "17.rb" "16.rb" "15.rb" "14.rb" "11.rb" "10.rb" "09.c" "07.c" "06.c" "04.c" "03.c" "02.c" "01.c" ".git/" ".DS_Store" "#14.rb#" "../" "./")
 
- ("/Users/Sun/Program/Ruby/" (21053 40057 0 0) "mdfind4.rb" "1.rb" ".git/" "#1.rb#" "../" "./")
-
  ("/Users/Sun/.emacs.d/plugins/" (21053 5073 0 0) "test.c.BAK" "test-case-mode.el" "quickrun.el" "python.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "fill-column-indicator.el" "dash-at-point.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/C/" (21053 6330 0 0) "time.c" "Makefile" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
 
  ("/Users/Sun/Program/Lisp/" (21052 10887 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "#new.lisp#" "../" "./")
 
@@ -340,8 +342,6 @@
  ("/Users/Sun/Desktop/lab11/server/" (20930 60045 0 0) "stress_server" "stcp_server.o" "stcp_server.h" "stcp_server.c" "app_stress_server.o" "app_stress_server.c" "app_simple_server.o" "app_simple_server.c" ".DS_Store" ".#app_simple_server.c" "#app_simple_server.c#" "../" "./")
 
  ("/Users/Sun/Desktop/lab12/topology/" (20930 59833 0 0) "topology.h" "topology.dat" "topology.c" ".#topology.c" "#topology.c#" "../" "./")
-
- ("/Users/Sun/Desktop/lab11/client/" (20930 59498 0 0) "stress_client" "stcp_client.o" "stcp_client.h" "stcp_client.c" "simple_client" "sendthis.txt" "app_stress_client.o" "app_stress_client.c" "app_simple_client.o" "app_simple_client.c" ".DS_Store" ".#app_simple_client.c" "#app_simple_client.c#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

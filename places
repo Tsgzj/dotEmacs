@@ -1,5 +1,8 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/Sun/.emacs.d/.emacs" . 4912)
+(("/Users/Sun/.emacs.d/.emacs" . 7499)
+ ("/Users/Sun/Program/C/quicksort.c" . 533)
+ ("/Users/Sun/Program/Ruby/Sudoku.rb" . 5118)
+ ("/Users/Sun/Program/C/chinese.c" . 485)
  ("/Users/Sun/.emacs.d/plugins/markdown-mode/markdown-mode.el" . 78240)
  ("/Users/Sun/.emacs.d/weibo/weibo-authorize.el" . 2703)
  ("/Users/Sun/.emacs.d/weibo/weibo.el" . 1773)

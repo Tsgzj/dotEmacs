@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- markdown-mode
+ package-install
+ compile
+ c-mode
+ ruby-mode
+ comment-region
  html-mode
  mouse-set-point
- quickrun
- mail
- global-set-key
- eshell
 )
 
 ;; ----- smex-data -----
@@ -15,11 +15,11 @@
  (shell . 11)
  (slime . 46)
  (eshell . 12)
- (c-mode . 32)
+ (c-mode . 33)
  (auto-complete-mode . 51)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
- (package-install . 8)
+ (package-install . 11)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -40,7 +40,7 @@
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
- (ruby-mode . 13)
+ (ruby-mode . 14)
  (org-mode . 2)
  (outline-mode . 6)
  (outline-minor-mode . 4)
@@ -68,7 +68,7 @@
  (html-mode . 7)
  (js2-mode . 1)
  (speedbar . 1)
- (comment-region . 28)
+ (comment-region . 29)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -99,7 +99,7 @@
  (server-start . 2)
  (server-mode . 1)
  (flymake-mode . 5)
- (compile . 5)
+ (compile . 6)
  (toggle-frame-fullscreen . 2)
  (quickrun . 13)
  (quickrun-region . 1)
