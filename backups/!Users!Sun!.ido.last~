@@ -2,6 +2,10 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Sun/thesis/RSS_reader/app/views/" . "layouts/")
+ ("/Users/Sun/thesis/RSS_reader/app/" . "controllers/")
+ ("/Users/Sun/thesis/RSS_reader/" . "app/")
+ ("/Users/Sun/thesis/" . "RSS_reader/")
  ("/Users/Sun/.emacs.d/plugins/" . "markdown-mode/")
  ("/Volumes/" . "KINGSTON/")
  ("/Applications/" . "develop/")
@@ -75,6 +79,8 @@
 ;; ----- ido-work-directory-list -----
 (
  "/Users/Sun/"
+ "/Users/Sun/thesis/RSS_reader/app/views/layouts/"
+ "/Users/Sun/thesis/RSS_reader/app/controllers/"
  "/Users/Sun/Program/C/"
  "/Users/Sun/Documents/LaTeX/cv/"
  "/Users/Sun/Documents/"
@@ -122,13 +128,13 @@
  "/Users/Sun/Dropbox/QQAtachment/lab14/server/"
  "/Users/Sun/Dropbox/QQAtachment/lab13/sip/"
  "/Users/Sun/Desktop/lab12_Source/sip/"
- "/Users/Sun/Desktop/lab12_Source/son/"
- "/Users/Sun/Desktop/lab12_Source/common/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
+ "application.html.erb"
+ "application_controller.rb"
  "quicksort.c"
  ".vimperatorrc"
  "wjl.tex"
@@ -136,13 +142,23 @@
  "with_best_regards,.html"
  "test.html"
  "chinese.c"
- "2.rb"
- "Sudoku.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21136 8883 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+ ("/Users/Sun/" (21161 6545 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "thesis/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".pip/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+
+ ("/Users/Sun/thesis/RSS_reader/app/views/layouts/" (21161 3664 0 0) "application.html.erb" "../" "./")
+
+ ("/Users/Sun/thesis/RSS_reader/app/views/" (21161 3664 0 0) "layouts/" "../" "./")
+
+ ("/Users/Sun/thesis/RSS_reader/app/controllers/" (21161 3958 0 0) "concerns/" "application_controller.rb" ".#application_controller.rb" "../" "./")
+
+ ("/Users/Sun/thesis/RSS_reader/app/" (21161 3664 0 0) "views/" "models/" "mailers/" "helpers/" "controllers/" "assets/" "../" "./")
+
+ ("/Users/Sun/thesis/RSS_reader/" (21161 3889 0 0) "vendor/" "tmp/" "test/" "README.rdoc" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "db/" "config.ru" "config/" "bin/" "app/" ".idea/" ".gitignore" "../" "./")
+
+ ("/Users/Sun/thesis/" (21161 3641 0 0) "RSS_reader/" "laserchicken/" ".idea/" "../" "./")
 
  ("/Users/Sun/Program/C/" (21115 42676 0 0) "time.c" "Makefile" "chinese.c" "a.out" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
 
@@ -330,18 +346,6 @@
  ("/Users/Sun/Downloads/lab12/son/" (20930 61424 0 0) "son.h" "son.c" "neighbortable.h" "neighbortable.c" "../" "./")
 
  ("/Users/Sun/Downloads/lab12/sip/" (20781 30305 0 0) "sip.h" "sip.c" "../" "./")
-
- ("//Users/Sun/Downloads/lab12/topology/" (20930 59158 0 0) "topology.h" "topology.dat" "topology.c" ".#topology.c" "#topology.c#" "../" "./")
-
- ("//Users/Sun/Downloads/lab12/" (20780 29796 0 0) "topology/" "son/" "sip/" "README" "Makefile" "common/" "../" "./")
-
- ("//Users/Sun/Downloads/" (20930 59269 0 0) "毛概论文.doc" "ZypKimP7.gz.part" "ZiJingBT.神探伽利略2.Galileo.Ep10.Chi_Jap.HDTVrip.704X396-YYeTs人人影视.rmvb.torrent" "ZiJingBT.King.of.Thorn.2010.720p.BluRay.x264.DTS-WiKi.mkv.torrent" "ZiJingBT.[neubt]少女病无损合集.torrent" "Shrek_一个动态面向对象程序设计语言.pdf" "lab12source.tar.gz" "lab12/" "95b7fb422e5df0683af86beb6a218484a97fe4be.torrent" ".localized" ".DS_Store" "../" "./")
-
- ("//Users/Sun/" (20930 19216 0 0) "weka.log" "UserContent/" "top10.xml" "top1.html" "tmux-powerline/" "test.c" "test/" "Sites/" "SimpleCLI.props" "RubymineProjects/" "Public/" "Program/" "Pictures/" "org/" "opt/" "News/" "ndk/" "my_blood_pressure.db" "Music/" "Movies/" "macruby_example.yml" "Library/" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "AndroidStudioProjects/" "a.out" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".marboo/" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".android/" "../" "./")
-
- ("/Users/Sun/Desktop/lab11/server/" (20930 60045 0 0) "stress_server" "stcp_server.o" "stcp_server.h" "stcp_server.c" "app_stress_server.o" "app_stress_server.c" "app_simple_server.o" "app_simple_server.c" ".DS_Store" ".#app_simple_server.c" "#app_simple_server.c#" "../" "./")
-
- ("/Users/Sun/Desktop/lab12/topology/" (20930 59833 0 0) "topology.h" "topology.dat" "topology.c" ".#topology.c" "#topology.c#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

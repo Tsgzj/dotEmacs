@@ -261,6 +261,10 @@
              "~/.emacs.d/elpa/ruby-tools-20121008.1851")
 (require 'ruby-tools)
 
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/rinari")
+(require 'rinari)
+
 ;;tabbar
 ;; (add-to-list 'load-path
 ;;              "~/.emacs.d/elpa/tabbar-20110824.1439")

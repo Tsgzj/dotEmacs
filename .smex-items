@@ -19,7 +19,7 @@
  (auto-complete-mode . 51)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
- (package-install . 13)
+ (package-install . 14)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
