@@ -74,8 +74,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Program/C/"
  "/Users/Sun/"
+ "/Users/Sun/Program/C/"
  "/Users/Sun/Documents/LaTeX/cv/"
  "/Users/Sun/Documents/"
  "/Users/Sun/Program/Ruby/"
@@ -128,6 +128,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".emacs"
  "quicksort.c"
  ".vimperatorrc"
  "wjl.tex"
@@ -137,16 +138,15 @@
  "chinese.c"
  "2.rb"
  "Sudoku.rb"
- "example.tex"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Sun/" (21136 8883 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+
  ("/Users/Sun/Program/C/" (21115 42676 0 0) "time.c" "Makefile" "chinese.c" "a.out" ".git/" ".DS_Store" "#time.c#" "#test.c#" "#a.c#" "../" "./")
 
  ("/Users/Sun/Program/" (21121 39496 0 0) "tiger/" "Sh/" "Ruby/" "Rails/" "Python/" "OS X/" "MLFTWP/" "Lisp/" "Js/" "Java/" "iOS/" "gittest/" "Euler/" "cvs/" "C/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/" (21132 35183 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mime.types" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".heroku/" ".gradle/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".autojump/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
 
  ("/Users/Sun/Documents/LaTeX/cv/" (21129 35240 0 0) "wjl.tex" "wjl.pdf" "wjl.out" "wjl.log" "wjl.aux" "TeX Live 2012" "res.cls" "res copy.cls" "missfont.log" "cv_孙文翔.pdf" "cv_9.tex" "cv_9.out" "cv_9.log" "cv_9.aux" "cv_9 copy.tex" "cv_8.tex" "cv_8.pdf" "cv_8.out" "cv_8.log" "cv_8.dvi" "cv_8.aux" "cv_6.tex" "cv_6.pdf" "cv_6.log" "cv_6.aux" "cv_2.tex" "cv_2.pdf" "cv_2.log" "   .tex" "../" "./")
 

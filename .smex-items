@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  package-install
+ dash-at-point
  compile
  c-mode
  ruby-mode
  comment-region
  html-mode
- mouse-set-point
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (auto-complete-mode . 51)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
- (package-install . 11)
+ (package-install . 13)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -84,7 +84,7 @@
  (global-blank-mode . 2)
  (highlight-indentation-current-column-mode . 1)
  (open-line . 1)
- (dash-at-point . 5)
+ (dash-at-point . 6)
  (list-packages . 1)
  (tabbar-mode . 1)
  (replace-regexp . 11)
