@@ -26,7 +26,10 @@
 (modify-coding-system-alist 'process "*" 'utf-8)
 
 ;;将所有的~文件放在.backup文件夹里面
-(setq backup-directory-alist (quote (("." . "~/.backups"))))
+(setq backup-directory-alist
+      `((".*" . , "~/.backups")))
+(setq auto-save-file-name-transforms
+      `((".*" , "~/.backups")))
 (setq mac-option-modifier 'meta)
 (setq default-major-mode 'text-mode)
 
@@ -42,7 +45,7 @@
 
 ;;(iswitchb-mode 1)
 (setq default-frame-alist
-'((top . 0)(left . 0)(width . 108)(height . 49)))
+'((top . 0)(left . 0)(width . 108)(height . 54)))
 ;;(setq default-frame-alist
 ;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0)))
 ;;(setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
@@ -165,6 +168,27 @@
   )
 (global-set-key "\C-cm" 'markdown-preview-file)
 
+;;web-mode
+(load-file "~/.emacs.d/plugins/web-mode.el")
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(setq web-mode-extra-auto-pairs '(("erb" . (("open" "close"))) ("php" . (("open" "close") ("open" "close"))) ))
+
+;;haml-mode
+(load-file "~/.emacs.d/plugins/haml-mode.el")
+(require 'haml-mode)
+(add-hook 'haml-mode-hook
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
+
 ;;(global-set-key [(control f3)] 'highlight-symbol-at-point)
 ;;global-set-key [f3] 'highlight-symbol-next)
 ;;(global-set-key [(shift f3)] 'highlight-symbol-prev)
@@ -264,6 +288,11 @@
 (add-to-list 'load-path
              "~/.emacs.d/plugins/rinari")
 (require 'rinari)
+
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/rvm.el")
+(require 'rvm)
+(rvm-use-default)
 
 ;;tabbar
 ;; (add-to-list 'load-path
@@ -623,11 +652,11 @@ static char * arrow_right[] = {
                                      (propertize " " 'display arrow-right-2)))
                      '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
                                      (propertize " " 'display arrow-right-3)))
-                     
+
                      ;; Justify right by filling with spaces to right fringe - 16
                      ;; (16 should be computed rahter than hardcoded)
                      '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
-                     
+
                      '(:eval (concat (propertize " " 'display arrow-left-3)
                                      (propertize " %p " 'face 'mode-line-color-3)))
                      '(:eval (concat (propertize " " 'display arrow-left-2)
@@ -720,11 +749,13 @@ static char * arrow_right[] = {
 ;; 在新建一个org文件时，自动插入`auto-insert-directory'目录下的`org-auto-insert`文件中的内容
 (setq auto-insert-query nil) 
 (define-auto-insert "\\.org" "org-auto-insert")
-(define-auto-insert "\\.c" "c.auto")
 (define-auto-insert "\\.cpp" "cpp.auto")
 (define-auto-insert "\\.lisp" "cl.auto")
 (define-auto-insert "\\.sml" "ml.auto")
 (define-auto-insert "\\.rb" "ruby.auto")
+(define-auto-insert "\\.erb" "erb.auto")
+(define-auto-insert "\\.c" "c.auto")
+
 
 (defadvice auto-insert  (around yasnippet-expand-after-auto-insert activate)
   "expand auto-inserted content as yasnippet templete,

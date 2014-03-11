@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- package-install
- dash-at-point
- compile
- c-mode
- ruby-mode
- comment-region
+ web-mode
  html-mode
+ auto-complete-mode
+ uncomment-region
+ comment-region
+ highlight-regexp
+ replace-regexp
 )
 
 ;; ----- smex-data -----
 (
  (shell . 11)
- (slime . 46)
- (eshell . 12)
- (c-mode . 33)
- (auto-complete-mode . 51)
+ (slime . 47)
+ (eshell . 14)
+ (c-mode . 34)
+ (auto-complete-mode . 53)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
  (package-install . 14)
@@ -35,13 +35,13 @@
  (sldb-cycle . 2)
  (slime-toggle-debug-on-swank-error . 1)
  (python-mode . 8)
- (markdown-mode . 14)
+ (markdown-mode . 15)
  (ecb-activate . 9)
  (window-number-mode . 1)
  (test-case-mode . 5)
  (test-case-run . 1)
- (ruby-mode . 14)
- (org-mode . 2)
+ (ruby-mode . 15)
+ (org-mode . 3)
  (outline-mode . 6)
  (outline-minor-mode . 4)
  (allout-mode . 4)
@@ -61,14 +61,14 @@
  (eval-region . 1)
  (indent-region . 56)
  (mac-mouse-turn-on-fullscreen . 1)
- (uncomment-region . 23)
+ (uncomment-region . 25)
  (css-mode . 6)
  (cedet-java-describe . 1)
  (javascript-mode . 4)
- (html-mode . 7)
+ (html-mode . 9)
  (js2-mode . 1)
  (speedbar . 1)
- (comment-region . 29)
+ (comment-region . 33)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -87,7 +87,7 @@
  (dash-at-point . 6)
  (list-packages . 1)
  (tabbar-mode . 1)
- (replace-regexp . 11)
+ (replace-regexp . 28)
  (auto-indent-mode . 4)
  (ecb-deactivate . 2)
  (clipboard-yank . 1)
@@ -107,4 +107,13 @@
  (global-set-key . 1)
  (mail . 1)
  (mouse-set-point . 1)
+ (rinari-launch . 2)
+ (rinari-web-server . 1)
+ (rvm-use-default . 1)
+ (rvm-use . 2)
+ (rvm-activate-corresponding-ruby . 1)
+ (term . 1)
+ (occur . 5)
+ (highlight-regexp . 1)
+ (web-mode . 2)
 )
