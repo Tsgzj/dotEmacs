@@ -45,7 +45,7 @@
 
 ;;(iswitchb-mode 1)
 (setq default-frame-alist
-'((top . 0)(left . 0)(width . 108)(height . 54)))
+'((top . 0)(left . 0)(width . 168)(height . 54)))
 ;;(setq default-frame-alist
 ;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0)))
 ;;(setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
@@ -207,6 +207,11 @@
 (require 'slime)
 (slime-setup '(slime-fancy))
 
+
+;;anything-config
+(add-to-list 'load-path
+             "~/.emacs.d/plugins/anything-config/")
+(require 'anything-config)
 
 ;;choose the color theme
 ;;(load-file “~/.emacs.d/themes/zenburn-theme.el”)

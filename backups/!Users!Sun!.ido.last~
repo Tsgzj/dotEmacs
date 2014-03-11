@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/" . "javascripts/")
+ ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/" . "public/")
  ("/Users/Sun/.emacs.d/auto-complete/" . "dict/")
  ("/Users/Sun/Program/sinatra/stringer/app/" . "controllers/")
  ("/Users/Sun/Program/sinatra/" . "Sinatra-Backbone-TodoApp/")
@@ -81,11 +83,13 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/views/"
  "/Users/Sun/"
+ "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/javascripts/"
  "/Users/Sun/Program/sinatra/thesis/"
- "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/"
+ "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/views/"
  "/Users/Sun/Program/sinatra/thesis/views/"
+ "/Users/Sun/Program/sinatra/"
+ "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/"
  "/Users/Sun/Program/sinatra/test/views/"
  "/Users/Sun/Program/sinatra/test/"
  "/Users/Sun/.emacs.d/auto-insert/"
@@ -129,39 +133,41 @@
  "/Users/Sun/Desktop/Tig/Report/"
  "/Users/Sun/Desktop/Tig/"
  "/Users/Sun/Desktop/ftp/Server/"
- "/Users/Sun/Desktop/ftp/Client/"
- "/Users/Sun/Downloads/cmm-compiler-master/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "index.haml"
  ".emacs"
- "model.rb"
- "FeedZirra.rb"
- "helpers.rb"
- "config.ru"
+ "backbone.js"
  "app.rb"
+ "date_format.js"
+ "template.haml"
+ "index.haml"
  "index.erb"
- "name.erb"
- "hi.rb"
+ "routes.rb"
+ "shorturl.rb"
+ "config.ru"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/javascripts/" (21278 32049 0 0) "underscore.js" "todo_task.js" "todo_app.js" "timeline.js" "mod_drag.js" "jquery_latest.js" "jquery_easing.js" "date_format.js" "backbone.js" "../" "./")
+
+ ("/Users/Sun/" (21278 31836 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/" (21273 52175 0 0) "stylesheets/" "javascripts/" "img/" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/views/" (21273 58061 0 0) "timeline.haml" "template.haml" "signup.haml" "login.haml" "layout.haml" "index.haml" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/views/" (21274 22924 0 0) "name.erb" "index.haml" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/" (21274 22898 0 0) "views/" "similarity.rb" "routes.rb" "public/" "model.rb" "helpers.rb" "Gemfile.lock" "Gemfile" "FeedZirra.rb" "app.rb" ".rvmrc" ".git/" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/" (21274 22535 0 0) "thesis/" "stringer/" "sinatra-book/" "Sinatra-Backbone-TodoApp/" "shorturl.rb" ".DS_Store" "../" "./")
+
  ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/" (21273 58015 0 0) "views/" "routes.rb" "README.md" "public/" "model.rb" "helpers.rb" "Gemfile.lock" "Gemfile" "config.ru" "app.rb" ".gitignore" ".git/" "../" "./")
 
- ("/Users/Sun/" (21273 58016 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
-
- ("/Users/Sun/Program/sinatra/" (21273 57717 0 0) "thesis/" "stringer/" "sinatra-book/" "Sinatra-Backbone-TodoApp/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/sinatra/thesis/" (21273 57763 0 0) "views/" "similarity.rb" "routes.rb" "public/" "model.rb" "Gemfile.lock" "Gemfile" "FeedZirra.rb" "app.rb" ".rvmrc" ".git/" ".#model.rb" ".#helpers.rb" ".#FeedZirra.rb" ".#app.rb" "../" "./")
-
  ("/Users/Sun/Program/sinatra/stringer/" (21261 21317 0 0) "VPS.md" "spec/" "screenshots/" "README.md" "Rakefile" "Procfile" "OpenShift.md" "LICENSE" "Gemfile.lock" "Gemfile" "fever_api.rb" "db/" "config.ru" "config/" "app.rb" "app/" ".travis.yml" ".rspec" ".gitignore" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/sinatra/thesis/views/" (21269 15462 0 0) "name.erb" "index.erb" "../" "./")
-
- ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/views/" (21273 52175 0 0) "timeline.haml" "template.haml" "signup.haml" "login.haml" "layout.haml" "index.haml" "../" "./")
 
  ("/Users/Sun/Program/sinatra/test/" (21265 19496 0 0) "views/" "tf-idf.rb" "tf-idf-simi.rb" "similarity.rb" "public/" "hi.rb" "Gemfile.lock" "Gemfile" "fix-ruby.patch" "FeedZirra.rb" "feed-simi.rb" "../" "./")
 
@@ -344,10 +350,6 @@
  ("/Users/Sun/Desktop/tiger-master/include/" (20938 38400 0 0) "util.h" "types.h" "tree.h" "translate.h" "tokens.h" "temp.h" "table.h" "symbol.h" "semant.h" "regalloc.h" "printtree.h" "prabsyn.h" "parse.h" "liveness.h" "graph.h" "frame.h" "flowgraph.h" "escape.h" "errormsg.h" "env.h" "color.h" "codegen.h" "canon.h" "assem.h" "absyn.h" "../" "./")
 
  ("/Users/Sun/Desktop/tiger/src/" (20938 40785 0 0) "y.output" "util.c" "tiger.output" "tiger.lex" "tiger.grm" "table.c" "symbol.c" "prabsyn.c" "parsetest.c" "parse.c" "lex.yy.c" "errormsg.c" "absyn.c" "../" "./")
-
- ("/Users/Sun/Desktop/tiger_source/chap3/" (13324 49224 0 0) "y.output" "util.h" "util.c" "tiger.grm" "parsetest.c" "makefile" "lex.yy.c" "errormsg.h" "errormsg.c" "../" "./")
-
- ("/Users/Sun/Desktop/tiger_source/chap4/" (13373 31538 0 0) "tiger.grm" "table.h" "table.c" "symbol.h" "symbol.c" "prabsyn.h" "prabsyn.c" "parse.h" "parse.c" "makefile" "lex.yy.c" "absyn.h" "absyn.c" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

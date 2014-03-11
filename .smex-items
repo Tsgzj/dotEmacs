@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ follow-mode
+ anything
+ package-install
+ js2-mode
  web-mode
  html-mode
  auto-complete-mode
- uncomment-region
- comment-region
- highlight-regexp
- replace-regexp
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (auto-complete-mode . 53)
  (ac-complete-yasnippet . 4)
  (auto-complete . 3)
- (package-install . 14)
+ (package-install . 16)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -66,7 +66,7 @@
  (cedet-java-describe . 1)
  (javascript-mode . 4)
  (html-mode . 9)
- (js2-mode . 1)
+ (js2-mode . 2)
  (speedbar . 1)
  (comment-region . 33)
  (whitespace-mode . 23)
@@ -116,4 +116,6 @@
  (occur . 5)
  (highlight-regexp . 1)
  (web-mode . 2)
+ (anything . 2)
+ (follow-mode . 3)
 )
