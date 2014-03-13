@@ -223,11 +223,10 @@
 ;;(load-file “~/.emacs.d/themes/zenburn-theme.el”)
 (load-file "~/.emacs.d/themes/color-theme-molokai.el")
 (load-file "~/.emacs.d/themes/color-theme-blackboard.el")
-;;(Color-theme-blackboard)
+;;(color-theme-blackboard)
 ;;(color-theme-gnome2)
 ;;(color-theme-zenburn)
 (color-theme-molokai)
-
 
 ;;dash
 (add-to-list 'load-path

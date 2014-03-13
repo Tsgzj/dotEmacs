@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ color-theme-molokai
+ markdown-follow-wiki-link-at-point
+ color-theme-blackboard
  cua-mode
  LaTeX-mode
  eshell
  follow-mode
- indent-region
- comment-region
- uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -123,4 +123,7 @@
  (dframe-close-frame . 1)
  (slim-mode . 1)
  (LaTeX-mode . 1)
+ (color-theme-blackboard . 1)
+ (markdown-follow-wiki-link-at-point . 1)
+ (color-theme-molokai . 1)
 )
