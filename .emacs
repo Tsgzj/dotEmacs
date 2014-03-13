@@ -180,6 +180,10 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (setq web-mode-extra-auto-pairs '(("erb" . (("open" "close"))) ("php" . (("open" "close") ("open" "close"))) ))
 
+;;slim-mode
+(load-file "~/.emacs.d/plugins/slim-mode.el")
+(require 'slim-mode)
+
 ;;haml-mode
 (load-file "~/.emacs.d/plugins/haml-mode.el")
 (require 'haml-mode)
@@ -201,6 +205,8 @@
   '(progn
      (color-theme-initialize)))
 
+
+;;slime
 (add-to-list 'load-path
              "~/.emacs.d/slime-2013-02-05/")
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
@@ -412,7 +418,7 @@
 
 ;;ecb
 ;;(add-to-list 'load-path
-;;   "~/.emacs.d/ecb-2.40/")
+;;    "~/.emacs.d/ecb-2.40/")
 ;;(require 'ecb)
 ;;(setq stack-trace-on-error nil)
 
@@ -527,9 +533,6 @@
       '(("dvips and PDF Viewer" "%(o?)dvips %d -o && open %f")
         ("PDF Viewer" "open %o")
         ("Safari" "open %o")))
-
-
-
 
 
 ;;powerline配置
@@ -657,11 +660,11 @@ static char * arrow_right[] = {
                                      (propertize " " 'display arrow-right-2)))
                      '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
                                      (propertize " " 'display arrow-right-3)))
-
+                     
                      ;; Justify right by filling with spaces to right fringe - 16
                      ;; (16 should be computed rahter than hardcoded)
                      '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
-
+                     
                      '(:eval (concat (propertize " " 'display arrow-left-3)
                                      (propertize " %p " 'face 'mode-line-color-3)))
                      '(:eval (concat (propertize " " 'display arrow-left-2)

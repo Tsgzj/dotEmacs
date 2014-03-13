@@ -1,25 +1,25 @@
 
 ;; ----- smex-history -----
 (
+ cua-mode
+ LaTeX-mode
+ eshell
  follow-mode
- anything
- package-install
- js2-mode
- web-mode
- html-mode
- auto-complete-mode
+ indent-region
+ comment-region
+ uncomment-region
 )
 
 ;; ----- smex-data -----
 (
- (shell . 11)
+ (shell . 12)
  (slime . 47)
- (eshell . 14)
+ (eshell . 16)
  (c-mode . 34)
  (auto-complete-mode . 53)
- (ac-complete-yasnippet . 4)
+ (ac-complete-yasnippet . 5)
  (auto-complete . 3)
- (package-install . 16)
+ (package-install . 17)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -29,7 +29,7 @@
  (eval-buffer . 16)
  (weibo-timeline . 5)
  (weibo-timeline-mode . 3)
- (cua-mode . 13)
+ (cua-mode . 17)
  (linum-mode . 12)
  (slime-mode . 1)
  (sldb-cycle . 2)
@@ -59,16 +59,16 @@
  (Electric-command-history-redo-expression . 1)
  (c++-mode . 4)
  (eval-region . 1)
- (indent-region . 56)
+ (indent-region . 58)
  (mac-mouse-turn-on-fullscreen . 1)
- (uncomment-region . 25)
+ (uncomment-region . 28)
  (css-mode . 6)
  (cedet-java-describe . 1)
  (javascript-mode . 4)
  (html-mode . 9)
  (js2-mode . 2)
- (speedbar . 1)
- (comment-region . 33)
+ (speedbar . 2)
+ (comment-region . 39)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -111,11 +111,16 @@
  (rinari-web-server . 1)
  (rvm-use-default . 1)
  (rvm-use . 2)
- (rvm-activate-corresponding-ruby . 1)
+ (rvm-activate-corresponding-ruby . 2)
  (term . 1)
  (occur . 5)
  (highlight-regexp . 1)
  (web-mode . 2)
- (anything . 2)
- (follow-mode . 3)
+ (anything . 10)
+ (follow-mode . 4)
+ (magit-status . 3)
+ (cedet-version . 1)
+ (dframe-close-frame . 1)
+ (slim-mode . 1)
+ (LaTeX-mode . 1)
 )
