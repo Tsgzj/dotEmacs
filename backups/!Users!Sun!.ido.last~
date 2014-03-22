@@ -73,7 +73,7 @@
  ("/Users/Sun/Blog/hexo/themes/light/layout/" . "_partial/")
  ("/Users/Sun/Program/Ruby/rails/test3/app/views/" . "events/")
  ("/Users/Sun/Program/Ruby/rails/test3/app/" . "views/")
- ("/Users/Sun/.emacs.d/elpa/" . "window-number-20100803.1327/")
+ ("/Users/Sun/.emacs.d/elpa/" . "haskell-mode-13.7/")
  ("/Users/Sun/Program/" . "Lisp/")
  ("/Users/" . "Sun/")
  ("/" . "Users/")
@@ -85,10 +85,11 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/Users/Sun/Program/haskell/"
  "/Users/Sun/"
+ "/Users/Sun/.emacs.d/elpa/haskell-mode-13.7/"
  "/Users/Sun/Program/Lisp/"
  "/Users/Sun/Program/MLFTWP/"
- "/Users/Sun/Program/haskell/"
  "/Users/Sun/.emacs.d/haskell-mode/examples/"
  "/Users/Sun/Program/Ruby/"
  "/Users/Sun/Documents/Week2_Answer (copy)/"
@@ -134,32 +135,35 @@
  "/Volumes/LaCie/Movies/V.for.Vendetta.2005.BluRay.1080p.x264.DTS-WiKi/"
  "/Applications/develop/"
  "/"
- "/Users/Sun/.emacs.d/vender/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "test.hs"
  ".emacs"
+ "README"
  "test.scheme"
  "test.lisp"
  "test.sml"
- "test.hs"
  "init.el"
  "triangle.hs"
  "1.rb"
  "triangle.hhs"
- "code.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21293 22257 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "share/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "bin/" "backup/" "Applications/" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".weechat/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".node-gyp/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".fasd-init-bash" ".fasd" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".atom/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+ ("/Users/Sun/Program/haskell/" (21293 23636 0 0) "triangle.hs" "test.hs" ".git/" "../" "./")
+
+ ("/Users/Sun/" (21293 23637 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "share/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "bin/" "backup/" "Applications/" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".weechat/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".node-gyp/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".fasd-init-bash" ".fasd" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".atom/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (21293 23277 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".gitignore" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" ".#.emacs" "../" "./")
+
+ ("/Users/Sun/.emacs.d/elpa/haskell-mode-13.7/" (21293 23132 0 0) "README" "NEWS" "logo.svg" "inf-haskell.elc" "inf-haskell.el" "haskell-yas.elc" "haskell-yas.el" "haskell-unicode-input-method.elc" "haskell-unicode-input-method.el" "haskell-string.elc" "haskell-string.el" "haskell-sort-imports.elc" "haskell-sort-imports.el" "haskell-simple-indent.elc" "haskell-simple-indent.el" "haskell-show.elc" "haskell-show.el" "haskell-session.elc" "haskell-session.el" "haskell-process.elc" "haskell-process.el" "haskell-package.elc" "haskell-package.el" "haskell-navigate-imports.elc" "haskell-navigate-imports.el" "haskell-move-nested.elc" "haskell-move-nested.el" "haskell-mode.info" "haskell-mode.elc" "haskell-mode.el" "haskell-mode-pkg.elc" "haskell-mode-pkg.el" "haskell-mode-autoloads.el" "haskell-menu.elc" "haskell-menu.el" "haskell-interactive-mode.elc" "haskell-interactive-mode.el" "haskell-indentation.elc" "haskell-indentation.el" "haskell-indent.elc" "haskell-indent.el" "haskell-font-lock.elc" "haskell-font-lock.el" "haskell-doc.elc" "haskell-doc.el" "haskell-decl-scan.elc" "haskell-decl-scan.el" "haskell-compat.elc" "haskell-compat.el" "haskell-checkers.elc" "haskell-checkers.el" "haskell-cabal.elc" "haskell-cabal.el" "haskell-c.elc" "haskell-c.el" "haskell-align-imports.elc" "haskell-align-imports.el" "ghc-core.elc" "ghc-core.el" "dir" "../" "./")
+
+ ("/Users/Sun/.emacs.d/elpa/" (21293 23123 0 0) "window-number-readme.txt" "window-number/" "tabbar-ruler-readme.txt" "tabbar-ruler-20130501.1226/" "tabbar-readme.txt" "tabbar-20110824.1439/" "starter-kit-20121025.1511/" "sml-mode-readme.txt" "sml-mode-6.4/" "smex-20120915.2041/" "ruby-tools-readme.txt" "ruby-tools-20121008.1851/" "rsense-readme.txt" "popup-readme.txt" "popup-20130117.1954/" "paredit-20110508.1256/" "nlinum-1.1/" "magit-20130203.1332/" "ido-ubiquitous-20121214.2145/" "idle-highlight-mode-20120920.1848/" "helm-c-yasnippet-readme.txt" "haskell-mode-13.7/" "find-file-in-project-20120716.1655/" "archives/" ".DS_Store" "#window-number-readme.txt#" "../" "./")
 
  ("/Users/Sun/Program/Lisp/" (21202 39314 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (21293 21908 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".gitignore" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/haskell/" (21293 21661 0 0) "triangle.hs" "test.hs" ".git/" ".#test.hs" "../" "./")
 
  ("/Users/Sun/.emacs.d/haskell-mode/examples/" (21293 20990 0 0) "init.el~" "init.el" "../" "./")
 
@@ -348,10 +352,6 @@
  ("/Users/Sun/Desktop/ftp/Client/" (20950 42829 0 0) "Client.c" "Client" ".DS_Store" ".#Client.c" "#Client.c#" "../" "./")
 
  ("/Users/Sun/Desktop/ftp/Server/" (20950 42134 0 0) "Server.c" "Server" "file/" ".DS_Store" ".#Server.c" "#Server.c#" "../" "./")
-
- ("/Users/Sun/Desktop/ftp/" (20712 16038 0 0) "Server/" "Client/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Downloads/cmm-compiler-master/" (20950 16999 0 0) "var_table.o" "var_table.h" "var_table.c" "type.o" "type.c" "translate.o" "translate.h" "translate.c" "test_inter_code.c" "test7.cmm" "test6.cmm" "test5.cmm" "test4.cmm" "test3.cmm" "test2.cmm" "test1.s" "test1.cmm" "syntax_tree_node.h" "syntax_tree.o" "syntax_tree.c" "symbol_table.o" "symbol_table.h" "symbol_table.c" "semantic_analysis.o" "semantic_analysis.h" "semantic_analysis.c" "README" "Makefile" "main.o" "main.c" "lex.yy.c" "inter_code.o" "inter_code.h" "inter_code.c" "gen_code.o" "gen_code.h" "gen_code.c" "common.h" "cmmyacc.y" "cmmyacc.tab.o" "cmmyacc.tab.h" "cmmyacc.tab.c" "cmmyacc.output" "cmmlex.l" "cc" ".#syntax_tree.c" "#syntax_tree.c#" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

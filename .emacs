@@ -85,7 +85,8 @@
 
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;;代码风格
 (setq tab-width 4)
@@ -133,20 +134,29 @@
 (global-linum-mode t)
 
 ;;Haskell-mode
-(add-to-list 'load-path "~/.emacs.d/plugins/haskell-mode")
-(require 'haskell-mode-autoloads)
-(add-to-list 'Info-default-directory-list "~/lib/emacs/haskell-mode/")
+(defun haskell-style ()
+  "Sets the current buffer to use Haskell Style. Meant to be
+added to `haskell-mode-hook'"
+  (interactive)
+  (setq tab-width 4
+        haskell-indentation-layout-offset 4
+        haskell-indentation-left-offset 4
+        haskell-indentation-ifte-offset 4))
+
+(provide 'haskell-style)
 (add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
+
 (defun my-haskell-mode-hook ()
   (haskell-indentation-mode -1) ;; turn off, just to be sure
   (haskell-indent-mode 1)       ;; turn on indent-mode
-  (indent-tabs-mode nil)
+  (haskell-style)
   ;; further customisations go here.  For example:
   (setq locale-coding-system 'utf-8 )
   (flyspell-prog-mode)  ;; spell-checking in comments and strings
   ;; etc.      
-
+  
   )
+
 
 ;;(setq default-fill-column 60)
 
@@ -284,7 +294,7 @@
 ;;(add-to-list 'default-frame-alist (cons 'alpha (list 95 95)))
 
 ;;自动缩进
-;;(global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "RET") 'newline-and-indent)
 (load-file "~/.emacs.d/plugins/auto-indent-mode.el")
 ;;(setq auto-indent-on-visit-file t)
 (require 'auto-indent-mode)

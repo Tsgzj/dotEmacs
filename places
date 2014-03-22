@@ -1,6 +1,7 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/Sun/.emacs.d/.emacs" . 4349)
- ("/Users/Sun/Program/haskell/test.hs" . 65)
+(("/Users/Sun/.emacs.d/.emacs" . 3514)
+ ("/Users/Sun/Program/haskell/test.hs" . 20)
+ ("/Users/Sun/.emacs.d/elpa/haskell-mode-13.7/haskell-mode-autoloads.el" . 21480)
  ("/Users/Sun/Program/Lisp/test.scheme" . 44)
  ("/Users/Sun/Program/Lisp/test.lisp" . 2002)
  ("/Users/Sun/Program/MLFTWP/test.sml" . 3029)

@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ package-install
+ package-refresh-contents
  scheme-mode
  indent-region
  comment-region
  c-mode
  uncomment-region
- comment-box
- replace-regexp
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (auto-complete-mode . 54)
  (ac-complete-yasnippet . 5)
  (auto-complete . 3)
- (package-install . 17)
+ (package-install . 22)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -129,10 +129,11 @@
  (paredit-mode . 4)
  (route . 1)
  (haskell-mode . 1)
- (haskell-indent-mode . 7)
+ (haskell-indent-mode . 8)
  (auto-indent-minor-mode . 5)
  (haskell-indentation-mode . 3)
  (auto-indent-kill-line . 1)
  (turn-on-hi2 . 1)
  (turn-on-haskell-simple-indent . 1)
+ (package-refresh-contents . 1)
 )
