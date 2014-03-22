@@ -145,17 +145,13 @@ added to `haskell-mode-hook'"
 
 (provide 'haskell-style)
 (add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
-
 (defun my-haskell-mode-hook ()
   (haskell-indentation-mode -1) ;; turn off, just to be sure
-  (haskell-indent-mode 1)       ;; turn on indent-mode
   (haskell-style)
   ;; further customisations go here.  For example:
   (setq locale-coding-system 'utf-8 )
-  (flyspell-prog-mode)  ;; spell-checking in comments and strings
-  ;; etc.      
-  
-  )
+  ;; etc.
+)
 
 
 ;;(setq default-fill-column 60)

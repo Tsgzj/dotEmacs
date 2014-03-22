@@ -2,12 +2,12 @@
 ;; ----- smex-history -----
 (
  package-install
+ auto-indent-mode
+ haskell-indent-mode
  package-refresh-contents
  scheme-mode
  indent-region
  comment-region
- c-mode
- uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -19,7 +19,7 @@
  (auto-complete-mode . 54)
  (ac-complete-yasnippet . 5)
  (auto-complete . 3)
- (package-install . 22)
+ (package-install . 23)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
@@ -88,7 +88,7 @@
  (list-packages . 1)
  (tabbar-mode . 1)
  (replace-regexp . 28)
- (auto-indent-mode . 13)
+ (auto-indent-mode . 16)
  (ecb-deactivate . 2)
  (clipboard-yank . 1)
  (weibo-send-post . 1)
@@ -129,7 +129,7 @@
  (paredit-mode . 4)
  (route . 1)
  (haskell-mode . 1)
- (haskell-indent-mode . 8)
+ (haskell-indent-mode . 9)
  (auto-indent-minor-mode . 5)
  (haskell-indentation-mode . 3)
  (auto-indent-kill-line . 1)
