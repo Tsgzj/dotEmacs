@@ -2,12 +2,13 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/Sun/Program/sinatra/thesis/public/css/bootstrap/" . "css/")
  ("/Users/Sun/Program/sinatra/thesis/" . "public/")
  ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/" . "javascripts/")
  ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/" . "public/")
  ("/Users/Sun/.emacs.d/auto-complete/" . "dict/")
  ("/Users/Sun/Program/sinatra/stringer/app/" . "controllers/")
- ("/Users/Sun/Program/sinatra/" . "Sinatra-Backbone-TodoApp/")
+ ("/Users/Sun/Program/sinatra/" . "thesis/")
  ("/Users/Sun/thesis/RSS_reader/app/views/" . "layouts/")
  ("/Users/Sun/thesis/RSS_reader/app/" . "controllers/")
  ("/Users/Sun/thesis/RSS_reader/" . "app/")
@@ -65,7 +66,7 @@
  ("/Users/Sun/Desktop/" . "tiger-master/")
  ("/Users/Sun/Git/" . "cv/")
  ("/Users/Sun/Documents/LaTeX/" . "bibtex_test/")
- ("/Users/Sun/Documents/" . "LaTeX/")
+ ("/Users/Sun/Documents/" . "Week2_Answer (copy)/")
  ("/Users/Sun/Blog/hexo/source/" . "_posts/")
  ("/Users/Sun/Blog/hexo/" . "source/")
  ("/Users/Sun/.vimperator/" . "info/")
@@ -73,23 +74,33 @@
  ("/Users/Sun/Program/Ruby/rails/test3/app/views/" . "events/")
  ("/Users/Sun/Program/Ruby/rails/test3/app/" . "views/")
  ("/Users/Sun/.emacs.d/elpa/" . "window-number-20100803.1327/")
- ("/Users/Sun/Program/" . "sinatra/")
+ ("/Users/Sun/Program/" . "Lisp/")
  ("/Users/" . "Sun/")
  ("/" . "Users/")
  ("/Users/Sun/Downloads/cs_thesis_zju-master/" . "data/")
  ("/Users/Sun/Downloads/" . "NJUbachelor_2.3/")
- ("/Users/Sun/" . ".emacs.d/")
- ("/Users/Sun/.emacs.d/" . "yasnippet/")
+ ("/Users/Sun/" . "Documents/")
+ ("/Users/Sun/.emacs.d/" . "Auctex/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/Users/Sun/"
- "/Users/Sun/Downloads/"
- "/Users/Sun/Downloads/NJUbachelor_2.3/"
- "/Users/Sun/Documents/LaTeX/bibtex_test/"
- "/Users/Sun/Program/sinatra/thesis/"
+ "/Users/Sun/Program/Lisp/"
+ "/Users/Sun/Program/MLFTWP/"
+ "/Users/Sun/Program/haskell/"
+ "/Users/Sun/.emacs.d/haskell-mode/examples/"
+ "/Users/Sun/Program/Ruby/"
+ "/Users/Sun/Documents/Week2_Answer (copy)/"
  "/Users/Sun/Program/sinatra/thesis/views/"
+ "/Users/Sun/Program/sinatra/thesis/"
+ "/Users/Sun/Program/sinatra/thesis/test/"
+ "/Users/Sun/Program/sinatra/thesis/public/css/"
+ "/Users/Sun/Program/sinatra/thesis/public/css/bootstrap/css/"
+ "/Users/Sun/Downloads/NJUbachelor_2.3/"
+ "/Users/Sun/Documents/dissertation/"
+ "/Users/Sun/Downloads/"
+ "/Users/Sun/Documents/LaTeX/bibtex_test/"
  "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/control structure/"
  "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/javascripts/"
  "/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/views/"
@@ -101,8 +112,6 @@
  "/Users/Sun/Program/sinatra/test/public/"
  "/Users/Sun/Program/sinatra/stringer/app/controllers/"
  "/Users/Sun/Program/sinatra/stringer/"
- "/Users/Sun/Program/Ruby/"
- "/Users/Sun/Program/Lisp/"
  "/Users/Sun/Documents/LaTeX/"
  "/Users/Sun/Documents/LaTeX/cv/"
  "/Users/Sun/Program/iOS/SimpleWeather/"
@@ -126,53 +135,75 @@
  "/Applications/develop/"
  "/"
  "/Users/Sun/.emacs.d/vender/"
- "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/general/"
- "/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/definitions/"
- "/Users/Sun/Program/lua/"
- "/Users/Sun/Blog/hexo/themes/memoir/layout/_partial/"
- "/Users/Sun/Blog/hexo/themes/light/layout/_partial/"
- "/Users/Sun/Git/iTerm2/"
- "/Users/Sun/Program/Sh/"
- "/Users/Sun/Program/ML/Tig/C2/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  ".emacs"
- "test.tex"
- "graduate_thesis.bib"
- "graduation_thesis.bib"
- "example.tex"
- "fuckyou.c"
- "Misia.-.[Misia.Love.&amp;.Ballads.The.Best.Ballade.Collection].专辑.(APE).cue"
- "missfont.log"
- "test.rb"
- "feed.slim"
+ "test.scheme"
+ "test.lisp"
+ "test.sml"
+ "test.hs"
+ "init.el"
+ "triangle.hs"
+ "1.rb"
+ "triangle.hhs"
+ "code.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/Sun/" (21281 40671 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "backup/" "Applications/" ".zshrc~" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".atom/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
+ ("/Users/Sun/" (21293 22257 0 0) "UserContent/" "toukiden.html" "tmux-powerline/" "texput.log" "test_c.html" "test.html" "Sites/" "share/" "Public/" "Program/" "Pictures/" "org/" "opt/" "NowPlaying/" "node_modules/" "my_blood_pressure.db" "Music/" "Movies/" "Library/" "iTunes.h" "Git/" "Dropbox/" "Downloads/" "Documents/" "Develop/" "Dev/" "Desktop/" "Copy/" "Blog/" "bin/" "backup/" "Applications/" ".zshrc" ".zsh-update" ".zprofile" ".zlogin" ".zhistory" ".zcompdump.Tsgzj.local.83357" ".zcompdump-Tsgzj-5.0.5" ".zcompdump-Tsgzj-5.0.2.Tsgzj.local.46907" ".zcompdump-Tsgzj-5.0.2" ".zcompdump" ".xunlei.lixian.cookies" ".xunlei.lixian.config" ".Xauthority" ".wireshark-etc/" ".wireshark/" ".weechat/" ".vimrc" ".vimperatorrc_back" ".vimperatorrc" ".vimperator/" ".viminfo" ".vim-fuf-data/" ".vim/" ".twister/" ".trc" ".Trash/" ".tmux.conf" ".TeXmacs/" ".taskrc" ".task/" ".t.weibo.emacs.d/" ".subversion/" ".ssh/" ".srecode/" ".sqlite_history" ".slime-history.eld" ".slime/" ".slate" ".sh_history" ".semanticdb/" ".sbclrc" ".rvm/" ".rsense" ".rnd" ".recentf" ".python-eggs/" ".profile" ".pip/" ".pgpass" ".oh-my-zsh/" ".nvm/" ".npm/" ".node-gyp/" ".newsrc-dribble" ".netrc" ".mongorc.js" ".mime.types" ".mikutter/" ".marboo/" ".mailcap" ".local/" ".lesshst" ".irb_history" ".irb-history" ".InstallAnywhere/" ".ido.last" ".idlerc/" ".heroku/" ".gradle/" ".gnupg/" ".gitignore" ".gitconfig" ".ghc/" ".gemrc" ".gem/" ".fontconfig/" ".filezilla/" ".fasd-init-bash" ".fasd" ".emacs.d/" ".emacs" ".eclipse/" ".ecb-tip-of-day.el" ".dvdcss/" ".DS_Store" ".dropbox/" ".deployData" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bundler/" ".bundle/" ".bashrc" ".bash_profile" ".bash_history" ".backups/" ".backup/" ".atom/" ".appcfg_cookies" ".android/" ".#my_blood_pressure.db" "../" "./")
 
- ("/Users/Sun/Downloads/" (21281 35307 0 0) "讨鬼传攻略/" "空中浩劫.S13.E01-E10/" "科幻世界合集/" "短暂和平/" "WeatherStarter/" "UICatalog/" "TorBrowserBundle_en-US.app/" "TableViewUpdates/" "SinaWeibo/" "SimpleWeather Part 1/" "Short.Peace.2013.720p.BluRay.x264.DTS-WiKi.gb.ass" "Ruby编程语言_涵盖Ruby 1.8和1.9[www.TopSage.com]/" "rating-news/" "PageControl/" "owlberta - Imgur/" "NJUbachelor_2.3-1/" "NJUbachelor_2.3/" "MISIA.-.[MISIAの森-Forest Covers-].专辑.(FLAC)/" "Misia.-.[Misia.Love.&amp;.Ballads.The.Best.Ballade.Collection].专辑.(APE).cue" "mikutter/" "House.of.Cards.2013.S02.720p.NF.WEBRip.DD5.1.x264-NTb/" "Flat-UI-master/" "BESTYO/" "Atom.app/" "[Album]一青窈 - 月天心/" "2013/" "00f2db0653642a5a9ab9e0921b10f8b1/" ".DS_Store" ".#test.tex" "../" "./")
+ ("/Users/Sun/Program/Lisp/" (21202 39314 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/" (21293 21908 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".gitignore" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/haskell/" (21293 21661 0 0) "triangle.hs" "test.hs" ".git/" ".#test.hs" "../" "./")
+
+ ("/Users/Sun/.emacs.d/haskell-mode/examples/" (21293 20990 0 0) "init.el~" "init.el" "../" "./")
+
+ ("/Users/Sun/.emacs.d/haskell-mode/" (20727 52980 0 0) "README.md" "NEWS" "Makefile" "logo.svg" "inf-haskell.el" "indent.hs" "haskell-string.el" "haskell-sort-imports.el" "haskell-site-file.el" "haskell-simple-indent.el" "haskell-show.el" "haskell-session.el" "haskell-process.el" "haskell-package.el" "haskell-navigate-imports.el" "haskell-move-nested.el" "haskell-mode.el" "haskell-interactive-mode.el" "haskell-indentation.el" "haskell-indent.el" "haskell-hugs.el" "haskell-ghci.el" "haskell-font-lock.el" "haskell-doc.el" "haskell-decl-scan.el" "haskell-checkers.el" "haskell-cabal.el" "haskell-c.el" "haskell-align-imports.el" "ghc-core.el" "fontlock.hs" "examples/" ".hgignore" ".gitignore" "../" "./")
+
+ ("/Users/Sun/Program/MLFTWP/" (21293 19934 0 0) "test.sml" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/plugins/" (21279 51693 0 0) "web-mode.el" "test.c.BAK" "test-case-mode.el" "slim-mode.el" "rvm.el/" "rinari/" "quickrun.el" "python.el" "minimap-1.0.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "haml-mode.el" "fill-column-indicator.el" "dash-at-point.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" "anything-config/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/Ruby/" (21293 17804 0 0) "Sudoku.rb" "mdfind4.rb" "1.rb" ".git/" ".DS_Store" ".#1.rb" "#2.rb#" "#1.rb#" "../" "./")
+
+ ("/Users/Sun/Program/" (21287 2123 0 0) "tiger/" "sinatra/" "Sh/" "Ruby/" "Rails/" "Python/" "OS X/" "MLFTWP/" "Lisp/" "Js/" "Java/" "iOS/" "haskell/" "gittest/" "Euler/" "cvs/" "C/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Documents/Week2_Answer (copy)/" (21286 25655 0 0) "references_db.bib" "ppt.toc" "ppt.tex~" "ppt.tex" "ppt.snm" "ppt.pdf" "ppt.out" "ppt.nav" "ppt.log" "ppt.blg" "ppt.bbl" "ppt.aux" "Pictures/" "formats.tex" "fonts.tex" "default.sty" ".#code.tex" "#ppt.tex#" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/views/" (21286 22419 0 0) "name.haml" "name.erb" "index.slim" "index.haml" "feeds.slim" "feed.slim" "feed.haml" "entry.slim" "dup.slim" "_header.slim" "_header.erb" ".#entry.slim" ".#dup.slim" ".#_header.slim" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/" (21286 16018 0 0) "views/" "test.rb" "test/" "similarity.rb" "routes.rb" "public/" "model.rb" "helpers.rb" "Gemfile.lock" "Gemfile" "fetch.rb" "feeds.db" "app.rb" ".rvmrc" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/test/" (21286 15927 0 0) "atom_b.xml" "atom_a.xml" ".#atom_b.xml" "../" "./")
+
+ ("/Users/Sun/Documents/" (21283 1583 0 0) "讨鬼传御魂武器装备资料.xlsx" "潜在语义标引.pdf" "毕业生生源.xls" "常務.mov" "尽管去做——无压工作的艺术.pdf" "奥华子.m3u" "冰与火之歌/" "YNAB/" "workspace/" "with_best_regards,.md" "with_best_regards,.html" "Week2_Answer (copy)/" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "User Manual.pdf" "Tig/" "Stephen,King - Under the Dome.epub" "Soft.ofocus-theme" "Sinatra：Up.and.Running(2011.11).pdf" "sicp.pdf" "ruby-style-guide-master/" "RSS.ppt" "RSS-1.ppt" "RoR/" "PS Vita/" "paper-reading.pdf" "OrgTutorial.en-cn.html" "onlisp-cn_20140217.pdf" "OmniOutliner/" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "my_code.cbxml" "My Snippets.textexpander" "My Collection.bib" "Monokai.alfredappearance" "MongoMapper.pdf" "MongoDB权威指南(中文版).pdf" "MongoDB.pdf" "Money.money/" "Markdown.textexpander" "Markdown-1.textexpander" "luhn58.pdf" "Library.papers3/" "LaTeX/" "Kevin Mitnick：欺骗的艺术.pdf" "iOS 7 Design Resources 苹果官方文档/" "iOS 7 By Tutorials/" "Intel-Recommended-Reading-List_1H14_0.pdf" "input_test.mov" "imsg.scpt" "icons-1-0-1.eps" "happy birthday.scpt" "gtpspcarsMEGANE.xls" "favicon/" "eBooks/" "Douglas Stinson：密码学原理与实践@2003 (第2版).pdf" "dissertation/" "cv_9.tex" "Course/" "Compiler_Slides/" "Chapter10.pdf" "Calibre Library/" "Buick's_CV_zh_CN.pdf" "Buick's_CV_en_US.pdf" "Bibtex/" "all_stack_overflow/" "Aiseesoft Studio/" "AI/" "3班青共校.xls" "10cs_3班_非本专业考研情况统计.xlsx" "10cs_3班_毕业生生源信息修改.xls" "10cs_3班_十一离校情况统计.xls" "10cs_3班_中秋离校信息.xls" "10cs3_工作统计.xls" "10cs1392602367.DOC" "1:149/" ".localized" ".DS_Store" ".#v.txt" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/public/css/" (21283 214 0 0) "reader.css" "flat-ui.css" "demo.css" "bootstrap/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/public/css/bootstrap/css/" (21283 202 0 0) "prettify.css" "bootstrap.css" "bootstrap-docs.css" ".#bootstrap.css" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/public/css/bootstrap/" (21160 25388 0 0) "js/" "fonts/" "css/" "../" "./")
+
+ ("/Users/Sun/Program/sinatra/thesis/public/" (21282 42193 0 0) "js/" "img/" "css/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Downloads/NJUbachelor_2.3/" (21282 36103 0 0) "test.toc" "test.tex" "test.pdf" "test.out" "test.log" "test.aux" "start.toc" "start.tex" "start.pdf" "start.out" "start.log" "start.aux" "refs/" "njulogos/" "NJUbachelor.cls" "NJUbachelor.bst" "missfont.log" "fortest/" "chapters/" ".DS_Store" ".#NJUbachelor.cls" "!) ReadMeFirst.txt" "../" "./")
+
+ ("/Users/Sun/Downloads/" (21282 26220 0 0) "讨鬼传攻略/" "空中浩劫.S13.E01-E10/" "科幻世界合集/" "短暂和平/" "WeatherStarter/" "UICatalog/" "TorBrowserBundle_en-US.app/" "TableViewUpdates/" "SinaWeibo/" "SimpleWeather Part 1/" "Short.Peace.2013.720p.BluRay.x264.DTS-WiKi.gb.ass" "Ruby编程语言_涵盖Ruby 1.8和1.9[www.TopSage.com]/" "rating-news/" "PageControl/" "owlberta - Imgur/" "NJUbachelor_2.3/" "MISIA.-.[MISIAの森-Forest Covers-].专辑.(FLAC)/" "Misia.-.[Misia.Love.&amp;.Ballads.The.Best.Ballade.Collection].专辑.(APE).cue" "mikutter/" "MacTeX.pkg" "House.of.Cards.2013.S02.720p.NF.WEBRip.DD5.1.x264-NTb/" "Flat-UI-master/" "BESTYO/" "Atom.app/" "[Album]一青窈 - 月天心/" "2013/" "00f2db0653642a5a9ab9e0921b10f8b1/" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/Documents/dissertation/" (21282 35209 0 0) "start.toc" "start.tex" "start.pdf" "start.out" "start.log" "start.aux" "njulogos/" "NJUbachelor.cls" "NJUbachelor.bst" ".DS_Store" "../" "./")
+
+ ("/Users/Sun/.emacs.d/Auctex/" (20598 8015 0 0) "toolbar-x.elc" "toolbar-x.el" "TODO" "texmathp.elc" "texmathp.el" "tex.elc" "tex.el" "tex-wizard.el" "tex-style.elc" "tex-style.el" "tex-site.el.out" "tex-site.el.in" "tex-site.el" "tex-mik.elc" "tex-mik.el" "tex-jp.elc" "tex-jp.el" "tex-info.elc" "tex-info.el" "tex-fptex.elc" "tex-fptex.el" "tex-font.elc" "tex-font.el" "tex-fold.elc" "tex-fold.el" "tex-buf.elc" "tex-buf.el" "tex-bar.elc" "tex-bar.el" "style/" "RELEASE" "README" "preview/" "multi-prompt.elc" "multi-prompt.el" "mkinstalldirs" "Makefile.in" "Makefile" "lpath.el" "latex.elc" "latex.el" "INSTALL.windows" "install-sh" "INSTALL" "images/" "font-latex.elc" "font-latex.el" "FAQ" "doc/" "COPYING" "context.elc" "context.el" "context-nl.elc" "context-nl.el" "context-en.elc" "context-en.el" "configure.ac" "configure" "config.status" "config.log" "CHANGES" "ChangeLog" "bib-cite.elc" "bib-cite.el" "auto-loads.el~" "auto-loads.el" "auctex.spec" "auctex.el.in" "auctex.el" "aclocal.m4" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Documents/LaTeX/bibtex_test/" (21281 34508 0 0) "test.bib" "Master.bib" "graduation_thesis.bib" "graduate_thesis.bib" "example.tex" "example.ps" "example.pdf" "example.log" "example.dvi" "example.blg" "example.bbl" "example.aux" ".DS_Store" ".#example.tex" "../" "./")
 
  ("/Users/Sun/Documents/LaTeX/" (21199 42232 0 0) "模板/" "zhipai.tex" "zhipai.pdf" "upLaTeX/" "uml.sty.0.09.pdf" "TeX Live 2012" "test_tikz.tex" "test_tikz.pdf" "temple.toc" "temple.tex" "temple.idx" "résumé.tex" "résumé.pdf" "résumé.out" "résumé.log" "résumé.aux" "platex_test.tex" "platex_test.pdf" "pLatex/" "net.tex" "net.pdf" "latex模板/" "latex教程.pdf" "Latex实用教程--20008年版.pdf" "latex.pdf" "gpl-3.0.tex" "gpl-3.0.pdf" "db_1.tex" "db_1.pdf" "cv_9.out" "cv_9.log" "cv_9.aux" "cv/" "cjk_test.toc" "cjk_test.tex" "ch4.tex" "ch4.pdf" "bitex_test.tex" "bitex_test.pdf" "bibtex_test/" "bd_2.tex" ".DS_Store" "#test_tikz.tex#" "#cjk_test.tex#" "../" "./")
 
- ("/Users/Sun/Documents/" (21278 49964 0 0) "讨鬼传御魂武器装备资料.xlsx" "潜在语义标引.pdf" "毕业生生源.xls" "常務.mov" "尽管去做——无压工作的艺术.pdf" "奥华子.m3u" "冰与火之歌/" "YNAB/" "workspace/" "with_best_regards,.md" "with_best_regards,.html" "Virtual Machines.localized/" "vimperator-plugins-3.6/" "User Manual.pdf" "Tig/" "Stephen,King - Under the Dome.epub" "Soft.ofocus-theme" "Sinatra：Up.and.Running(2011.11).pdf" "sicp.pdf" "ruby-style-guide-master/" "RSS.ppt" "RSS-1.ppt" "RoR/" "PS Vita/" "paper-reading.pdf" "OrgTutorial.en-cn.html" "onlisp-cn_20140217.pdf" "OmniOutliner/" "Omnifocus-modernize-theme/" "OmniFocus Backups/" "my_code.cbxml" "My Snippets.textexpander" "My Collection.bib" "Monokai.alfredappearance" "MongoMapper.pdf" "MongoDB权威指南(中文版).pdf" "MongoDB.pdf" "Money.money/" "Markdown.textexpander" "Markdown-1.textexpander" "luhn58.pdf" "Library.papers3/" "LaTeX/" "Kevin Mitnick：欺骗的艺术.pdf" "iOS 7 Design Resources 苹果官方文档/" "iOS 7 By Tutorials/" "Intel-Recommended-Reading-List_1H14_0.pdf" "input_test.mov" "imsg.scpt" "icons-1-0-1.eps" "happy birthday.scpt" "gtpspcarsMEGANE.xls" "favicon/" "eBooks/" "Douglas Stinson：密码学原理与实践@2003 (第2版).pdf" "cv_9.tex" "Course/" "Compiler_Slides/" "Chapter10.pdf" "Calibre Library/" "Buick's_CV_zh_CN.pdf" "Buick's_CV_en_US.pdf" "Bibtex/" "all_stack_overflow/" "Aiseesoft Studio/" "AI/" "3班青共校.xls" "10cs_3班_非本专业考研情况统计.xlsx" "10cs_3班_毕业生生源信息修改.xls" "10cs_3班_十一离校情况统计.xls" "10cs_3班_中秋离校信息.xls" "10cs3_工作统计.xls" "10cs1392602367.DOC" "1:149/" ".localized" ".DS_Store" ".#v.txt" "../" "./")
-
- ("/Users/Sun/Program/sinatra/thesis/views/" (21281 33548 0 0) "name.haml" "name.erb" "index.slim" "index.haml" "feed.slim" "feed.haml" ".#index.slim" ".#feed.slim" "../" "./")
-
- ("/Users/Sun/Downloads/NJUbachelor_2.3/" (21281 33277 0 0) "test.toc" "test.tex" "test.pdf" "test.out" "test.log" "test.aux" "start.tex" "start.pdf" "refs/" "njulogos/" "NJUbachelor.cls" "NJUbachelor.bst" "missfont.log" "fortest/" "chapters/" ".DS_Store" "!) ReadMeFirst.txt" "../" "./")
-
- ("/Users/Sun/Program/sinatra/thesis/" (21281 8484 0 0) "views/" "test.rb" "similarity.rb" "routes.rb" "public/" "model.rb" "helpers.rb" "Gemfile.lock" "Gemfile" "fetch.rb" "FeedZirra.rb" "feeds.db" "app.rb" ".rvmrc" ".gitignore" ".git/" "../" "./")
-
- ("/Users/Sun/.emacs.d/" (21279 11308 0 0) "yasnippet/" "weibo/" "vender/" "tutorial/" "themes/" "slime-2013-02-05/" "README" "plugins/" "places" "org-mode/" "init.el" "haskell-mode/" "go/" "eshell/" "elpa/" "ede-projects.el" "ecb-2.40/" "color-theme/" "cedet-1.1/" "backups/" "auto-save-list/" "auto-insert/" "auto-complete/" "Auctex/" "ac-comphist.dat" ".smex-items" ".gitignore" ".git/" ".emacs.before_ecb_2.40" ".emacs" ".DS_Store" "../" "./")
-
  ("/Users/Sun/.emacs.d/yasnippet/snippets/ruby-mode/control structure/" (21279 9626 0 0) "while" "when" "upt" "until" "tim" "ife" "if" "forin" "do" "../" "./")
-
- ("/Users/Sun/Program/sinatra/thesis/public/" (21269 18054 0 0) "stylesheets/" "javascrips/" "img/" "../" "./")
 
  ("/Users/Sun/Program/sinatra/Sinatra-Backbone-TodoApp/public/javascripts/" (21278 32049 0 0) "underscore.js" "todo_task.js" "todo_app.js" "timeline.js" "mod_drag.js" "jquery_latest.js" "jquery_easing.js" "date_format.js" "backbone.js" "../" "./")
 
@@ -204,17 +235,11 @@
 
  ("/Users/Sun/Program/sinatra/stringer/app/" (21177 52319 0 0) "views/" "utils/" "tasks/" "repositories/" "public/" "models/" "jobs/" "helpers/" "fever_api/" "controllers/" "commands/" "../" "./")
 
- ("/Users/Sun/Program/Ruby/" (21211 31663 0 0) "Sudoku.rb" "mdfind4.rb" "1.rb" ".git/" ".DS_Store" ".#1.rb" "#2.rb#" "#1.rb#" "../" "./")
-
- ("/Users/Sun/Program/Lisp/" (21202 38759 0 0) "test.lisp" "test.db" "Notes/" "blood_pressure.lisp" ".git/" ".DS_Store" ".#1.lisp" "../" "./")
-
  ("/Users/Sun/Documents/LaTeX/cv/" (21129 54285 0 0) "wjl.tex" "wjl.pdf" "wjl.out" "wjl.log" "wjl.aux" "TeX Live 2012" "res.cls" "res copy.cls" "missfont.log" "cv_孙文翔.pdf" "cv_9.tex" "cv_9.out" "cv_9.log" "cv_9.aux" "cv_9 copy.tex" "cv_8.tex" "cv_8.pdf" "cv_8.out" "cv_8.log" "cv_8.dvi" "cv_8.aux" "cv_6.tex" "cv_6.pdf" "cv_6.log" "cv_6.aux" "cv_2.tex" "cv_2.pdf" "cv_2.log" "   .tex" "../" "./")
 
  ("/Users/Sun/Program/iOS/SimpleWeather/" (21195 26670 0 0) "SimpleWeatherTests/" "SimpleWeather.xcodeproj/" "SimpleWeather/" "../" "./")
 
  ("/Users/Sun/Program/iOS/" (21195 26670 0 0) "Weibo/" "WBOauthDemo/" "UIToolbar-Keyboard-Example/" "SimpleWeather/" "NavigationDemo/" "GrowingTextView/" "DynamicsPlayground/" ".git/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/" (21177 50734 0 0) "tiger/" "sinatra/" "Sh/" "Ruby/" "Rails/" "Python/" "OS X/" "MLFTWP/" "Lisp/" "Js/" "Java/" "iOS/" "gittest/" "Euler/" "cvs/" "C/" ".DS_Store" "../" "./")
 
  ("/Users/Sun/thesis/RSS_reader/app/controllers/" (21161 6114 0 0) "concerns/" "application_controller.rb" "#application_controller.rb#" "../" "./")
 
@@ -259,8 +284,6 @@
  ("/etc/" (21055 9086 0 0) "zshenv" "xtab" "ttys" "syslog.conf" "sudoers" "sshd_config~orig" "sshd_config" "ssh_host_rsa_key.pub" "ssh_host_rsa_key" "ssh_host_key.pub" "ssh_host_key" "ssh_host_dsa_key.pub" "ssh_host_dsa_key" "ssh_config~orig" "ssh_config" "snmp/" "shells" "services" "security/" "rtadvd.conf" "rpc" "rmtab" "resolver/" "resolv.conf" "RemoteManagement.launchd" "rc.netboot" "rc.imaging" "rc.common" "raddb/" "racoon/" "protocols" "profile" "ppp/" "postfix/" "php.ini.default-5.2-previous" "php.ini.default" "php-fpm.conf.default" "pf.os" "pf.conf" "pf.anchors/" "periodic/" "paths.d/" "paths" "passwd" "pam.d/" "opt/" "openldap/" "ntp_opendirectory.conf" "ntp.conf" "ntp-restrict.conf" "notify.conf" "nfs.conf" "newsyslog.d/" "newsyslog.conf" "networks" "nanorc" "named.conf" "moduli" "master.passwd" "manpaths.d/" "manpaths" "man.conf" "mail.rc" "mach_init_per_user.d/" "mach_init_per_login_session.d/" "mach_init.d/" "locate.rc" "localtime" "krb5.keytab~orig" "krb5.keytab" "kern_loader.conf" "irbrc" "ip6addrctl.conf" "hosts~orig" "hosts.equiv" "hosts" "hostconfig" "group" "gettytab" "ftpusers" "ftpd.conf.default" "ftpd.conf" "fstab.hd" "find.codes" "emond.d/" "efax.rc" "dnsextd.conf" "defaults/" "cups/" "csh.logout" "csh.login" "csh.cshrc" "com.apple.screensharing.agent.launchd" "CiscoSystemsVPNClient/" "bind.keys" "bashrc" "autofs.conf" "auto_master" "auto_home" "authorization" "asl.conf" "apache2/" "aliases.db" "aliases" "afpovertcp.cfg" "../" "./")
 
  ("/Users/Sun/Program/Euler/" (21053 40992 0 0) "qr_97941ApD.out" "qr_97941ApD.c" "qr_97656QoD.rb" "qr_97656q8P" "qr_97656dyJ.out" "qr_97656dyJ.c" "qr_96270UPc.rb" "qr_96270twJ.rb" "qr_96270hZi.rb" "qr_96270HFW.rb" "qr_96270gmD.rb" "qr_9627066P.rb" "17.rb" "16.rb" "15.rb" "14.rb" "11.rb" "10.rb" "09.c" "07.c" "06.c" "04.c" "03.c" "02.c" "01.c" ".git/" ".DS_Store" "#14.rb#" "../" "./")
-
- ("/Users/Sun/.emacs.d/plugins/" (21053 5073 0 0) "test.c.BAK" "test-case-mode.el" "quickrun.el" "python.el" "markdown-mode/" "js2-mode.el" "highlight-symbol.el" "highlight-indentation.el" "fill-column-indicator.el" "dash-at-point.el" "blank-mode.el" "autopair.el" "auto-pair+.el" "auto-indent-mode.el" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Program/Python/" (20980 41571 0 0) "test/" "hello_world.py" ".git/" ".DS_Store" "#hello_world.py#" "../" "./")
 
@@ -329,28 +352,6 @@
  ("/Users/Sun/Desktop/ftp/" (20712 16038 0 0) "Server/" "Client/" ".DS_Store" "../" "./")
 
  ("/Users/Sun/Downloads/cmm-compiler-master/" (20950 16999 0 0) "var_table.o" "var_table.h" "var_table.c" "type.o" "type.c" "translate.o" "translate.h" "translate.c" "test_inter_code.c" "test7.cmm" "test6.cmm" "test5.cmm" "test4.cmm" "test3.cmm" "test2.cmm" "test1.s" "test1.cmm" "syntax_tree_node.h" "syntax_tree.o" "syntax_tree.c" "symbol_table.o" "symbol_table.h" "symbol_table.c" "semantic_analysis.o" "semantic_analysis.h" "semantic_analysis.c" "README" "Makefile" "main.o" "main.c" "lex.yy.c" "inter_code.o" "inter_code.h" "inter_code.c" "gen_code.o" "gen_code.h" "gen_code.c" "common.h" "cmmyacc.y" "cmmyacc.tab.o" "cmmyacc.tab.h" "cmmyacc.tab.c" "cmmyacc.output" "cmmlex.l" "cc" ".#syntax_tree.c" "#syntax_tree.c#" "../" "./")
-
- ("/usr/" (20826 39831 0 0) "X11R6/" "X11/" "texbin/" "standalone/" "share/" "sbin/" "local/" "llvm-gcc-4.2/" "libexec/" "lib/" "include/" "games/" "bin/" "../" "./")
-
- ("/usr/include/" (20852 52582 0 0) "zlib.h" "zconf.h" "Xplugin.h" "xpc/" "xlocale.h" "xlocale/" "xar/" "wordexp.h" "wctype.h" "wchar.h" "vproc.h" "vis.h" "vfs/" "uuid/" "utmpx.h" "utmp.h" "utime.h" "util.h" "unwind.h" "unistd.h" "unctrl.h" "ulimit.h" "ucontext.h" "tzfile.h" "ttyent.h" "tkPlatDecls.h" "tkMacOSX.h" "tkIntXlibDecls.h" "tkDecls.h" "tk.h" "timeconv.h" "time.h" "tidy/" "tic.h" "termios.h" "termcap.h" "term_entry.h" "term.h" "tclTomMathDecls.h" "tclTomMath.h" "tclPlatDecls.h" "tclDecls.h" "tcl.h" "TargetConfig.h" "TargetConditionals.h" "tar.h" "syslog.h" "sysexits.h" "sys/" "struct.h" "strings.h" "stringlist.h" "string.h" "strhash.h" "stdlib.h" "stdio.h" "stdint.h" "stddef.h" "stdbool.h" "standards.h" "stab.h" "sqlucode.h" "sqltypes.h" "sqlite3ext.h" "sqlite3.h" "sqlext.h" "sqlda.h" "sqlda-native.h" "sqlda-compat.h" "sqlca.h" "sql3types.h" "sql.h" "spawn.h" "slapi-plugin.h" "signal.h" "sgtty.h" "setjmp.h" "servers/" "semaphore.h" "security/" "secure/" "search.h" "sched.h" "sasl/" "sandbox.h" "runetype.h" "rune.h" "rpcsvc/" "rpc/" "resolv.h" "removefile.h" "regex.h" "readpassphrase.h" "readline/" "ranlib.h" "python2.7/" "python2.6/" "python2.5/" "pwd.h" "pthread_spis.h" "pthread_impl.h" "pthread.h" "protocols/" "profile.h" "postgresql/" "postgres_ext.h" "poll.h" "php/" "pgtypes_timestamp.h" "pgtypes_numeric.h" "pgtypes_interval.h" "pgtypes_error.h" "pgtypes_date.h" "pg_config_os.h" "pg_config_manual.h" "pg_config.h" "pexpert/" "pcap.h" "pcap-namedb.h" "pcap-bpf.h" "pcap/" "paths.h" "panel.h" "os/" "openssl/" "odbcinst.h" "objc/" "ntsid.h" "NSSystemDirectories.h" "notify_keys.h" "notify.h" "nlist.h" "nl_types.h" "nfs/" "netkey/" "netinet6/" "netinet/" "netdb.h" "net-snmp/" "net/" "ndbm.h" "ncurses_dll.h" "ncurses.h" "nc_tparm.h" "nameser.h" "mpool.h" "monitor.h" "monetary.h" "miscfs/" "menu.h" "memory.h" "memcached/" "membership.h" "math.h" "malloc/" "MacTypes.h" "machine/" "mach_debug/" "mach-o/" "mach/" "locale.h" "localcharset.h" "limits.h" "libxslt/" "libxml2/" "libunwind.h" "libproc.h" "libpq-fe.h" "libpq-events.h" "libpq/" "libkern/" "libgen.h" "libexslt/" "libcharset.h" "libc.h" "ldif.h" "ldap_utf8.h" "ldap_schema.h" "ldap_features.h" "ldap_cdefs.h" "ldap.h" "lber_types.h" "lber.h" "launch.h" "langinfo.h" "krb5.h" "krb5/" "isqltypes.h" "isqlext.h" "isql.h" "iso646.h" "iodbcunix.h" "iodbcinst.h" "iodbcext.h" "inttypes.h" "ifaddrs.h" "iconv.h" "i386/" "histedit.h" "hfs/" "gssapi.h" "gssapi/" "grp.h" "glob.h" "getopt.h" "get_compat.h" "ftw.h" "fts.h" "fstab.h" "fsproperties.h" "form.h" "fnmatch.h" "fmtmsg.h" "FlexLexer.h" "ffi/" "fenv.h" "fcntl.h" "expat_external.h" "expat.h" "execinfo.h" "eti.h" "errno.h" "err.h" "editline/" "ecpgtype.h" "ecpglib.h" "ecpgerrno.h" "ecpg_informix.h" "ecpg_config.h" "dtrace.h" "DNSServiceDiscovery/" "dns_util.h" "dns_sd.h" "dns.h" "dlfcn.h" "dispatch/" "disktab.h" "dirent.h" "device/" "default_pager/" "db.h" "cxxabi.h" "curses.h" "curl/" "cups/" "ctype.h" "crt_externs.h" "cpio.h" "copyfile.h" "ConditionalMacros.h" "complex.h" "CommonCrypto/" "com_err.h" "checkint.h" "cache_callbacks.h" "cache.h" "c++/" "bzlib.h" "bsm/" "Block.h" "bitstring.h" "AvailabilityMacros.h" "AvailabilityInternal.h" "Availability.h" "AssertMacros.h" "assert.h" "asl.h" "arpa/" "architecture/" "ar.h" "apr-1/" "apache2/" "alloca.h" "aio.h" "_xlocale.h" "_wctype.h" "_types.h" "_structs.h" "_locale.h" "../" "./")
-
- ("/usr/include/sys/" (20852 52582 0 0) "xattr.h" "wait.h" "vstat.h" "vnode_if.h" "vnode.h" "vnioctl.h" "vmparam.h" "vmmeter.h" "vm.h" "vcmd.h" "vadvise.h" "utsname.h" "utfconv.h" "user.h" "unpcb.h" "unistd.h" "un.h" "uio.h" "ucred.h" "ucontext.h" "ubc.h" "types.h" "ttydev.h" "ttydefaults.h" "ttycom.h" "ttychars.h" "tty.h" "trace.h" "tprintf.h" "times.h" "timeb.h" "time.h" "termios.h" "syslog.h" "syslimits.h" "sysctl.h" "syscall.h" "sys_domain.h" "statvfs.h" "stat.h" "spawn.h" "sockio.h" "socketvar.h" "socket.h" "signalvar.h" "signal.h" "shm.h" "semaphore.h" "sem.h" "select.h" "sdt.h" "sbuf.h" "resourcevar.h" "resource.h" "reboot.h" "random.h" "quota.h" "queue.h" "ptrace.h" "protosw.h" "proc_info.h" "proc.h" "posix_shm.h" "posix_sem.h" "poll.h" "pipe.h" "paths.h" "param.h" "netport.h" "msgbuf.h" "msg.h" "mount.h" "mman.h" "mbuf.h" "malloc.h" "lockf.h" "lock.h" "loadable_fs.h" "lctx.h" "kernel_types.h" "kernel.h" "kern_memorystatus.h" "kern_event.h" "kern_control.h" "kdebug.h" "kauth.h" "ipc.h" "ioctl_compat.h" "ioctl.h" "ioccom.h" "gmon.h" "filio.h" "filedesc.h" "file.h" "fcntl.h" "fasttrap_isa.h" "fasttrap.h" "event.h" "ev.h" "errno.h" "dtrace_impl.h" "dtrace_glue.h" "dtrace.h" "domain.h" "dkstat.h" "disk.h" "dirent.h" "dir.h" "conf.h" "cdefs.h" "buf.h" "attr.h" "appleapiopts.h" "aio.h" "acl.h" "acct.h" "_types.h" "_symbol_aliasing.h" "_structs.h" "_select.h" "_posix_availability.h" "_endian.h" "../" "./")
-
- ("/Users/Sun/Desktop/tiger/" (20941 12074 0 0) "../" "./")
-
- ("/Users/Sun/Dropbox/QQAtachment/101220100 语义/" (20941 10097 0 0) "实验报告.pdf" "syntax.y" "semantic.c" "main.c" "lexical.l" "#syntax.y#" "../" "./")
-
- ("/Users/Sun/Desktop/tiger-master/src/" (20941 10097 0 0) "yacc/" "y.tab.h" "y.tab.c" "y.output" "x86frame.c" "x86codegen.c" "util.c" "types.c" "tree.c" "translate.c" "tiger.lex" "tiger.grm" "temp.c" "table.c" "symbol.c" "semant.c" "runtime.c" "regalloc.c" "printtree.c" "prabsyn.c" "parse.c" "liveness.c" "lex.yy.c" "graph.c" "flowgraph.c" "escape.c" "errormsg.c" "env.c" "color.c" "canon.c" "assem.c" "amd64frame.c" "amd64codegen.c" "absyn.c" ".DS_Store" "#tiger.grm#" "../" "./")
-
- ("/Users/Sun/Desktop/tiger_source/chap5/" (12972 63792 0 0) "types.h" "types.c" "../" "./")
-
- ("/Users/Sun/Desktop/tiger-master/" (20940 19224 0 0) "tigertests/" "test/" "src/" "run_tests.py" "obj/" "makefile" "include/" "bin/" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Dropbox/QQAtachment/" (20939 61935 0 0) "红警2_win7_vista_局域网联机补丁.rar" "沪江面试申请者详细情况登记书.doc" "指导攻略 2.pdf" "指导攻略 1.pdf" "南京大学校园纪念物调研及仙林校区校园纪念物规划建议报告.doc" "不要不要 官方舞蹈设计版--音悦台.mp4" "README" "qqhd_ptt_1370705851317.amr" "qqhd_ptt_1370700445331.amr" "qqhd_ptt_1369839420237.amr" "qqhd_ptt_1369839379011.amr" "qqhd_ptt_1369839373408.amr" "qqhd_ptt_1369839331644.amr" "qqhd_ptt_1369839305223.amr" "qqhd_ptt_1368889668608.amr" "qqhd_ptt_1368715519030.amr" "qqhd_ptt_1368715512461.amr" "qqhd_ptt_1368715507716.amr" "qqhd_ptt_1368715499672.amr" "qqhd_ptt_1368715450421.amr" "lab14.rar" "lab14.doc" "lab14/" "lab13.rar" "lab13.doc" "lab13/" "DSCF1374.AVI" "Book1.xlsx" "101220100 语义/" "101220100 机器代码/" "101220100 中间代码/" "10100107 吴小乐.docx" ".DS_Store" "../" "./")
-
- ("/Users/Sun/Program/ML/Tig/C2/" (20925 8909 0 0) "tokens.sml" "tokens.sig" "tiger.lex.sml" "tiger.lex" "test.sml" "test/" "sources.cm" "report.tex" "report.pdf" "report.out" "report.log" "report.aux" "out/" "Grammar.tex" "Grammar.pdf" "Grammar.log" "Grammar.aux" "errormsg.sml" "driver.sml" "a.tig" ".DS_Store" ".cm/" "#tiger.lex#" "#TeX Live 2012#" "#test.sml#" "#report.tex#" "../" "./")
-
- ("/Users/Sun/Program/ML/tiger/" (20923 54790 0 0) "types.sml" "tree.sml" "translate.sml" "translate.sig" "tokens.sml" "tokens.sig" "tiger.lex.sml" "tiger.lex" "tiger.grm.sml" "tiger.grm.sig" "tiger.grm" "testliveness.sml" "testcases" "temp.sml" "temp.sig" "table.sml" "table.sig" "symbol.sml" "sources.cm" "slp.sml" "semant.sml" "semant.sig" "runtime.c" "regalloc.sml" "regalloc.sig" "README.md" "printtree.sml" "prabsyn.sml" "parsetest.sml" "parse.sml" "mipsgen.sml" "mipsframe.sml" "makegraph.sml" "main.sml" "liveness.sml" "hash_table.sml" "graph.sml" "graph.sig" "frame.sig" "flowgraph.sml" "findescape.sml" "errormsg.sml" "env.sml" "env.sig" "driver.sml" "color.sml" "color.sig" "codegen.sig" "canon.sml" "assem.sml" "absyn.sml" ".gitignore" ".git/" ".cm/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

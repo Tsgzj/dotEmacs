@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- color-theme-molokai
- markdown-follow-wiki-link-at-point
- color-theme-blackboard
- cua-mode
- LaTeX-mode
- eshell
- follow-mode
+ scheme-mode
+ indent-region
+ comment-region
+ c-mode
+ uncomment-region
+ comment-box
+ replace-regexp
 )
 
 ;; ----- smex-data -----
 (
  (shell . 12)
- (slime . 47)
+ (slime . 51)
  (eshell . 16)
  (c-mode . 34)
- (auto-complete-mode . 53)
+ (auto-complete-mode . 54)
  (ac-complete-yasnippet . 5)
  (auto-complete . 3)
  (package-install . 17)
@@ -29,7 +29,7 @@
  (eval-buffer . 16)
  (weibo-timeline . 5)
  (weibo-timeline-mode . 3)
- (cua-mode . 17)
+ (cua-mode . 23)
  (linum-mode . 12)
  (slime-mode . 1)
  (sldb-cycle . 2)
@@ -55,20 +55,20 @@
  (split-window-vertically . 1)
  (comment-box . 30)
  (sml-lex-mode . 11)
- (scheme-mode . 1)
+ (scheme-mode . 3)
  (Electric-command-history-redo-expression . 1)
  (c++-mode . 4)
  (eval-region . 1)
- (indent-region . 58)
+ (indent-region . 63)
  (mac-mouse-turn-on-fullscreen . 1)
- (uncomment-region . 28)
+ (uncomment-region . 32)
  (css-mode . 6)
  (cedet-java-describe . 1)
  (javascript-mode . 4)
  (html-mode . 9)
  (js2-mode . 2)
  (speedbar . 2)
- (comment-region . 39)
+ (comment-region . 58)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -88,7 +88,7 @@
  (list-packages . 1)
  (tabbar-mode . 1)
  (replace-regexp . 28)
- (auto-indent-mode . 4)
+ (auto-indent-mode . 13)
  (ecb-deactivate . 2)
  (clipboard-yank . 1)
  (weibo-send-post . 1)
@@ -96,7 +96,7 @@
  (ebrowse-tags-find-definition . 1)
  (man . 2)
  (server-force-delete . 5)
- (server-start . 2)
+ (server-start . 3)
  (server-mode . 1)
  (flymake-mode . 5)
  (compile . 6)
@@ -126,4 +126,13 @@
  (color-theme-blackboard . 1)
  (markdown-follow-wiki-link-at-point . 1)
  (color-theme-molokai . 1)
+ (paredit-mode . 4)
+ (route . 1)
+ (haskell-mode . 1)
+ (haskell-indent-mode . 7)
+ (auto-indent-minor-mode . 5)
+ (haskell-indentation-mode . 3)
+ (auto-indent-kill-line . 1)
+ (turn-on-hi2 . 1)
+ (turn-on-haskell-simple-indent . 1)
 )

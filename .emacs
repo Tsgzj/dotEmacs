@@ -1,10 +1,10 @@
-(setq user-full-name "Sun Wenxiang")
+0;95;c(setq user-full-name "Sun Wenxiang")
 (setq user-mail-address "wxsun1991@gmail.com")
 
 (setq default-directory "~/")
 
-;;(load "server")
-;;(unless (server-running-p) (server-start))
+(load "server")
+(unless (server-running-p) (server-start))
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -23,7 +23,7 @@
 (set-clipboard-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
-(modify-coding-system-alist 'process "*" 'utf-8)
+0;95;c(modify-coding-system-alist 'process "*" 'utf-8)
 
 ;;将所有的~文件放在.backup文件夹里面
 (setq backup-directory-alist
@@ -42,6 +42,18 @@
                                        :size 14)))
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
+
+(if (featurep 'ns)
+    (progn
+      (defun ns-raise-emacs ()
+        "Raise Emacs."
+        (ns-do-applescript "tell application \"Emacs\" to activate"))
+
+      (if (display-graphic-p)
+          (progn
+            (add-hook 'server-visit-hook 'ns-raise-emacs)
+            (add-hook 'before-make-frame-hook 'ns-raise-emacs)
+            (ns-raise-emacs)))))
 
 ;;(iswitchb-mode 1)
 (setq default-frame-alist
@@ -121,7 +133,20 @@
 (global-linum-mode t)
 
 ;;Haskell-mode
-(load "~/.emacs.d/haskell-mode/haskell-site-file")
+(add-to-list 'load-path "~/.emacs.d/plugins/haskell-mode")
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list "~/lib/emacs/haskell-mode/")
+(add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
+(defun my-haskell-mode-hook ()
+  (haskell-indentation-mode -1) ;; turn off, just to be sure
+  (haskell-indent-mode 1)       ;; turn on indent-mode
+  (indent-tabs-mode nil)
+  ;; further customisations go here.  For example:
+  (setq locale-coding-system 'utf-8 )
+  (flyspell-prog-mode)  ;; spell-checking in comments and strings
+  ;; etc.      
+
+  )
 
 ;;(setq default-fill-column 60)
 
@@ -264,6 +289,7 @@
 ;;(setq auto-indent-on-visit-file t)
 (require 'auto-indent-mode)
 (auto-indent-global-mode)
+
 
 ;;fill-column
 (load-file "~/.emacs.d/plugins/fill-column-indicator.el")
@@ -780,3 +806,4 @@ static char * arrow_right[] = {
       )
     )
   )
+
