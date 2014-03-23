@@ -1,5 +1,7 @@
 ;;; -*- coding: utf-8 -*-
-(("/Users/Sun/.emacs" . 8819)
+(("/Users/Sun/.emacs.d/el-get/.loaddefs.el" . 54677)
+ ("/Users/Sun/.emacs" . 15875)
+ ("/Users/Sun/Program/Ruby/Sudoku.rb" . 5145)
  ("/Users/Sun/Program/haskell/test.hs" . 20)
  ("/Users/Sun/.emacs.d/elpa/exec-path-from-shell-1.7/exec-path-from-shell-autoloads.el" . 1252)
  ("/Users/Sun/.emacs.d/.emacs" . 4885)
@@ -19,7 +21,6 @@
  ("/Users/Sun/Program/sinatra/stringer/app/controllers/first_run_controller.rb" . 1287)
  ("/Users/Sun/Downloads/mikutter/mikutter.rb" . 2253)
  ("/Users/Sun/Program/C/quicksort.c" . 533)
- ("/Users/Sun/Program/Ruby/Sudoku.rb" . 5118)
  ("/Users/Sun/Program/C/chinese.c" . 485)
  ("/Users/Sun/.emacs.d/plugins/markdown-mode/markdown-mode.el" . 78240)
  ("/Users/Sun/.emacs.d/weibo/weibo-authorize.el" . 2703)

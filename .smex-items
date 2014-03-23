@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ el-get-remove
+ el-get-install
  comment-region
+ ido-mode
  package-install
  package-refresh-contents
- scheme-mode
  indent-region
- c-mode
- uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -68,7 +68,7 @@
  (html-mode . 9)
  (js2-mode . 2)
  (speedbar . 2)
- (comment-region . 60)
+ (comment-region . 64)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -136,4 +136,12 @@
  (turn-on-hi2 . 1)
  (turn-on-haskell-simple-indent . 1)
  (package-refresh-contents . 1)
+ (el-get-cd . 1)
+ (el-get-install . 10)
+ (helm-mode . 6)
+ (ace-jump-mode . 1)
+ (ido-mode . 2)
+ (helm-find . 1)
+ (helm-mini . 1)
+ (el-get-remove . 1)
 )
