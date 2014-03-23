@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- el-get-remove
- el-get-install
+ scheme-mode
+ lisp-mode
+ ruby-mode
+ uncomment-region
  comment-region
- ido-mode
- package-install
- package-refresh-contents
  indent-region
+ c-mode
 )
 
 ;; ----- smex-data -----
@@ -15,15 +15,15 @@
  (shell . 12)
  (slime . 51)
  (eshell . 16)
- (c-mode . 34)
- (auto-complete-mode . 54)
+ (c-mode . 35)
+ (auto-complete-mode . 56)
  (ac-complete-yasnippet . 5)
  (auto-complete . 3)
  (package-install . 23)
  (package-list-packages . 8)
  (java-mode . 3)
  (ac-complete-slime . 1)
- (lisp-mode . 9)
+ (lisp-mode . 11)
  (go-mode . 1)
  (plain-TeX-mode . 3)
  (eval-buffer . 16)
@@ -38,9 +38,9 @@
  (markdown-mode . 15)
  (ecb-activate . 9)
  (window-number-mode . 1)
- (test-case-mode . 5)
+ (test-case-mode . 7)
  (test-case-run . 1)
- (ruby-mode . 15)
+ (ruby-mode . 17)
  (org-mode . 3)
  (outline-mode . 6)
  (outline-minor-mode . 4)
@@ -55,20 +55,20 @@
  (split-window-vertically . 1)
  (comment-box . 30)
  (sml-lex-mode . 11)
- (scheme-mode . 3)
+ (scheme-mode . 4)
  (Electric-command-history-redo-expression . 1)
  (c++-mode . 4)
  (eval-region . 1)
  (indent-region . 63)
  (mac-mouse-turn-on-fullscreen . 1)
- (uncomment-region . 32)
+ (uncomment-region . 35)
  (css-mode . 6)
  (cedet-java-describe . 1)
  (javascript-mode . 4)
  (html-mode . 9)
  (js2-mode . 2)
  (speedbar . 2)
- (comment-region . 64)
+ (comment-region . 69)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
@@ -123,10 +123,10 @@
  (dframe-close-frame . 1)
  (slim-mode . 1)
  (LaTeX-mode . 1)
- (color-theme-blackboard . 1)
+ (color-theme-blackboard . 2)
  (markdown-follow-wiki-link-at-point . 1)
  (color-theme-molokai . 1)
- (paredit-mode . 4)
+ (paredit-mode . 6)
  (route . 1)
  (haskell-mode . 1)
  (haskell-indent-mode . 9)
@@ -137,11 +137,16 @@
  (turn-on-haskell-simple-indent . 1)
  (package-refresh-contents . 1)
  (el-get-cd . 1)
- (el-get-install . 10)
+ (el-get-install . 17)
  (helm-mode . 6)
  (ace-jump-mode . 1)
  (ido-mode . 2)
  (helm-find . 1)
  (helm-mini . 1)
- (el-get-remove . 1)
+ (el-get-remove . 3)
+ (el-get-list-packages . 1)
+ (yascroll-bar-mode . 4)
+ (smartparens-mode . 3)
+ (smartparens-global-mode . 1)
+ (rsense-complete . 1)
 )

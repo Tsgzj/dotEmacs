@@ -1,4 +1,4 @@
-0;95;c(setq user-full-name "Sun Wenxiang")
+(setq user-full-name "Sun Wenxiang")
 (setq user-mail-address "wxsun1991@gmail.com")
 
 (setq default-directory "~/")
@@ -8,7 +8,7 @@
 ;; 设置默认字体
 ;;(set-default-font "Andale Mono Regular-16")
 (fset 'yes-or-no-p 'y-or-n-p)
-(set-frame-parameter (selected-frame) 'alpha (list 100 100)) 
+(set-frame-parameter (selected-frame) 'alpha (list 100 100))
 (add-to-list 'default-frame-alist (cons 'alpha (list 100 100))) 
 (set-language-environment "Chinese-GB")
 (set-keyboard-coding-system 'chinese-iso-8bit)
@@ -23,7 +23,7 @@
 (set-clipboard-coding-system 'utf-8)
 (set-buffer-file-coding-system 'utf-8)
 (set-selection-coding-system 'utf-8)
-0;95;c(modify-coding-system-alist 'process "*" 'utf-8)
+(modify-coding-system-alist 'process "*" 'utf-8)
 
 ;;将所有的~文件放在.backup文件夹里面
 (setq backup-directory-alist
@@ -31,7 +31,7 @@
 (setq auto-save-file-name-transforms
       `((".*" , "~/.backups")))
 (setq mac-option-modifier 'meta)
-(setq default-major-mode 'text-mode)
+;;(setq default-major-mode 'text-mode)
 
 ;; Setting English Font
 (set-face-attribute 'default nil :font "Inconsolata 14")
@@ -43,21 +43,21 @@
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 
-(if (featurep 'ns)
-    (progn
-      (defun ns-raise-emacs ()
-        "Raise Emacs."
-        (ns-do-applescript "tell application \"Emacs\" to activate"))
+;; (if (featurep 'ns)
+;;     (progn
+;;       (defun ns-raise-emacs ()
+;;         "Raise Emacs."
+;;         (ns-do-applescript "tell application \"Emacs\" to activate"))
 
-      (if (display-graphic-p)
-          (progn
-            (add-hook 'server-visit-hook 'ns-raise-emacs)
-            (add-hook 'before-make-frame-hook 'ns-raise-emacs)
-            (ns-raise-emacs)))))
+;;       (if (display-graphic-p)
+;;           (progn
+;;             (add-hook 'server-visit-hook 'ns-raise-emacs)
+;;             (add-hook 'before-make-frame-hook 'ns-raise-emacs)
+;;             (ns-raise-emacs)))))
 
 ;;(iswitchb-mode 1)
 (setq default-frame-alist
-'((top . 0)(left . 0)(width . 168)(height . 54)))
+'((top . 0)(left . 20)(width . 168)(height . 54)))
 ;;(setq default-frame-alist
 ;;'((height . 64) (width . 160) (menu-bar-lines . 0) (tool-bar-lines . 0)(scroll-bar-lines . 0)))
 ;;(setq frame-title-format "☆Emacs☆      %b   ") ; 显示当前编辑的文档
@@ -80,13 +80,24 @@
 ;;  ;; If there is more than one, they won't work right.
 ;;  )
 
-;;咆哮体，勿用
-;;(font-spec :family "FZNHT" :size 36 )))
-
+;;package
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+;;el-get
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+
+(unless (require 'el-get nil 'noerror)
+  (with-current-buffer
+      (url-retrieve-synchronously
+       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
+    (goto-char (point-max))
+    (eval-print-last-sexp)))
+
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-user/recipes")
+(el-get 'sync)
 
 ;;代码风格
 (setq tab-width 4)
@@ -103,6 +114,10 @@
 (set-face-background 'highlight-indentation-face "#323232")
 (set-face-background 'highlight-indentation-current-column-face "#465457")
 
+;;$PATH for OS X
+(load-file "~/.emacs.d/plugins/exec-path-from-shell-1.7/exec-path-from-shell.el")
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;;quickrun
 (load-file "~/.emacs.d/plugins/quickrun.el")
@@ -111,7 +126,7 @@
 (global-set-key (kbd "<f12>") 'quickrun)
 (global-set-key (kbd "<f11>") 'toggle-frame-fullscreen)
 ;;flymake
-(load-file "~/.emacs.d/vender/emacs-flymake/flymake.el")
+(load-file "~/.emacs.d/plugins/emacs-flymake/flymake.el")
 ;; ;; Let's run 8 checks at once instead.
 (setq flymake-max-parallel-syntax-checks 8)
 ;; ;; Yes, I want my copies in the same dir as the original.
@@ -156,10 +171,10 @@ added to `haskell-mode-hook'"
 
 ;;(setq default-fill-column 60)
 
-(setq sentence-end "\\([。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
-(setq sentence-end-double-space nil)
-(setq scroll-margin 3
-      scroll-conservatively 10000)
+;; (setq sentence-end "\\([。！？]\\|……\\|[.?!][]\"')}]*\\($\\|[ \t]\\)\\)[ \t\n]*")
+;; (setq sentence-end-double-space nil)
+;; (setq scroll-margin 3
+;;       scroll-conservatively 10000)
 
 ;;(setq frame-title-format "emacs@%b")
 
@@ -170,13 +185,8 @@ added to `haskell-mode-hook'"
 ;;(linum-mode 1)
 
 (require 'ido)
-(ido-mode t)
+(ido-mode nil)
 
-
-;;(add-to-list 'load-path
-;;	     "~/.emacs.d/plugins/")
-;;(require 'powerline)
-;;(powerline-default)
 ;;(add-to-list 'load-path
 ;; 	     "~/.emacs.d/plugins/")
 ;;(require 'highlight-symbol)
@@ -244,12 +254,6 @@ added to `haskell-mode-hook'"
 (require 'slime)
 (slime-setup '(slime-fancy))
 
-
-;;anything-config
-(add-to-list 'load-path
-             "~/.emacs.d/plugins/anything-config/")
-(require 'anything-config)
-
 ;;choose the color theme
 ;;(load-file “~/.emacs.d/themes/zenburn-theme.el”)
 (load-file "~/.emacs.d/themes/color-theme-molokai.el")
@@ -266,28 +270,6 @@ added to `haskell-mode-hook'"
   "Search the word at point with Dash." t nil)
 (global-set-key (kbd "C-c C-d") 'dash-at-point)
 
-;; (defun set-frame-size-according-to-resolution ()
-;;   (interactive)
-;;   (if window-system
-;;       (progn
-;;         ;; use 180 char wide window for largeish displays
-;;         ;; and smaller 80 column windows for smaller displays
-;;         ;; pick whatever numbers make sense for you
-;;         (if (> (x-display-pixel-width) 1280)
-;;             (add-to-list 'default-frame-alist (cons 'width 180))
-;;           (add-to-list 'default-frame-alist (cons 'width 80)))
-;;         ;; for the height, subtract a couple hundred pixels
-;;         ;; from the screen height (for panels, menubars and
-;;         ;; whatnot), then divide by the height of a char to
-;;         ;; get the height we want
-;;         (add-to-list 'default-frame-alist
-;;                      (cons 'height (/ (- (x-display-pixel-height) 200) (frame-char-height)))))))
-
-;; (set-frame-size-according-to-resolution)
-
-;;透明
-;;(set-frame-parameter (selected-frame) 'alpha (list 95 95))
-;;(add-to-list 'default-frame-alist (cons 'alpha (list 95 95)))
 
 ;;自动缩进
 (global-set-key (kbd "RET") 'newline-and-indent)
@@ -306,22 +288,6 @@ added to `haskell-mode-hook'"
 (load-file "~/.emacs.d/plugins/minimap-1.0.el")
 (require 'minimap)
 
-;; ;;cedet
-;; (add-to-list 'load-path "~/.emacs.d/cedet-1.1/common")
-;; (require 'cedet)
-;; (require 'semantic-ia)
-
-;; ;; Enable EDE (Project Management) features
-;; (global-ede-mode 1)
-
-;; (semantic-load-enable-minimum-features)
-;; ;;(semantic-load-enable-code-helpers)
-;; (semantic-load-enable-guady-code-helpers)
-;; (semantic-load-enable-excessive-code-helpers)
-;; (semantic-load-enable-semantic-debugging-helpers)
-;; ;; Enable SRecode (Template management) minor-mode.
-;; (global-srecode-minor-mode 1)
-
 ;;ruby-tools
 (add-to-list 'load-path
              "~/.emacs.d/elpa/ruby-tools-20121008.1851")
@@ -336,36 +302,19 @@ added to `haskell-mode-hook'"
 (require 'rvm)
 (rvm-use-default)
 
-;;tabbar
-;; (add-to-list 'load-path
-;;              "~/.emacs.d/elpa/tabbar-20110824.1439")
-;; (add-to-list 'load-path
-;;              "~/.emacs.d/elpa/tabbar-ruler-20130501.1226")
-;; (setq tabbar-ruler-global-tabbar 't) ; If you want tabbar
-;; ;;(setq tabbar-ruler-global-ruler 't) ; if you want a global ruler
-;; (setq tabbar-ruler-popup-menu 't) ; If you want a popup menu.
-;; (setq tabbar-ruler-popup-toolbar 't) ; If you want a popup toolbar
-
-;; (require 'tabbar-ruler)
-
 ;;blank-mode
 (load-file "~/.emacs.d/plugins/blank-mode.el")
 (require 'blank-mode)
 (setq blank-empty 'underline)
 
-;;python
-;;(add-to-list 'load-path
-;;             "~/.emacs.d/plugins/python.el")
-;;(require 'python)
-
 
 ;;textmate-mode
-(add-to-list 'load-path "~/.emacs.d/vender/textmate.el")
-(require 'textmate)
-(textmate-mode)
+;; (add-to-list 'load-path "~/.emacs.d/vender/textmate.el")
+;; (require 'textmate)
+;; (textmate-mode)
 
 ;;highlight-parentheses
-(load-file "~/.emacs.d/vender/highlight-parentheses.el")
+(load-file "~/.emacs.d/plugins/highlight-parentheses.el")
 (require 'highlight-parentheses)
 
 ;;whitespace
@@ -426,12 +375,12 @@ added to `haskell-mode-hook'"
 
 
 ;;test-case-mode
-(add-to-list 'load-path "~/.emacs.d/plugins/test-case-mode")
-(autoload 'test-case-mode "test-case-mode" nil t)
-(autoload 'enable-test-case-mode-if-test "test-case-mode")
-(autoload 'test-case-find-all-tests "test-case-mode" nil t)
-(autoload 'test-case-compilation-finish-run-all "test-case-mode")
-(add-hook 'find-file-hook 'enable-test-case-mode-if-test)
+;; (add-to-list 'load-path "~/.emacs.d/plugins/test-case-mode")
+;; (autoload 'test-case-mode "test-case-mode" nil t)
+;; (autoload 'enable-test-case-mode-if-test "test-case-mode")
+;; (autoload 'test-case-find-all-tests "test-case-mode" nil t)
+;; (autoload 'test-case-compilation-finish-run-all "test-case-mode")
+;; (add-hook 'find-file-hook 'enable-test-case-mode-if-test)
 
 ;;SML-mode
 (global-font-lock-mode t)
@@ -455,11 +404,11 @@ added to `haskell-mode-hook'"
 
 
 ;;autopari
-(add-to-list 'load-path
-	     "~/.emacs.d/plugins")
-(require 'autopair)
-(autopair-global-mode) 
-(require 'auto-pair+)
+;; (add-to-list 'load-path
+;; 	     "~/.emacs.d/plugins")
+;; (require 'autopair)
+;; (autopair-global-mode) 
+;; (require 'auto-pair+)
 
 ;;Golang
 (add-to-list 'load-path
@@ -566,195 +515,167 @@ added to `haskell-mode-hook'"
         ("Safari" "open %o")))
 
 
-;;powerline配置
-(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline/")
-(load-file "~/.emacs.d/vender/emacs-powerline/powerline.el")
-(require 'powerline)
-;;(require 'cl)
+;;yascroll
+(global-yascroll-bar-mode 1)
 
-(defun arrow-right-xpm (color1 color2)
-  "Return an XPM right arrow string representing."
-  (format "/* XPM */
-static char * arrow_right[] = {
-\"12 24 2 1\",
-\". c %s\",
-\"  c %s\",
-\".           \",
-\"..          \",
-\"...         \",
-\"....        \",
-\".....       \",
-\"......      \",
-\".......     \",
-\"........    \",
-\".........   \",
-\"..........  \",
-\"........... \",
-\"............\",
-\"........... \",
-\"..........  \",
-\".........   \",
-\"........    \",
-\".......     \",
-\"......      \",
-\".....       \",
-\"....        \",
-\"...         \",
-\"..          \",
-\".           \",
-\"            \"};"  color1 color2))
-
-
-
-(defun arrow-left-xpm (color1 color2)
-  "Return an XPM right arrow string representing."
-  (format "/* XPM */
-static char * arrow_right[] = {
-\"12 24 2 1\",
-\". c %s\",
-\"  c %s\",
-\"           .\",
-\"          ..\",
-\"         ...\",
-\"        ....\",
-\"       .....\",
-\"      ......\",
-\"     .......\",
-\"    ........\",
-\"   .........\",
-\"  ..........\",
-\" ...........\",
-\"............\",
-\" ...........\",
-\"  ..........\",
-\"   .........\",
-\"    ........\",
-\"     .......\",
-\"      ......\",
-\"       .....\",
-\"        ....\",
-\"         ...\",
-\"          ..\",
-\"           .\",
-\"            \"};"  color2 color1))
-
-
-(defun arrow-first-xpm (color1 color2)
-  "Return an XPM right arrow string representing."
-  (format "/* XPM */
-static char * arrow_right[] = {
-\"21 24 2 1\",
-\". c %s\",
-\"  c %s\",
-\".   ......           \",
-\"..   ......          \",
-\"...   ......         \",
-\"....   ......        \",
-\".....   ......       \",
-\"......   ......      \",
-\".......   ......     \",
-\"........   ......    \",
-\".........   ......   \",
-\"..........   ......  \",
-\"...........   ...... \",
-\"............   ......\",
-\"...........   ...... \",
-\"..........   ......  \",
-\".........   ......   \",
-\"........   ......    \",
-\".......   ......     \",
-\"......   ......      \",
-\".....   ......       \",
-\"....   ......        \",
-\"...   ......         \",
-\"..   ......          \",
-\".   ......           \",
-\"   ......            \"};"  color1 color2))
+;;powerline
+;; (add-to-list 'load-path "~/.emacs.d/plugins/emacs-powerline")
+;; (require 'powerline)
+;; (defun arrow-right-xpm (color1 color2)
+;;   "Return an XPM right arrow string representing."
+;;   (format "/* XPM */
+;; static char * arrow_right[] = {
+;; \"12 24 2 1\",
+;; \". c %s\",
+;; \"  c %s\",
+;; \".           \",
+;; \"..          \",
+;; \"...         \",
+;; \"....        \",
+;; \".....       \",
+;; \"......      \",
+;; \".......     \",
+;; \"........    \",
+;; \".........   \",
+;; \"..........  \",
+;; \"........... \",
+;; \"............\",
+;; \"........... \",
+;; \"..........  \",
+;; \".........   \",
+;; \"........    \",
+;; \".......     \",
+;; \"......      \",
+;; \".....       \",
+;; \"....        \",
+;; \"...         \",
+;; \"..          \",
+;; \".           \",
+;; \"            \"};"  color1 color2))
 
 
 
-(defconst color1 "#F9408C")
-(defconst color2 "#989898")
-(defconst color3 "#696969")
+;; (defun arrow-left-xpm (color1 color2)
+;;   "Return an XPM right arrow string representing."
+;;   (format "/* XPM */
+;; static char * arrow_right[] = {
+;; \"12 24 2 1\",
+;; \". c %s\",
+;; \"  c %s\",
+;; \"           .\",
+;; \"          ..\",
+;; \"         ...\",
+;; \"        ....\",
+;; \"       .....\",
+;; \"      ......\",
+;; \"     .......\",
+;; \"    ........\",
+;; \"   .........\",
+;; \"  ..........\",
+;; \" ...........\",
+;; \"............\",
+;; \" ...........\",
+;; \"  ..........\",
+;; \"   .........\",
+;; \"    ........\",
+;; \"     .......\",
+;; \"      ......\",
+;; \"       .....\",
+;; \"        ....\",
+;; \"         ...\",
+;; \"          ..\",
+;; \"           .\",
+;; \"            \"};"  color2 color1))
 
-(defvar arrow-right-1 (create-image (arrow-first-xpm color1 color2) 'xpm t :ascent 'center))
-(defvar arrow-right-2 (create-image (arrow-right-xpm color2 color3) 'xpm t :ascent 'center))
-(defvar arrow-right-3 (create-image (arrow-right-xpm color3 "None") 'xpm t :ascent 'center))
-(defvar arrow-left-1  (create-image (arrow-left-xpm color2 color1) 'xpm t :ascent 'center))
-(defvar arrow-left-2  (create-image (arrow-left-xpm color3 color2) 'xpm t :ascent 'center))
-(defvar arrow-left-3  (create-image (arrow-left-xpm "None" color3) 'xpm t :ascent 'center))
 
-(setq-default mode-line-format
-              (list  '(:eval (concat (propertize " %* %b " 'face 'mode-line-color-1)
-                                     (propertize " " 'display arrow-right-1)))
-                     '(:eval (concat (propertize " %Z " 'face 'mode-line-color-2)
-                                     (propertize " " 'display arrow-right-2)))
-                     '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
-                                     (propertize " " 'display arrow-right-3)))
+;; (defun arrow-first-xpm (color1 color2)
+;;   "Return an XPM right arrow string representing."
+;;   (format "/* XPM */
+;; static char * arrow_right[] = {
+;; \"21 24 2 1\",
+;; \". c %s\",
+;; \"  c %s\",
+;; \".   ......           \",
+;; \"..   ......          \",
+;; \"...   ......         \",
+;; \"....   ......        \",
+;; \".....   ......       \",
+;; \"......   ......      \",
+;; \".......   ......     \",
+;; \"........   ......    \",
+;; \".........   ......   \",
+;; \"..........   ......  \",
+;; \"...........   ...... \",
+;; \"............   ......\",
+;; \"...........   ...... \",
+;; \"..........   ......  \",
+;; \".........   ......   \",
+;; \"........   ......    \",
+;; \".......   ......     \",
+;; \"......   ......      \",
+;; \".....   ......       \",
+;; \"....   ......        \",
+;; \"...   ......         \",
+;; \"..   ......          \",
+;; \".   ......           \",
+;; \"   ......            \"};"  color1 color2))
+
+
+
+;; (defconst color1 "#F9408C")
+;; (defconst color2 "#989898")
+;; (defconst color3 "#696969")
+
+;; (defvar arrow-right-1 (create-image (arrow-first-xpm color1 color2) 'xpm t :ascent 'center))
+;; (defvar arrow-right-2 (create-image (arrow-right-xpm color2 color3) 'xpm t :ascent 'center))
+;; (defvar arrow-right-3 (create-image (arrow-right-xpm color3 "None") 'xpm t :ascent 'center))
+;; (defvar arrow-left-1  (create-image (arrow-left-xpm color2 color1) 'xpm t :ascent 'center))
+;; (defvar arrow-left-2  (create-image (arrow-left-xpm color3 color2) 'xpm t :ascent 'center))
+;; (defvar arrow-left-3  (create-image (arrow-left-xpm "None" color3) 'xpm t :ascent 'center))
+
+;; (setq-default mode-line-format
+;;               (list  '(:eval (concat (propertize " %* %b " 'face 'mode-line-color-1)
+;;                                      (propertize " " 'display arrow-right-1)))
+;;                      '(:eval (concat (propertize " %Z " 'face 'mode-line-color-2)
+;;                                      (propertize " " 'display arrow-right-2)))
+;;                      '(:eval (concat (propertize " %m " 'face 'mode-line-color-3)
+;;                                      (propertize " " 'display arrow-right-3)))
+;;                      '(:eval (count  (propertize " %% " 'face 'mode-line-color-1)
+;;                                      (propertize " " 'display arrow-right-4)))
                      
-                     ;; Justify right by filling with spaces to right fringe - 16
-                     ;; (16 should be computed rahter than hardcoded)
-                     '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
                      
-                     '(:eval (concat (propertize " " 'display arrow-left-3)
-                                     (propertize " %p " 'face 'mode-line-color-3)))
-                     '(:eval (concat (propertize " " 'display arrow-left-2)
-                                     (propertize "%4l:%2c  " 'face 'mode-line-color-2)))
-                     ))
+;;                      ;; Justify right by filling with spaces to right fringe - 16
+;;                      ;; (16 should be computed rahter than hardcoded)
+;;                      '(:eval (propertize " " 'display '((space :align-to (- right-fringe 17)))))
+                     
+;;                      '(:eval (concat (propertize " " 'display arrow-left-3)
+;;                                      (propertize " %p " 'face 'mode-line-color-3)))
+;;                      '(:eval (concat (propertize " " 'display arrow-left-2)
+;;                                      (propertize "%4l:%2c  " 'face 'mode-line-color-2)))
+;;                      ))
 
-(make-face 'mode-line-color-1)
-(set-face-attribute 'mode-line-color-1 nil
-                    :foreground "#fff"
-                    :background color1)
+;; (make-face 'mode-line-color-1)
+;; (set-face-attribute 'mode-line-color-1 nil
+;;                     :foreground "#fff"
+;;                     :background color1)
 
-(make-face 'mode-line-color-2)
-(set-face-attribute 'mode-line-color-2 nil
-                    :foreground "#fff"
-                    :background color2)
+;; (make-face 'mode-line-color-2)
+;; (set-face-attribute 'mode-line-color-2 nil
+;;                     :foreground "#fff"
+;;                     :background color2)
 
-(make-face 'mode-line-color-3)
-(set-face-attribute 'mode-line-color-3 nil
-                    :foreground "#fff"
-                    :background color3)
+;; (make-face 'mode-line-color-3)
+;; (set-face-attribute 'mode-line-color-3 nil
+;;                     :foreground "#fff"
+;;                     :background color3)
 
-(set-face-attribute 'mode-line nil
-                    :foreground "#fff"
-                    :background "#404040"
-                    :box nil)
-(set-face-attribute 'mode-line-inactive nil
-                    :foreground "#fff"
-                    :background "#202020")
-
-
-
-;;scroll优化
-(setq scroll-step 1)
-
-(global-set-key (kbd "<next>") 'my-page-down)
-(defun my-page-down ()
-  "12Feb03"
-  (interactive)
-  (let ((pos (point)))
-    (goto-char (window-start))
-    (next-line 1)
-    (set-window-start (selected-window)
-                      (point))
-    (goto-char pos)
-    (next-line 1)))
-
-(global-set-key (kbd "<prior>") 'my-page-up)
-(defun my-page-up ()
-  "12Feb03"
-  (interactive)
-  (let ((pos (point)))
-    (goto-char (window-start))
-    (previous-line 1)
-    (set-window-start (selected-window)
-                      (point))
-    (goto-char pos)
-    (previous-line 1)))
-
-
+;; (set-face-attribute 'mode-line nil
+;;                     :foreground "#fff"
+;;                     :background "#404040"
+;;                     :box nil)
+;; (set-face-attribute 'mode-line-inactive nil
+;;                     :foreground "#fff"
+;;                     :background "#202020")
 
 (global-set-key "\M-w"
                 (lambda ()
@@ -779,6 +700,20 @@ static char * arrow_right[] = {
                                    (line-end-position))
                       (message "killed line")))))
 
+;;ace-jump-mode
+(autoload
+  'ace-jump-mode
+  "ace-jump-mode"
+  "Emacs quick move minor mode"
+  t)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
+;;helm-mode
+(helm-mode 1)
+
+;;expand-region
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
 
 ;;autoinsert
 ;;首先这句话设置一个目录，你的auto-insert 的模版文件会存放在这个目录中，

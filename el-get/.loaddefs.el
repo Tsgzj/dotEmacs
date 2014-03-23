@@ -174,7 +174,7 @@ List of modes which derive from `text-mode' for which text mode expansions are n
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm" "helm/helm.el" (21295 2115 0 0))
+;;;### (autoloads nil "helm/helm" "helm/helm.el" (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm.el
 
 (autoload 'helm-define-multi-key "helm/helm" "\
@@ -481,7 +481,7 @@ This will enable `helm-follow-mode' automatically in `helm-source-buffers-list'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-adaptative" "helm/helm-adaptative.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-adaptative.el
 
 (autoload 'helm-reset-adaptative-history "helm/helm-adaptative" "\
@@ -492,7 +492,7 @@ Useful when you have a old or corrupted `helm-adaptive-history-file'.
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-apt" "helm/helm-apt.el" (21295 2115
+;;;### (autoloads nil "helm/helm-apt" "helm/helm-apt.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-apt.el
 
@@ -505,7 +505,7 @@ With a prefix arg reload cache.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-bbdb" "helm/helm-bbdb.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-bbdb.el
 
 (autoload 'helm-bbdb "helm/helm-bbdb" "\
@@ -520,7 +520,7 @@ http://bbdb.sourceforge.net/
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-bookmark" "helm/helm-bookmark.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-bookmark.el
 
 (autoload 'helm-bookmarks "helm/helm-bookmark" "\
@@ -543,7 +543,7 @@ only if external library addressbook-bookmark.el is available.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-buffers" "helm/helm-buffers.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-buffers.el
 
 (autoload 'helm-buffers-list "helm/helm-buffers" "\
@@ -554,7 +554,7 @@ Preconfigured `helm' to list buffers.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-call-tree" "helm/helm-call-tree.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-call-tree.el
 
 (autoload 'helm-simple-call-tree "helm/helm-call-tree" "\
@@ -568,7 +568,7 @@ http://www.emacswiki.org/cgi-bin/wiki/download/simple-call-tree.el
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-color" "helm/helm-color.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-color.el
 
 (autoload 'helm-colors "helm/helm-color" "\
@@ -579,7 +579,7 @@ Preconfigured `helm' for color.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-command" "helm/helm-command.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-command.el
 
 (autoload 'helm-M-x "helm/helm-command" "\
@@ -591,7 +591,7 @@ It is `helm' replacement of regular `M-x' `execute-extended-command'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-config" "helm/helm-config.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-config.el
 
 (autoload 'helm-configuration "helm/helm-config" "\
@@ -602,7 +602,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-dabbrev" "helm/helm-dabbrev.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-dabbrev.el
 
 (autoload 'helm-dabbrev "helm/helm-dabbrev" "\
@@ -613,7 +613,7 @@ Customize `helm'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-elisp" "helm/helm-elisp.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-elisp.el
 
 (autoload 'helm-lisp-completion-at-point "helm/helm-elisp" "\
@@ -665,7 +665,7 @@ Preconfigured `helm' for timers.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-elisp-package" "helm/helm-elisp-package.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-elisp-package.el
 
 (autoload 'helm-list-elisp-packages "helm/helm-elisp-package" "\
@@ -676,7 +676,7 @@ Preconfigured `helm' for timers.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-elscreen" "helm/helm-elscreen.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-elscreen.el
 
 (autoload 'helm-elscreen "helm/helm-elscreen" "\
@@ -687,7 +687,7 @@ Preconfigured helm to list elscreen.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-emms" "helm/helm-emms.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-emms.el
 
 (autoload 'helm-emms "helm/helm-emms" "\
@@ -698,7 +698,7 @@ Preconfigured `helm' for emms sources.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-eshell" "helm/helm-eshell.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-eshell.el
 
 (autoload 'helm-esh-pcomplete "helm/helm-eshell" "\
@@ -714,7 +714,7 @@ Preconfigured helm for eshell history.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-eval" "helm/helm-eval.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-eval.el
 
 (autoload 'helm-eval-expression "helm/helm-eval" "\
@@ -735,7 +735,7 @@ Preconfigured helm for `helm-source-calculation-result'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-external" "helm/helm-external.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-external.el
 
 (autoload 'helm-run-external-command "helm/helm-external" "\
@@ -749,7 +749,7 @@ You can set your own list of commands with
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-files" "helm/helm-files.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-files.el
 
 (autoload 'helm-browse-project "helm/helm-files" "\
@@ -791,7 +791,7 @@ Preconfigured `helm' for `recentf'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-firefox" "helm/helm-firefox.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-firefox.el
 
 (autoload 'helm-firefox-bookmarks "helm/helm-firefox" "\
@@ -812,7 +812,7 @@ After closing firefox, you will be able to browse you bookmarks.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-font" "helm/helm-font.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-font.el
 
 (autoload 'helm-select-xfont "helm/helm-font" "\
@@ -828,7 +828,7 @@ Preconfigured helm for `ucs-names' math symbols.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-gentoo" "helm/helm-gentoo.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-gentoo.el
 
 (autoload 'helm-gentoo "helm/helm-gentoo" "\
@@ -839,7 +839,7 @@ Preconfigured `helm' for gentoo linux.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-grep" "helm/helm-grep.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-grep.el
 
 (autoload 'helm-goto-precedent-file "helm/helm-grep" "\
@@ -927,7 +927,7 @@ Preconfigured helm for pdfgrep.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-help" "helm/helm-help.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-help.el
 
 (defvar helm-mode-line-string "\\<helm-map>\\[helm-help]:Help \\[helm-select-action]:Act \\[helm-exit-minibuffer]/\\[helm-select-2nd-action-or-end-of-line]/\\[helm-select-3rd-action]:NthAct" "\
@@ -1066,7 +1066,7 @@ HELM-ATTRIBUTE should be a symbol.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-imenu" "helm/helm-imenu.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-imenu.el
 
 (autoload 'helm-imenu "helm/helm-imenu" "\
@@ -1077,7 +1077,7 @@ Preconfigured `helm' for `imenu'.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-info" "helm/helm-info.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-info.el
 
 (autoload 'helm-info-at-point "helm/helm-info" "\
@@ -1089,7 +1089,7 @@ With a prefix-arg insert symbol at point.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-locate" "helm/helm-locate.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-locate.el
 
 (autoload 'helm-locate-read-file-name "helm/helm-locate" "\
@@ -1117,7 +1117,7 @@ Where db_path is a filename matched by
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-man" "helm/helm-man.el" (21295 2115
+;;;### (autoloads nil "helm/helm-man" "helm/helm-man.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-man.el
 
@@ -1130,7 +1130,7 @@ With a prefix arg reinitialize the cache.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-match-plugin" "helm/helm-match-plugin.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-match-plugin.el
 
 (defvar helm-match-plugin-mode nil "\
@@ -1151,7 +1151,7 @@ See `helm-mp-matching-method' for the behavior of each method.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-misc" "helm/helm-misc.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-misc.el
 
 (autoload 'helm-browse-menubar "helm/helm-misc" "\
@@ -1202,7 +1202,7 @@ Predefined `helm' that provide completion of `comint' history.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-mode" "helm/helm-mode.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-mode.el
 
 (autoload 'helm-comp-read "helm/helm-mode" "\
@@ -1319,7 +1319,7 @@ Note: This mode is incompatible with Emacs23.
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-net" "helm/helm-net.el" (21295 2115
+;;;### (autoloads nil "helm/helm-net" "helm/helm-net.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-net.el
 
@@ -1340,7 +1340,7 @@ Preconfigured `helm' for Yahoo searching with Yahoo suggest.
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-org" "helm/helm-org.el" (21295 2115
+;;;### (autoloads nil "helm/helm-org" "helm/helm-org.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-org.el
 
@@ -1357,7 +1357,7 @@ Preconfigured helm to show org headlines.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-regexp" "helm/helm-regexp.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-regexp.el
 
 (defvar helm-occur-match-plugin-mode t "\
@@ -1414,7 +1414,7 @@ The prefix arg can be set before calling
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-ring" "helm/helm-ring.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-ring.el
 
 (autoload 'helm-mark-ring "helm/helm-ring" "\
@@ -1448,7 +1448,7 @@ First call open the kill-ring browser, next calls move to next line.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-semantic" "helm/helm-semantic.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-semantic.el
 
 (autoload 'helm-semantic "helm/helm-semantic" "\
@@ -1467,7 +1467,7 @@ Fill in the symbol at point by default.
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-sys" "helm/helm-sys.el" (21295 2115
+;;;### (autoloads nil "helm/helm-sys" "helm/helm-sys.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-sys.el
 
@@ -1509,7 +1509,7 @@ Preconfigured `helm' for emacs process.
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-tags" "helm/helm-tags.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-tags.el
 
 (autoload 'helm-etags-select "helm/helm-tags" "\
@@ -1528,7 +1528,7 @@ This function aggregates three sources of tag files:
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-utils" "helm/helm-utils.el" (21295
-;;;;;;  2115 0 0))
+;;;;;;  3941 0 0))
 ;;; Generated autoloads from helm/helm-utils.el
 
 (autoload 'helm-show-all-in-this-source-only "helm/helm-utils" "\
@@ -1564,7 +1564,7 @@ the entire symbol.
 
 ;;;***
 
-;;;### (autoloads nil "helm/helm-w3m" "helm/helm-w3m.el" (21295 2115
+;;;### (autoloads nil "helm/helm-w3m" "helm/helm-w3m.el" (21295 3941
 ;;;;;;  0 0))
 ;;; Generated autoloads from helm/helm-w3m.el
 
@@ -1581,7 +1581,7 @@ http://emacs-w3m.namazu.org/
 ;;;***
 
 ;;;### (autoloads nil "helm/helm-yaoddmuse" "helm/helm-yaoddmuse.el"
-;;;;;;  (21295 2115 0 0))
+;;;;;;  (21295 3941 0 0))
 ;;; Generated autoloads from helm/helm-yaoddmuse.el
 
 (autoload 'helm-yaoddmuse-cache-pages "helm/helm-yaoddmuse" "\
@@ -1605,6 +1605,170 @@ Preconfigured `helm' to post library to EmacsWiki.
 Needs yaoddmuse.el.
 
 http://www.emacswiki.org/emacs/download/yaoddmuse.el
+
+\(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil "smartparens/smartparens" "smartparens/smartparens.el"
+;;;;;;  (21295 4704 0 0))
+;;; Generated autoloads from smartparens/smartparens.el
+
+(autoload 'sp-cheat-sheet "smartparens/smartparens" "\
+Generate a cheat sheet of all the smartparens interactive functions.
+
+Without a prefix argument, print only the short documentation and examples.
+
+With non-nil prefix argument, show the full documentation for each function.
+
+You can follow the links to the function or variable help page.
+To get back to the full list, use \\[help-go-back].
+
+You can use `beginning-of-defun' and `end-of-defun' to jump to
+the previous/next entry.
+
+Examples are fontified using the `font-lock-string-face' for
+better orientation.
+
+\(fn &optional ARG)" t nil)
+
+(defvar sp-keymap (make-sparse-keymap) "\
+Keymap used for `smartparens-mode'.")
+
+(autoload 'sp-use-paredit-bindings "smartparens/smartparens" "\
+Initiate `sp-keymap' with paredit-compatible bindings for
+corresponding functions provided by smartparens.  See variable
+`sp-paredit-bindings'.
+
+\(fn)" t nil)
+
+(autoload 'sp-use-smartparens-bindings "smartparens/smartparens" "\
+Initiate `sp-keymap' with smartparens bindings for navigation functions.
+See variable `sp-smartparens-bindings'.
+
+\(fn)" t nil)
+
+(autoload 'smartparens-mode "smartparens/smartparens" "\
+Toggle smartparens mode.
+
+You can enable pre-set bindings by customizing
+`sp-base-key-bindings' variable.  The current content of
+`sp-keymap' is:
+
+ \\{sp-keymap}
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'smartparens-strict-mode "smartparens/smartparens" "\
+Toggle the strict smartparens mode.
+
+When strict mode is active, `delete-char', `kill-word' and their
+backward variants will skip over the pair delimiters in order to
+keep the structure always valid (the same way as `paredit-mode'
+does).  This is accomplished by remapping them to
+`sp-delete-char' and `sp-kill-word'.  There is also function
+`sp-kill-symbol' that deletes symbols instead of words, otherwise
+working exactly the same (it is not bound to any key by default).
+
+When strict mode is active, this is indicated with \"/s\"
+after the smartparens indicator in the mode list.
+
+\(fn &optional ARG)" t nil)
+
+(defvar smartparens-global-strict-mode nil "\
+Non-nil if Smartparens-Global-Strict mode is enabled.
+See the command `smartparens-global-strict-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `smartparens-global-strict-mode'.")
+
+(custom-autoload 'smartparens-global-strict-mode "smartparens/smartparens" nil)
+
+(autoload 'smartparens-global-strict-mode "smartparens/smartparens" "\
+Toggle Smartparens-Strict mode in all buffers.
+With prefix ARG, enable Smartparens-Global-Strict mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Smartparens-Strict mode is enabled in all buffers where
+`turn-on-smartparens-strict-mode' would do it.
+See `smartparens-strict-mode' for more information on Smartparens-Strict mode.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-smartparens-strict-mode "smartparens/smartparens" "\
+Turn on `smartparens-strict-mode'.
+
+\(fn)" t nil)
+
+(defvar smartparens-global-mode nil "\
+Non-nil if Smartparens-Global mode is enabled.
+See the command `smartparens-global-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `smartparens-global-mode'.")
+
+(custom-autoload 'smartparens-global-mode "smartparens/smartparens" nil)
+
+(autoload 'smartparens-global-mode "smartparens/smartparens" "\
+Toggle Smartparens mode in all buffers.
+With prefix ARG, enable Smartparens-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Smartparens mode is enabled in all buffers where
+`turn-on-smartparens-mode' would do it.
+See `smartparens-mode' for more information on Smartparens mode.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-smartparens-mode "smartparens/smartparens" "\
+Turn on `smartparens-mode'.
+
+\(fn)" t nil)
+
+(autoload 'turn-off-smartparens-mode "smartparens/smartparens" "\
+Turn off `smartparens-mode'.
+
+\(fn)" t nil)
+
+(autoload 'show-smartparens-mode "smartparens/smartparens" "\
+Toggle visualization of matching pairs.  When enabled, any
+matching pair is highlighted after `sp-show-pair-delay' seconds
+of Emacs idle time if the point is immediately in front or after
+a pair.  This mode works similarly to `show-paren-mode', but
+support custom pairs.
+
+\(fn &optional ARG)" t nil)
+
+(defvar show-smartparens-global-mode nil "\
+Non-nil if Show-Smartparens-Global mode is enabled.
+See the command `show-smartparens-global-mode' for a description of this minor mode.
+Setting this variable directly does not take effect;
+either customize it (see the info node `Easy Customization')
+or call the function `show-smartparens-global-mode'.")
+
+(custom-autoload 'show-smartparens-global-mode "smartparens/smartparens" nil)
+
+(autoload 'show-smartparens-global-mode "smartparens/smartparens" "\
+Toggle Show-Smartparens mode in all buffers.
+With prefix ARG, enable Show-Smartparens-Global mode if ARG is positive;
+otherwise, disable it.  If called from Lisp, enable the mode if
+ARG is omitted or nil.
+
+Show-Smartparens mode is enabled in all buffers where
+`turn-on-show-smartparens-mode' would do it.
+See `show-smartparens-mode' for more information on Show-Smartparens mode.
+
+\(fn &optional ARG)" t nil)
+
+(autoload 'turn-on-show-smartparens-mode "smartparens/smartparens" "\
+Turn on `show-smartparens-mode'.
+
+\(fn)" t nil)
+
+(autoload 'turn-off-show-smartparens-mode "smartparens/smartparens" "\
+Turn off `show-smartparens-mode'.
 
 \(fn)" t nil)
 
@@ -1777,7 +1941,11 @@ See `yascroll-bar-mode' for more information on Yascroll-Bar mode.
 ;;;;;;  "expand-region/sml-mode-expansions.el" "expand-region/text-mode-expansions.el"
 ;;;;;;  "expand-region/the-org-mode-expansions.el" "expand-region/web-mode-expansions.el"
 ;;;;;;  "helm/helm-aliases.el" "helm/helm-pkg.el" "helm/helm-plugin.el"
-;;;;;;  "powerline/powerline-separators.el") (21295 3146 66626 0))
+;;;;;;  "rsense/etc/rsense.el" "smartparens/smartparens-config.el"
+;;;;;;  "smartparens/smartparens-html.el" "smartparens/smartparens-latex.el"
+;;;;;;  "smartparens/smartparens-lua.el" "smartparens/smartparens-pkg.el"
+;;;;;;  "smartparens/smartparens-ruby.el" "yasnippet/yasnippet-debug.el"
+;;;;;;  "yasnippet/yasnippet-tests.el") (21295 6996 958251 0))
 
 ;;;***
 
