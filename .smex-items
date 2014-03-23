@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ comment-region
  package-install
- auto-indent-mode
- haskell-indent-mode
  package-refresh-contents
  scheme-mode
  indent-region
- comment-region
+ c-mode
+ uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -68,7 +68,7 @@
  (html-mode . 9)
  (js2-mode . 2)
  (speedbar . 2)
- (comment-region . 58)
+ (comment-region . 60)
  (whitespace-mode . 23)
  (blank-mode . 19)
  (browse-url-w3 . 3)
