@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- scheme-mode
- lisp-mode
+ align-regexp
+ newline-and-indent
  ruby-mode
- uncomment-region
  comment-region
  indent-region
  c-mode
+ uncomment-region
 )
 
 ;; ----- smex-data -----
@@ -16,7 +16,7 @@
  (slime . 51)
  (eshell . 16)
  (c-mode . 35)
- (auto-complete-mode . 56)
+ (auto-complete-mode . 61)
  (ac-complete-yasnippet . 5)
  (auto-complete . 3)
  (package-install . 23)
@@ -40,7 +40,7 @@
  (window-number-mode . 1)
  (test-case-mode . 7)
  (test-case-run . 1)
- (ruby-mode . 17)
+ (ruby-mode . 18)
  (org-mode . 3)
  (outline-mode . 6)
  (outline-minor-mode . 4)
@@ -73,7 +73,7 @@
  (blank-mode . 19)
  (browse-url-w3 . 3)
  (c-set-style . 8)
- (newline-and-indent . 2)
+ (newline-and-indent . 3)
  (auto-fill-mode . 2)
  (customize-variable . 1)
  (fci-mode . 1)
@@ -84,11 +84,11 @@
  (global-blank-mode . 2)
  (highlight-indentation-current-column-mode . 1)
  (open-line . 1)
- (dash-at-point . 6)
+ (dash-at-point . 10)
  (list-packages . 1)
  (tabbar-mode . 1)
  (replace-regexp . 28)
- (auto-indent-mode . 16)
+ (auto-indent-mode . 18)
  (ecb-deactivate . 2)
  (clipboard-yank . 1)
  (weibo-send-post . 1)
@@ -128,25 +128,29 @@
  (color-theme-molokai . 1)
  (paredit-mode . 6)
  (route . 1)
- (haskell-mode . 1)
- (haskell-indent-mode . 9)
+ (haskell-mode . 8)
+ (haskell-indent-mode . 15)
  (auto-indent-minor-mode . 5)
- (haskell-indentation-mode . 3)
+ (haskell-indentation-mode . 5)
  (auto-indent-kill-line . 1)
  (turn-on-hi2 . 1)
  (turn-on-haskell-simple-indent . 1)
  (package-refresh-contents . 1)
  (el-get-cd . 1)
- (el-get-install . 17)
+ (el-get-install . 24)
  (helm-mode . 6)
  (ace-jump-mode . 1)
  (ido-mode . 2)
  (helm-find . 1)
  (helm-mini . 1)
- (el-get-remove . 3)
+ (el-get-remove . 6)
  (el-get-list-packages . 1)
  (yascroll-bar-mode . 4)
  (smartparens-mode . 3)
  (smartparens-global-mode . 1)
  (rsense-complete . 1)
+ (ghc-core-mode . 1)
+ (sr-speedbar-open . 1)
+ (align-regexp . 1)
+ (literate-haskell-mode . 2)
 )

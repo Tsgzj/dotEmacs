@@ -1610,6 +1610,82 @@ http://www.emacswiki.org/emacs/download/yaoddmuse.el
 
 ;;;***
 
+;;;### (autoloads nil "powerline/powerline" "powerline/powerline.el"
+;;;;;;  (21298 17389 0 0))
+;;; Generated autoloads from powerline/powerline.el
+
+(autoload 'powerline-hud "powerline/powerline" "\
+Return an XPM of relative buffer location using FACE1 and FACE2 of optional WIDTH.
+
+\(fn FACE1 FACE2 &optional WIDTH)" nil nil)
+
+(autoload 'powerline-mouse "powerline/powerline" "\
+Return mouse handler for CLICK-GROUP given CLICK-TYPE and STRING.
+
+\(fn CLICK-GROUP CLICK-TYPE STRING)" nil nil)
+
+(autoload 'powerline-concat "powerline/powerline" "\
+Concatonate STRINGS and pad sides by spaces.
+
+\(fn &rest STRINGS)" nil nil)
+
+(autoload 'defpowerline "powerline/powerline" "\
+Create function NAME by wrapping BODY with powerline padding an propetization.
+
+\(fn NAME BODY)" nil t)
+
+(autoload 'powerline-raw "powerline/powerline" "\
+Render STR as mode-line data using FACE and optionally PAD import on left (l) or right (r).
+
+\(fn STR &optional FACE PAD)" nil nil)
+
+(autoload 'powerline-fill "powerline/powerline" "\
+Return empty space using FACE and leaving RESERVE space on the right.
+
+\(fn FACE RESERVE)" nil nil)
+
+(defpowerline powerline-major-mode (propertize (format-mode-line mode-name) 'mouse-face 'mode-line-highlight 'help-echo "Major mode\nmouse-1: Display major mode menu\nmouse-2: Show help for major mode\nmouse-3: Toggle minor modes" 'local-map (let ((map (make-sparse-keymap))) (define-key map [mode-line down-mouse-1] `(menu-item ,(purecopy "Menu Bar") ignore :filter (lambda (_) (mouse-menu-major-mode-map)))) (define-key map [mode-line mouse-2] 'describe-mode) (define-key map [mode-line down-mouse-3] mode-line-mode-menu) map)))
+
+(defpowerline powerline-minor-modes (mapconcat (lambda (mm) (propertize mm 'mouse-face 'mode-line-highlight 'help-echo "Minor mode\n mouse-1: Display minor mode menu\n mouse-2: Show help for minor mode\n mouse-3: Toggle minor modes" 'local-map (let ((map (make-sparse-keymap))) (define-key map [mode-line down-mouse-1] (powerline-mouse 'minor 'menu mm)) (define-key map [mode-line mouse-2] (powerline-mouse 'minor 'help mm)) (define-key map [mode-line down-mouse-3] (powerline-mouse 'minor 'menu mm)) (define-key map [header-line down-mouse-3] (powerline-mouse 'minor 'menu mm)) map))) (split-string (format-mode-line minor-mode-alist)) (propertize " " 'face face)))
+
+(defpowerline powerline-narrow (let (real-point-min real-point-max) (save-excursion (save-restriction (widen) (setq real-point-min (point-min) real-point-max (point-max)))) (when (or (/= real-point-min (point-min)) (/= real-point-max (point-max))) (propertize "Narrow" 'mouse-face 'mode-line-highlight 'help-echo "mouse-1: Remove narrowing from the current buffer" 'local-map (make-mode-line-mouse-map 'mouse-1 'mode-line-widen)))))
+
+(defpowerline powerline-vc (when (and (buffer-file-name (current-buffer)) vc-mode) (format-mode-line '(vc-mode vc-mode))))
+
+(defpowerline powerline-buffer-size (propertize (if powerline-buffer-size-suffix "%I" "%i") 'mouse-face 'mode-line-highlight 'local-map (make-mode-line-mouse-map 'mouse-1 (lambda nil (interactive) (setq powerline-buffer-size-suffix (not powerline-buffer-size-suffix)) (force-mode-line-update)))))
+
+(defpowerline powerline-buffer-id (format-mode-line mode-line-buffer-identification))
+
+(defpowerline powerline-process (cond ((symbolp mode-line-process) (symbol-value mode-line-process)) ((listp mode-line-process) (format-mode-line mode-line-process)) (t mode-line-process)))
+
+;;;***
+
+;;;### (autoloads nil "powerline/powerline-themes" "powerline/powerline-themes.el"
+;;;;;;  (21298 17389 0 0))
+;;; Generated autoloads from powerline/powerline-themes.el
+
+(autoload 'powerline-default-theme "powerline/powerline-themes" "\
+Setup the default mode-line.
+
+\(fn)" t nil)
+
+(autoload 'powerline-center-theme "powerline/powerline-themes" "\
+Setup a mode-line with major and minor modes centered.
+
+\(fn)" t nil)
+
+(autoload 'powerline-vim-theme "powerline/powerline-themes" "\
+Setup a Vim-like mode-line.
+
+\(fn)" t nil)
+
+(autoload 'powerline-nano-theme "powerline/powerline-themes" "\
+Setup a nano-like mode-line.
+
+\(fn)" t nil)
+
+;;;***
+
 ;;;### (autoloads nil "smartparens/smartparens" "smartparens/smartparens.el"
 ;;;;;;  (21295 4704 0 0))
 ;;; Generated autoloads from smartparens/smartparens.el
@@ -1941,11 +2017,10 @@ See `yascroll-bar-mode' for more information on Yascroll-Bar mode.
 ;;;;;;  "expand-region/sml-mode-expansions.el" "expand-region/text-mode-expansions.el"
 ;;;;;;  "expand-region/the-org-mode-expansions.el" "expand-region/web-mode-expansions.el"
 ;;;;;;  "helm/helm-aliases.el" "helm/helm-pkg.el" "helm/helm-plugin.el"
-;;;;;;  "rsense/etc/rsense.el" "smartparens/smartparens-config.el"
+;;;;;;  "popup/popup.el" "powerline/powerline-separators.el" "smartparens/smartparens-config.el"
 ;;;;;;  "smartparens/smartparens-html.el" "smartparens/smartparens-latex.el"
 ;;;;;;  "smartparens/smartparens-lua.el" "smartparens/smartparens-pkg.el"
-;;;;;;  "smartparens/smartparens-ruby.el" "yasnippet/yasnippet-debug.el"
-;;;;;;  "yasnippet/yasnippet-tests.el") (21295 6996 958251 0))
+;;;;;;  "smartparens/smartparens-ruby.el") (21298 17390 214032 0))
 
 ;;;***
 

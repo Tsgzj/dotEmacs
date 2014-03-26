@@ -162,8 +162,11 @@ added to `haskell-mode-hook'"
 (add-hook 'haskell-mode-hook 'my-haskell-mode-hook)
 (defun my-haskell-mode-hook ()
   (haskell-indentation-mode -1) ;; turn off, just to be sure
+  (haskell-indent-mode t)
   (haskell-style)
   ;; further customisations go here.  For example:
+  (define-key haskell-mode-map (kbd "C-c C-d") 'dash-at-point)
+  (define-key haskell-mode-map (kbd "RET") 'newline-and-indent)
   (setq locale-coding-system 'utf-8 )
   ;; etc.
 )
@@ -264,8 +267,7 @@ added to `haskell-mode-hook'"
 (color-theme-molokai)
 
 ;;dash
-(add-to-list 'load-path
-             "~/.emacs.d/plugins/dash-at-point")
+(load-file "~/.emacs.d/plugins/dash-at-point.el")
 (autoload 'dash-at-point "dash-at-point"
   "Search the word at point with Dash." t nil)
 (global-set-key (kbd "C-c C-d") 'dash-at-point)
@@ -444,6 +446,9 @@ added to `haskell-mode-hook'"
 (yas-global-mode t)
 
 
+;;smartparent
+(smartparens-global-mode)
+
 ;;org-mode
 (add-to-list 'load-path 
              "~/.emacs.d/org-mode/lisp/")
@@ -519,8 +524,11 @@ added to `haskell-mode-hook'"
 (global-yascroll-bar-mode 1)
 
 ;;powerline
-;; (add-to-list 'load-path "~/.emacs.d/plugins/emacs-powerline")
-;; (require 'powerline)
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-powerline")
+(require 'powerline)
+(setq powerline-color1 "grey22")
+(setq powerline-color2 "grey40")
+
 ;; (defun arrow-right-xpm (color1 color2)
 ;;   "Return an XPM right arrow string representing."
 ;;   (format "/* XPM */
@@ -677,6 +685,9 @@ added to `haskell-mode-hook'"
 ;;                     :foreground "#fff"
 ;;                     :background "#202020")
 
+
+
+
 (global-set-key "\M-w"
                 (lambda ()
                   (interactive)
@@ -710,6 +721,10 @@ added to `haskell-mode-hook'"
 
 ;;helm-mode
 (helm-mode 1)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
+
 
 ;;expand-region
 (require 'expand-region)
